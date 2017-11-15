@@ -1,29 +1,16 @@
 /*
 Welcome to my attempt at a stylesheet! Let's see what I can do with this boy.
 */
-.typer {
-  font-family: 'Special Elite', cursive;
-  text-align: center;
-  font-size: 300%;
+html {
+  background: rgb(220,220,220);
+  -webkit-font-smoothing: antialiased;
 }
 
-.logo img {
-  align-items: center;
-  width: 300px;
-}
-
-.menu {
-  width: 100%;
-  text-align: center;
+body {
+  background-color: rgb(250, 250, 250);
+  background-image: url('http://stephenkender.com/groovepaper.png');
   font-family: 'Lato', sans-serif;
-}
-
-.caption {
-  font-family: 'Lato', sans-serif;
-  font-style: italic;
-  color: rgb(150,150,150);
-  padding-left: 100px;
-  padding-right: 100px;
+  text-align: center;
 }
 
 h1 {
@@ -32,16 +19,9 @@ h1 {
   font-family: 'Special Elite', cursive;
 }
 
-body {
-  background-color: rgb(250,250,250);
-  background-image: url('http://stephenkender.com/groovepaper.png');
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-}
-
 h2 {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 150%
+  font-size: 150%;
   text-align: center;
 }
 
@@ -56,4 +36,91 @@ h3 {
 p {
   font-family: 'Lato', sans-serif;
   text-align: center;
+}
+
+.header {
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  font-size: 300%;
+}
+
+.logo img {
+  align-items: center;
+  width: 400px;
+}
+
+a:link {
+  text-decoration: none;
+  transition: all .2s ease-in;
+  color: rgb(25, 75, 150);
+}
+
+a:link:visited {
+  transition: all .2s ease-in;
+  color: rgb(137, 136, 231);
+}
+
+a:link:hover {
+  color: rgb(255, 85, 75);
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu ul {
+  list-style-type: none;
+  display: inline-table;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  border: 3px;
+  border-radius: 10px;
+  background-color: rgb(25, 75, 150);
+  font-family: 'Lato', sans-serif;
+}
+
+.menu li a {
+  display: block;
+  transition: all .2s ease-in;
+  color: rgb(250, 250, 250);
+  padding: 8px;
+}
+
+.menu li a:hover {
+  background-color: rgb(250, 250, 250);
+  color: rgb(25, 75, 150);
+  border-color: rgb(25, 75, 150);
+}
+
+.active {
+  background-color: rgb(0, 50, 125);
+  color: rgb(250, 250, 250);
+}
+
+.halves {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  color: rgb(150, 150, 150);
+  float: left;
+  width: 49%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.caption {
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  color: rgb(150, 150, 150);
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.footer {
+  font-style: italic;
+  background-color: rgb(25, 75, 150);
+  color: rgb(250, 250, 250);
+  padding: 16px 0px 16px;
+  width: 100%;
 }
