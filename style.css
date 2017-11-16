@@ -22,11 +22,12 @@ h2 {
   font-size: 150%;
 }
 
-h3 {
+.subheader {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 110%;
-  padding-left: 10%;
-  padding-right: 10%;
+  display: inline-block;
+  width: 90%;
+  margin: auto;
 }
 
 p {
