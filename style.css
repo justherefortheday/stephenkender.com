@@ -42,25 +42,29 @@ p {
   padding-bottom: 30px;
 }
 
+.logo img {
+  align-items: center;
+  margin: auto;
+}
+
+.logo:hover img {
+  transition: .1s ease-in;
+  opacity: .5;
+}
+
 @media only screen and (min-width: 900px) {
   .logo img {
-    align-items: center;
     width: 50%;
-    margin: auto;
   } }
 
 @media only screen and (max-width: 900px) and (min-width: 500px) {
   .logo img {
-    align-items: center;
     width: 67.5%;
-    margin: auto;
   } }
 
 @media only screen and (max-width: 500px) {
   .logo img {
-    align-items: center;
     width: 85%;
-    margin: auto;
   } }
 
 a:link {
