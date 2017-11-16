@@ -22,14 +22,6 @@ h2 {
   font-size: 150%;
 }
 
-.subheader {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 110%;
-  display: inline-block;
-  width: 90%;
-  margin: auto;
-}
-
 p {
   font-family: 'Lato', sans-serif;
 }
@@ -38,6 +30,16 @@ p {
   font-family: 'Special Elite', cursive;
   text-align: center;
   font-size: 300%;
+}
+
+.subheader {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 110%;
+  font-weight: bold;
+  display: inline-block;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 30px;
 }
 
 .logo img {
@@ -104,6 +106,7 @@ a:link:hover {
   color: rgb(150, 150, 150);
   width: 49%;
   margin: auto;
+  padding-bottom: 10px;
 }
 
 .caption {
@@ -111,8 +114,9 @@ a:link:hover {
   font-family: 'Lato', sans-serif;
   font-style: italic;
   color: rgb(150, 150, 150);
-  padding-left: 10%;
-  padding-right: 10%;
+  width: 90%;
+  padding-bottom: 10px;
+
 }
 
 .footer {
