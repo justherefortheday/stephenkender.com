@@ -42,10 +42,19 @@ p {
   padding-bottom: 30px;
 }
 
-.logo img {
-  align-items: center;
-  width: 400px;
-}
+@media (min-width: 992px) {
+  .logo img {
+    align-items: center;
+    width: 60%;
+    margin: auto;
+  } }
+
+@media (min-width: 500px) {
+  .logo img {
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  } }
 
 a:link {
   text-decoration: none;
@@ -73,7 +82,6 @@ a:link:hover {
   margin: 0;
   padding: 0;
   width: 250px;
-  border: 3px;
   border-radius: 10px;
   background-color: rgb(25, 75, 150);
   font-family: 'Lato', sans-serif;
@@ -87,9 +95,8 @@ a:link:hover {
 }
 
 .menu li a:hover {
-  background-color: rgb(220, 220, 220);
-  color: rgb(25, 75, 150);
-  border-color: rgb(25, 75, 150);
+  background-color: rgb(255,150,0);
+  color: rgb(0, 50, 100);
 }
 
 .active {
