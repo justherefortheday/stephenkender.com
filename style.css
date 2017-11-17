@@ -2,13 +2,13 @@
 Welcome to my attempt at a stylesheet! Let's see what I can do with this boy.
 */
 html {
-  background: rgb(250,250,250);
+  background: #fafafa;
   -webkit-font-smoothing: antialiased;
   text-align: center;
 }
 
 body {
-  background-color: rgb(250, 250, 250);
+  background-color: #fafafa;
   font-family: 'Lato', sans-serif
 }
 
@@ -45,10 +45,11 @@ p {
 .logo img {
   align-items: center;
   margin: auto;
+  transition: .3s ease-out;
 }
 
 .logo:hover img {
-  transition: .1s ease-in;
+  transition: .2s ease-in;
   opacity: .5;
 }
 
@@ -70,16 +71,16 @@ p {
 a:link {
   text-decoration: none;
   transition: all .2s ease-in;
-  color: rgb(25, 75, 150);
+  color: #1e50b4;
 }
 
 a:link:visited {
   transition: all .2s ease-in;
-  color: rgb(137, 136, 231);
+  color: #9c3cb0;
 }
 
 a:link:hover {
-  color: rgb(255, 85, 75);
+  color: #f44336;
 }
 
 .menu {
@@ -94,25 +95,25 @@ a:link:hover {
   padding: 0;
   width: 250px;
   border-radius: 10px;
-  background-color: rgb(25, 75, 150);
+  background-color: #1e50b4;
   font-family: 'Lato', sans-serif;
 }
 
 .menu li a {
   display: block;
   transition: all .2s ease-in;
-  color: rgb(250, 250, 250);
+  color: #fafafa;
   padding: 8px;
 }
 
 .menu li a:hover {
-  background-color: rgb(250,250,250);
-  color: rgb(0, 50, 100);
+  background-color: #fafafa;
+  color: #1e50b4;
 }
 
 .active {
-  background-color: rgb(0, 50, 125);
-  color: rgb(220, 220, 220);
+  background-color: #1e50b4;
+  color: #1e1e1e;
 }
 
 .halves {
@@ -121,7 +122,7 @@ a:link:hover {
   vertical-align: text-top;
   font-family: 'Lato', sans-serif;
   font-style: italic;
-  color: rgb(150, 150, 150);
+  color: #969696;
   width: 49%;
   margin: auto;
   padding-bottom: 10px;
@@ -131,22 +132,24 @@ a:link:hover {
   display: inline-block;
   font-family: 'Lato', sans-serif;
   font-style: italic;
-  color: rgb(150, 150, 150);
+  color: #969696;
   width: 90%;
   padding-bottom: 10px;
 }
 
 .profile img {
+  width: 35%;
+  margin: auto;
   border-width: 20px;
-  border-color: rgba(255, 150, 50,.5);
+  border-color: #ff733280;
   border-style: solid;
   border-radius: 50%;
 }
 
 .footer {
   font-style: italic;
-  background-color: rgb(25, 75, 150);
-  color: rgb(250, 250, 250);
+  background-color: #1e50b4;
+  color: #fafafa;
   padding: 16px 0px 16px;
   margin: 0;
 }
