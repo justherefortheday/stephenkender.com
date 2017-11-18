@@ -50,6 +50,30 @@ Welcome to my attempt at a stylesheet! Let's see what I can do with this boy.
   height: 80px;
   opacity: 0;
   background-image: linear-gradient(transparent, rgba(0,0,0,0.5));
+<<<<<<< HEAD
+=======
+  text-align: left;
+  text-indent: 84%;
+  line-height: 95px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0 0 1px #000;
+}
+
+.counter {
+  position: absolute;
+  bottom: 20px;
+  height: 20px;
+  width: 100%;
+  z-index: 2;
+  text-align: left;
+  text-indent: 86%;
+  color: #fff;
+  line-height: 21px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s;
+>>>>>>> 8d4618c7097e506192daa57ca9b83227c2ce89d0
 }
 
 .faux-ui-facia {
