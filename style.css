@@ -105,7 +105,7 @@ p {
   background-image: linear-gradient(transparent, rgba(0,0,0,0.5));
 }
 
-.picshow {
+.faux-picshow {
   top: 0;
   right: 0;
   float: right;
@@ -117,33 +117,33 @@ p {
   opacity: 0;
   cursor: pointer;
 }
-.picshow:checked {
+.faux-picshow:checked {
   z-index: 8;
 }
-.picshow:checked + .slide {
+.faux-picshow:checked + .slide {
   opacity: 0;
 }
-.picshow:checked:nth-child(1):checked {
+.faux-picshow:checked:nth-child(1):checked {
   z-index: 9;
 }
-.picshow:nth-child(1):checked {
+.faux-picshow:nth-child(1):checked {
   float: left;
   z-index: 9;
 }
-.picshow:nth-child(1):checked + .slide {
+.faux-picshow:nth-child(1):checked + .slide {
   opacity: 1;
 }
-.picshow:nth-child(1):checked ~ .picshow {
+.faux-picshow:nth-child(1):checked ~ .faux-picshow {
   float: left;
   z-index: 8;
 }
-.picshow:nth-child(1):checked ~ .picshow + .slide {
+.faux-picshow:nth-child(1):checked ~ .faux-picshow + .slide {
   opacity: 0;
 }
-.picshow:nth-child(1):checked ~ .picshow:checked {
+.faux-picshow:nth-child(1):checked ~ .faux-picshow:checked {
   z-index: 9;
 }
-.picshow:nth-child(1):checked ~ .picshow:checked + .slide {
+.faux-picshow:nth-child(1):checked ~ .faux-picshow:checked + .slide {
   opacity: 1;
 }
 
