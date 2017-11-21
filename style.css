@@ -271,6 +271,7 @@ a:link:hover {
 
 .profile img {
   width: 35%;
+  max-width: 400px;
   margin: auto;
   border-width: 20px;
   border-color: #ff733280;
