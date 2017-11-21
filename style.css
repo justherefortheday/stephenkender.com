@@ -2,6 +2,59 @@
 Welcome to my attempt at a stylesheet! Let's see what I can do with this boy.
 */
 
+html {
+  background: #fafafa;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  /*background-image: linear-gradient(#17191f, #252a35);*/
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Lato', sans-serif
+}
+
+h1 {
+  font-size: 200%;
+  font-family: 'Special Elite', cursive;
+}
+
+h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 150%;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+.header {
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  font-size: 300%;
+}
+
+.subheader {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 110%;
+  font-weight: bold;
+  display: inline-block;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.logo img {
+  align-items: center;
+  margin: auto;
+  transition: .3s ease-out;
+}
+
+.logo:hover img {
+  transition: .2s ease-in;
+  opacity: .5;
+}
+
 .carousel {
   position: relative;
   width: 50%;
@@ -52,7 +105,7 @@ Welcome to my attempt at a stylesheet! Let's see what I can do with this boy.
   background-image: linear-gradient(transparent, rgba(0,0,0,0.5));
 }
 
-.faux-ui-facia {
+.picshow {
   top: 0;
   right: 0;
   float: right;
@@ -64,86 +117,34 @@ Welcome to my attempt at a stylesheet! Let's see what I can do with this boy.
   opacity: 0;
   cursor: pointer;
 }
-.faux-ui-facia:checked {
+.picshow:checked {
   z-index: 8;
 }
-.faux-ui-facia:checked + .slide {
+.picshow:checked + .slide {
   opacity: 0;
 }
-.faux-ui-facia:checked:nth-child(1):checked {
+.picshow:checked:nth-child(1):checked {
   z-index: 9;
 }
-.faux-ui-facia:nth-child(1):checked {
+.picshow:nth-child(1):checked {
   float: left;
   z-index: 9;
 }
-.faux-ui-facia:nth-child(1):checked + .slide {
+.picshow:nth-child(1):checked + .slide {
   opacity: 1;
 }
-.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia {
+.picshow:nth-child(1):checked ~ .picshow {
   float: left;
   z-index: 8;
 }
-.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia + .slide {
+.picshow:nth-child(1):checked ~ .picshow + .slide {
   opacity: 0;
 }
-.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked {
+.picshow:nth-child(1):checked ~ .picshow:checked {
   z-index: 9;
 }
-.faux-ui-facia:nth-child(1):checked ~ .faux-ui-facia:checked + .slide {
+.picshow:nth-child(1):checked ~ .picshow:checked + .slide {
   opacity: 1;
-}
-
-html {
-  background: #fafafa;
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-}
-
-body {
-  background-color: #fafafa;
-  font-family: 'Lato', sans-serif
-}
-
-h1 {
-  font-size: 200%;
-  font-family: 'Special Elite', cursive;
-}
-
-h2 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 150%;
-}
-
-p {
-  font-family: 'Lato', sans-serif;
-}
-
-.header {
-  font-family: 'Special Elite', cursive;
-  text-align: center;
-  font-size: 300%;
-}
-
-.subheader {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 110%;
-  font-weight: bold;
-  display: inline-block;
-  width: 90%;
-  margin: auto;
-  padding-bottom: 30px;
-}
-
-.logo img {
-  align-items: center;
-  margin: auto;
-  transition: .3s ease-out;
-}
-
-.logo:hover img {
-  transition: .2s ease-in;
-  opacity: .5;
 }
 
 @media only screen and (min-width: 900px) {
