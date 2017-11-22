@@ -56,10 +56,9 @@ p {
 }
 
 .menutext {
-  height: 150px;
   font-family: Barlow Condensed;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 22px;
   color: #fafafa;
   text-shadow: 1px 1px #000;
 }
@@ -70,6 +69,8 @@ p {
 }
 
 .menu1 {
+  box-sizing: border-box;
+  padding:8px;
   display:flex;
   width: 60%;
   align-items: flex-end;
@@ -87,13 +88,15 @@ p {
 }
 
 .menu2 {
+  box-sizing: border-box;
+  padding:8px;
   display:flex;
   width: 40%;
   align-items: flex-end;
   height: 150px;
   background-color: #ffeb3b99;
   float: left;
-  background-image: url(gd.png);
+  background-image: url(gd.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -104,8 +107,10 @@ p {
 }
 
 .menu3 {
+  box-sizing: border-box;
+  padding:8px;
   display:flex;
-  width: 35%;
+  width: 30%;
   align-items: flex-end;
   height: 150px;
   background-color: #03a9f399;
@@ -121,13 +126,15 @@ p {
 }
 
 .menu4 {
+  box-sizing: border-box;
+  padding:8px;
   display:flex;
-  width: 65%;
+  width: 70%;
   align-items: flex-end;
   height: 150px;
   background-color: #00d77899;
   float: left;
-  background-image: url(moldflow.png);
+  background-image: url(moldflow.jpg);
   background-position: center;
   background-size: cover;
 }
