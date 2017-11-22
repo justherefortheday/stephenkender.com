@@ -14,18 +14,34 @@ body {
   font-family: 'Lato', sans-serif
 }
 
-h1 {
-  font-size: 200%;
-  font-family: 'Special Elite', cursive;
+
+.menutext {
+  font-family: Barlow Condensed;
+  font-weight: bold;
+  font-size: 22px;
+  color: #fafafa;
+  text-shadow: 1px 1px #000;
 }
 
-h2 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 150%;
+.menutext:hover {
+  transition: .2s ease-in-out;
+  color: #666666;
 }
 
-p {
-  font-family: 'Lato', sans-serif;
+.menu {
+  box-sizing: border-box;
+  padding:8px;
+  display:flex;
+  align-items: flex-end;
+  height: 200px;
+  float: left;
+  background-position: center;
+  background-size: cover;
+}
+
+.menu:hover {
+  opacity: .8;
+  transition: .2s ease-in-out;
 }
 
 .header {
@@ -55,93 +71,18 @@ p {
   opacity: .5;
 }
 
-.menutext {
-  font-family: Barlow Condensed;
-  font-weight: bold;
-  font-size: 22px;
-  color: #fafafa;
-  text-shadow: 1px 1px #000;
+h1 {
+  font-size: 200%;
+  font-family: 'Special Elite', cursive;
 }
 
-.menutext:hover {
-  transition: .2s ease-in-out;
-  color: #666666;
+h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 150%;
 }
 
-.menu1 {
-  box-sizing: border-box;
-  padding:8px;
-  display:flex;
-  width: 60%;
-  align-items: flex-end;
-  height: 150px;
-  background-color: #ff733299;
-  float: left;
-  background-image: url(bird.JPG);
-  background-position: center;
-  background-size: cover;
-}
-
-.menu1:hover {
-  opacity: .8;
-  transition: .2s ease-in-out;
-}
-
-.menu2 {
-  box-sizing: border-box;
-  padding:8px;
-  display:flex;
-  width: 40%;
-  align-items: flex-end;
-  height: 150px;
-  background-color: #ffeb3b99;
-  float: left;
-  background-image: url(gd.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.menu2:hover {
-  opacity: .8;
-  transition: .2s ease-in-out;
-}
-
-.menu3 {
-  box-sizing: border-box;
-  padding:8px;
-  display:flex;
-  width: 30%;
-  align-items: flex-end;
-  height: 150px;
-  background-color: #03a9f399;
-  float: left;
-  background-image: url(typewriterhead.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.menu3:hover {
-  opacity: .8;
-  transition: .2s ease-in-out;
-}
-
-.menu4 {
-  box-sizing: border-box;
-  padding:8px;
-  display:flex;
-  width: 70%;
-  align-items: flex-end;
-  height: 150px;
-  background-color: #00d77899;
-  float: left;
-  background-image: url(moldflow.jpg);
-  background-position: center;
-  background-size: cover;
-}
-
-.menu4:hover {
-  opacity: .8;
-  transition: .2s ease-in-out;
+p {
+  font-family: 'Lato', sans-serif;
 }
 
 .carousel {
