@@ -55,6 +55,88 @@ p {
   opacity: .5;
 }
 
+.menutext {
+  height: 150px;
+  font-family: Barlow Condensed;
+  font-weight: bold;
+  font-size: 30px;
+  color: #fafafa;
+  text-shadow: 1px 1px #000;
+}
+
+.menutext:hover {
+  transition: .2s ease-in-out;
+  color: #666666;
+}
+
+.menu1 {
+  display:flex;
+  width: 60%;
+  align-items: flex-end;
+  height: 150px;
+  background-color: #ff733299;
+  float: left;
+  background-image: url(bird.JPG);
+  background-position: center;
+  background-size: cover;
+}
+
+.menu1:hover {
+  opacity: .8;
+  transition: .2s ease-in-out;
+}
+
+.menu2 {
+  display:flex;
+  width: 40%;
+  align-items: flex-end;
+  height: 150px;
+  background-color: #ffeb3b99;
+  float: left;
+  background-image: url(gd.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.menu2:hover {
+  opacity: .8;
+  transition: .2s ease-in-out;
+}
+
+.menu3 {
+  display:flex;
+  width: 35%;
+  align-items: flex-end;
+  height: 150px;
+  background-color: #03a9f499;
+  float: left;
+  background-image: url(typewriterhead.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.menu3:hover {
+  opacity: .8;
+  transition: .2s ease-in-out;
+}
+
+.menu4 {
+  display:flex;
+  width: 65%;
+  align-items: flex-end;
+  height: 150px;
+  background-color: #00d77899;
+  float: left;
+  background-image: url(moldflow.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.menu4:hover {
+  opacity: .8;
+  transition: .2s ease-in-out;
+}
+
 .carousel {
   position: relative;
   width: 50%;
@@ -213,39 +295,7 @@ a:link:visited {
 
 a:link:hover {
   color: #f44336;
-}
-
-.menu {
-  text-align: center;
-}
-
-.menu ul {
-  list-style-type: none;
-  display: inline-table;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
-  width: 250px;
-  border-radius: 10px;
-  background-color: #1e50b4;
-  font-family: 'Lato', sans-serif;
-}
-
-.menu li a {
-  display: block;
-  transition: all .2s ease-in;
-  color: #fafafa;
-  padding: 8px;
-}
-
-.menu li a:hover {
-  background-color: #fafafa;
-  color: #1e50b4;
-}
-
-.active {
-  background-color: #1e50b4;
-  color: #1e1e1e;
+  transition: .2s ease-in-out;
 }
 
 .halves {
@@ -273,7 +323,7 @@ a:link:hover {
   width: 35%;
   max-width: 400px;
   margin: auto;
-  border-width: 20px;
+  border-width: 1rem;
   border-color: #ff733280;
   border-style: solid;
   border-radius: 50%;
