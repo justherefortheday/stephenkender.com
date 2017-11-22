@@ -18,7 +18,7 @@ body {
 .menutext {
   font-family: Barlow Condensed;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 34px;
   color: #fafafa;
   text-shadow: 1px 1px #000;
 }
@@ -213,6 +213,11 @@ p {
   .logo img {
     width: 85%;
   }
+
+  .menutext {
+    font-size: 18px;
+    }
+
   .carousel {
     position: relative;
     width: 100%;
