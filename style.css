@@ -145,13 +145,13 @@ section {
   left: 20px;
   bottom: 20px;
   width: 70%;
-  color: rgba(255,255,255,0.9);
+  color: rgb(255,255,255);
   font-size: 14px;
   font-weight: 300;
   z-index: 12;
   opacity: 0;
   transition: opacity 0.3s;
-  text-shadow: 0 0 1px #000;
+  text-shadow: 1px 1px 1px #000;
 }
 .slide:after {
   content: attr(slide);
@@ -268,6 +268,10 @@ a:link:hover {
   transition: .2s ease-in-out;
 }
 
+.social {
+  padding: 0px 10px 0px 10px;
+}
+
 .halves {
   display: inline-block;
   text-align: center;
@@ -302,6 +306,6 @@ a:link:hover {
 .footer {
   font-style: italic;
   color: #fafafa;
-  padding: 16px 0px 16px;
+  padding: 16px 10px 16px 10px;
   margin: auto;
 }
