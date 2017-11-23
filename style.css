@@ -2,7 +2,7 @@
 Welcome to my attempt at a stylesheet! Let's see what I can do with this boy.
 */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600");
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+@import url("https://fonts.googleapis.com/css?family=Special+Elite");
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed");
 
 
@@ -42,7 +42,12 @@ body {
 .menutext:hover {
   transition: .2s ease-in-out;
   color: #fafafa00;
-  text-shadow: 0px 0px #00000000;
+  text-shadow: 0px 0px transparent;
+}
+
+.menublock {
+  display: block;
+  height: 400px;
 }
 
 .menu {
@@ -63,8 +68,8 @@ body {
 
 .header {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 300%;
-  line-height: .8em;
+  font-size: 280%;
+  line-height: 1.1em;
   padding: 30px 10px 30px 10px;
 }
 
@@ -76,9 +81,16 @@ body {
   margin: auto;
   padding: 0px 10px 30px 10px;
 }
-.breakup {
+.quote {
   display: block;
-  height: 470px;
+  background-color: #eaeaea;
+  background-image: url(lined-paper.png);
+  color: #242424;
+  text-align: center;
+  font-family: Special Elite;
+  font-size: 16px;
+  line-height: 1.35em;
+  padding:15px 10px 15px 10px;
 }
 
 h1 {
@@ -147,7 +159,6 @@ section {
   width: 70%;
   color: rgb(255,255,255);
   font-size: 14px;
-  font-weight: 300;
   z-index: 12;
   opacity: 0;
   transition: opacity 0.3s;
@@ -217,12 +228,8 @@ section {
     width: 40%;
   }
   .carousel {
-    position: relative;
     width: 75%;
     padding-bottom:56.25%;
-    overflow: hidden;
-    margin: 0 auto;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   }}
 
 @media only screen and (max-width: 500px) {
@@ -230,26 +237,22 @@ section {
     width: 75%;
   }
 
+  .header {
+    font-size: 200%;
+  }
+
   .menutext {
     font-size: 18px;
     }
 
   .carousel {
-    position: relative;
     width: 90%;
     padding-bottom:67.5%;
-    overflow: hidden;
-    margin: 0 auto;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   }
 
   .carousel2 {
-    position: relative;
     width: 90%;
     padding-bottom:90%;
-    overflow: hidden;
-    margin: 0 auto;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   }}
 
 a:link {
@@ -293,8 +296,13 @@ a:link:hover {
   padding-bottom: 10px;
 }
 
-.profile img {
+.profile {
+  margin: auto;
   width: 35%;
+}
+
+.profile img {
+  width: 100%;
   max-width: 400px;
   margin: auto;
   border-width: .6rem;
