@@ -19,9 +19,12 @@ body {
   margin: 0px;
 }
 
-.logo img {
+.logo {
   display: block;
   padding: 10px 0px 0px 10px;
+}
+.logo img {
+  width: 100%;
   transition: .3s ease-out;
 }
 
@@ -219,12 +222,12 @@ section {
 }
 
 @media only screen and (min-width: 900px) {
-  .logo img {
+  .logo {
     width: 30%;
   } }
 
 @media only screen and (max-width: 900px) and (min-width: 500px) {
-  .logo img {
+  .logo {
     width: 40%;
   }
   .carousel {
@@ -233,7 +236,7 @@ section {
   }}
 
 @media only screen and (max-width: 500px) {
-  .logo img {
+  .logo {
     width: 75%;
   }
 
