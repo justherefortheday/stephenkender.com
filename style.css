@@ -13,6 +13,18 @@ html {
   background-color: #242943;
 }
 
+header {
+  height:100vh;
+ background-image: url("https://stephenkender.com/header.JPG");
+ background-size: cover;
+ /* Now this will center the header text*/
+ z-index: 2;
+ display: flex;
+ flex-flow: column;
+ justify-content: center;
+ position: relative;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #fafafa;
@@ -69,14 +81,15 @@ body {
   transition: .2s ease-in-out;
 }
 
-.header {
+.heading {
+
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 280%;
   line-height: 1.1em;
   padding: 30px 10px 30px 10px;
 }
 
-.subheader {
+.subheading {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 110%;
   display: inline-block;
@@ -240,7 +253,7 @@ section {
     width: 75%;
   }
 
-  .header {
+  .heading {
     font-size: 200%;
   }
 
