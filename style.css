@@ -14,7 +14,7 @@ html {
 }
 
 header {
-  height:100vh;
+  height:70vh;
   background-image: url("https://stephenkender.com/header.JPG");
   background-size: cover;
   /* Now this will center the header text*/
@@ -59,7 +59,7 @@ body {
 
 .menublock {
   display: block;
-  height: 400px;
+  height: 15vh;
 }
 
 .menu {
@@ -67,7 +67,7 @@ body {
   padding:8px;
   display:flex;
   align-items: flex-end;
-  height: 200px;
+  height: 15vh;
   float: left;
   background-position: center;
   background-size: cover;
