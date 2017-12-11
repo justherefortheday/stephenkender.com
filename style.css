@@ -15,14 +15,11 @@ html {
 
 header {
   height:100vh;
- background-image: url("https://stephenkender.com/header.JPG");
- background-size: cover;
- /* Now this will center the header text*/
- z-index: 2;
- display: flex;
- flex-flow: column;
- justify-content: center;
- position: relative;
+  background-image: url("https://stephenkender.com/header.JPG");
+  background-size: cover;
+  /* Now this will center the header text*/
+  display: flex;
+  flex-flow: column;
 }
 
 body {
@@ -33,10 +30,10 @@ body {
 
 .logo {
   display: block;
-  padding: 10px 0px 0px 10px;
+  margin: auto;
 }
 .logo img {
-  width: 100%;
+  width: 90%;
   transition: .3s ease-out;
 }
 
@@ -85,8 +82,9 @@ body {
 
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 280%;
+  text-align: center;
   line-height: 1.1em;
-  padding: 30px 10px 30px 10px;
+  padding: 10px 10px 30px 10px;
 }
 
 .subheading {
@@ -236,12 +234,12 @@ section {
 
 @media only screen and (min-width: 900px) {
   .logo {
-    width: 30%;
+    width: 40%;
   } }
 
 @media only screen and (max-width: 900px) and (min-width: 500px) {
   .logo {
-    width: 40%;
+    width: 50%;
   }
   .carousel {
     width: 75%;
