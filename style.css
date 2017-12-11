@@ -17,6 +17,7 @@ header {
   height:70vh;
   background-image: url("https://stephenkender.com/header.JPG");
   background-size: cover;
+  background-position: bottom;
   /* Now this will center the header text*/
   display: flex;
   flex-flow: column;
