@@ -89,7 +89,7 @@ body {
 }
 
 .subheading {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 110%;
   display: inline-block;
   width: 90%;
@@ -116,7 +116,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 150%;
   padding: 0px 10px 0px 10px;
 }
@@ -129,8 +129,7 @@ p {
 }
 
 section {
-  border-top: solid 1px;
-  border-color: #676d79;
+  padding: 10px;
 }
 
 .carousel {
@@ -166,6 +165,18 @@ section {
 }
 .carousel3:hover .slide:after,
 .carousel3:hover .slide:before {
+  opacity: 1;
+}
+
+.carousel4 {
+  position: relative;
+  width: 50%;
+  padding-bottom: 33.25%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.carousel4:hover .slide:after,
+.carousel4:hover .slide:before {
   opacity: 1;
 }
 
@@ -291,6 +302,10 @@ section {
   }
 
   .carousel3 {
+    width: 90%;
+    padding-bottom:59.85%;
+  }
+  .carousel4 {
     width: 90%;
     padding-bottom:59.85%;
   }}
