@@ -157,6 +157,18 @@ section {
   opacity: 1;
 }
 
+.carousel3 {
+  position: relative;
+  width: 50%;
+  padding-bottom: 33.25%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.carousel3:hover .slide:after,
+.carousel3:hover .slide:before {
+  opacity: 1;
+}
+
 .slide {
   float: right;
   position: absolute;
@@ -276,6 +288,11 @@ section {
   .carousel2 {
     width: 90%;
     padding-bottom:90%;
+  }
+
+  .carousel3 {
+    width: 90%;
+    padding-bottom:59.85%;
   }}
 
 a:link {
@@ -322,6 +339,7 @@ a:link:hover {
 .profile {
   margin: auto;
   width: 35%;
+  padding-bottom: 10px;
 }
 
 .profile img {
