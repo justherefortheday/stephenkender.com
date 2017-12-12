@@ -34,7 +34,7 @@ body {
   margin: auto;
 }
 .logo img {
-  width: 90%;
+  width: 100%;
   transition: .3s ease-out;
 }
 
@@ -124,6 +124,8 @@ h2 {
 p {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 0px 10px 0px 10px;
+  width: 50%;
+  margin: auto;
 }
 
 section {
@@ -235,12 +237,16 @@ section {
 
 @media only screen and (min-width: 900px) {
   .logo {
-    width: 40%;
-  } }
+    width: 60%;
+    max-width: 800px;
+  }}
 
 @media only screen and (max-width: 900px) and (min-width: 500px) {
   .logo {
-    width: 80%;
+    width: 60%;
+  }
+  p {
+    width:65%;
   }
   .carousel {
     width: 75%;
@@ -249,13 +255,15 @@ section {
 
 @media only screen and (max-width: 500px) {
   .logo {
-    width: 70%;
+    width: 85%;
   }
 
   .heading {
     font-size: 200%;
   }
-
+  p {
+    width:90%;
+  }
   .menutext {
     font-size: 18px;
     }
