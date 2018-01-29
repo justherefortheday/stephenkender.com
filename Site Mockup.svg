@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.5"
-     inkscape:cx="801.02734"
-     inkscape:cy="5124.6216"
+     inkscape:zoom="0.1767767"
+     inkscape:cx="2774.636"
+     inkscape:cy="4258.7514"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -71,7 +71,7 @@
        id="rect6572"
        style="opacity:1;fill:#00c2ff;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.1500001;stroke-opacity:1" />
     <rect
-       style="opacity:1;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.1500001;stroke-opacity:1"
+       style="opacity:1;fill:#e62841;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.1500001;stroke-opacity:1"
        id="rect6574"
        width="1920"
        height="1080"
@@ -83,7 +83,7 @@
        height="1080"
        width="1920"
        id="rect6576"
-       style="opacity:1;fill:#e62841;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.1500001;stroke-opacity:1" />
+       style="opacity:1;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.1500001;stroke-opacity:1" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:35px;line-height:123.00000191%;font-family:sans-serif;text-align:start;letter-spacing:-1px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -97,7 +97,7 @@
          y="-3106.738"
          style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:87.5px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Heavy'">photography</tspan></text>
     <rect
-       style="opacity:1;fill:#0fcd64;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.1500001;stroke-opacity:1"
+       style="opacity:1;fill:#00c844;fill-opacity:1;stroke:none;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:6.1500001;stroke-opacity:1"
        id="rect6582"
        width="1920"
        height="1080"
@@ -108,9 +108,9 @@
        id="text4200"
        y="-3746.7007"
        x="964.18506"
-       style="font-style:normal;font-weight:normal;font-size:35px;line-height:123.00000191%;font-family:sans-serif;text-align:center;letter-spacing:-1px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:35px;line-height:123.00000191%;font-family:sans-serif;text-align:center;letter-spacing:-1px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:187.5px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Heavy';fill:#000000;fill-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:900;font-stretch:normal;font-size:187.5px;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Heavy';fill:#000000;fill-opacity:1;"
          id="tspan4204"
          y="-3746.7007"
          x="963.68506"
