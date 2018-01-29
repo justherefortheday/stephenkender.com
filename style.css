@@ -109,10 +109,10 @@ body {
 }
 
 h1 {
-  font-size: 225%;
+  font-size: 275%;
   font-weight: 900;
-  line-height: .8em;
-  padding: 0px 10px 0px 10px;
+  line-height: 1.15em;
+  padding: 0px 10px 0px 30px;
 }
 
 h2 {
@@ -256,6 +256,23 @@ section {
   opacity: 1;
 }
 
+.profile {
+  margin: auto;
+  width: 35%;
+  max-width: 400px;
+  padding-bottom: 10px;
+}
+
+.profile img {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  border-width: .6rem;
+  border-color: #ff733280;
+  border-style: solid;
+  border-radius: 50%;
+}
+
 @media only screen and (min-width: 900px) {
   .logo {
     width: 45%;
@@ -281,10 +298,21 @@ section {
 
   .heading {
     font-size: 4em;
+    padding-left: 0px;
+  }
+
+  h1 {
+    font-size: 225%;
+    padding: 0px 10px 0px 10px;
   }
   p {
     width:90%;
   }
+
+  .profile{
+    width:58%;
+  }
+
   .menutext {
     font-size: 18px;
     }
@@ -347,23 +375,6 @@ a:link:hover {
   color: #cccccc;
   width: 90%;
   padding-bottom: 10px;
-}
-
-.profile {
-  margin: auto;
-  width: 35%;
-  max-width: 400px;
-  padding-bottom: 10px;
-}
-
-.profile img {
-  width: 100%;
-  max-width: 400px;
-  margin: auto;
-  border-width: .6rem;
-  border-color: #ff733280;
-  border-style: solid;
-  border-radius: 50%;
 }
 
 .footer {
