@@ -84,8 +84,8 @@ body {
   font-weight:900;
   font-size: 7em;
   text-align: center;
-  line-height: 1.1em;
-  padding: 10px 10px 30px 10px;
+  line-height: .9rem;
+  padding: 10px 10px 100px 10px;
 }
 
 .subheading {
