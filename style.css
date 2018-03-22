@@ -18,7 +18,8 @@ h1,h2,body,p {
 header {
   height:70vh;
   background-color: #ffe61e;
-  /* Now this will center the header text*/
+  background-image:  url("https://stephenkender.com/splashbg.png");
+    /* Now this will center the header text*/
   display: flex;
   flex-flow: column;
 }
