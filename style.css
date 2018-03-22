@@ -19,11 +19,13 @@ header {
   height:70vh;
   background-color: #ffe61e;
   background-image:  url("https://stephenkender.com/splashbg.png");
+/*PARRRRRRRAAAAALLLLLLLLLAAAAAXXXXXXXX*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     /* Now this will center the header text*/
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
   display: flex;
   flex-flow: column;
 }
@@ -285,6 +287,20 @@ section {
   }}
 
 @media only screen and (max-width: 900px) and (min-width: 500px) {
+  header {
+    height:70vh;
+    background-color: #ffe61e;
+    background-image:  url("https://stephenkender.com/splashbg_mobile.png");
+  /*PARRRRRRRAAAAALLLLLLLLLAAAAAXXXXXXXX*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+      /* Now this will center the header text*/
+      
+    display: flex;
+    flex-flow: column;
+  }
   .logo {
     width: 60%;
   }
