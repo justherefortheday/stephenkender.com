@@ -20,6 +20,10 @@ header {
   background-color: #ffe61e;
   background-image:  url("https://stephenkender.com/splashbg.png");
     /* Now this will center the header text*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   display: flex;
   flex-flow: column;
 }
