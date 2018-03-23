@@ -19,11 +19,6 @@ header {
   height:70vh;
   background-color: #ffe61e;
   background-image:  url("https://stephenkender.com/splashbg.png");
-/*PARRRRRRRAAAAALLLLLLLLLAAAAAXXXXXXXX*/
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
     /* Now this will center the header text*/
 
   display: flex;
@@ -284,7 +279,16 @@ section {
   .logo {
     width: 45%;
     max-width: 700px;
-  }}
+  }
+  header{
+    /*PARRRRRRRAAAAALLLLLLLLLAAAAAXXXXXXXX*/
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
 
 @media only screen and (max-width: 900px) and (min-width: 500px) {
   .logo {
@@ -304,8 +308,7 @@ section {
 @media only screen and (max-width: 500px) {
   header {
     background-image:  url("https://stephenkender.com/splashbg_mobile.png");
-    background-size: cover;
-      width:100%;
+    width:100%;
   }
   .logo {
     width: 85%;
