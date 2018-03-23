@@ -305,8 +305,7 @@ section {
   header {
     background-image:  url("https://stephenkender.com/splashbg_mobile.png");
     background-size: cover;
-    background-size:100%;
-    width:100%;
+      width:100%;
   }
   .logo {
     width: 85%;
