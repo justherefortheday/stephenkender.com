@@ -287,10 +287,6 @@ section {
   }}
 
 @media only screen and (max-width: 900px) and (min-width: 500px) {
-  header {
-    background-image:  url("https://stephenkender.com/splashbg_mobile.png");
-    background-size: contain;
-  }
   .logo {
     width: 60%;
   }
@@ -308,7 +304,7 @@ section {
 @media only screen and (max-width: 500px) {
   header {
     background-image:  url("https://stephenkender.com/splashbg_mobile.png");
-    background-size: contain;
+    background-size: cover;
   }
   .logo {
     width: 85%;
