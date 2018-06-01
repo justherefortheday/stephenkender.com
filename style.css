@@ -78,7 +78,6 @@ body {
 
 .menu:hover {
   opacity: .8;
-  background-size: 110%;
   transition: .2s ease-in-out;
 }
 
