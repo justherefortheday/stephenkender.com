@@ -65,6 +65,7 @@ body {
   display: block;
   height: 30vh;
   width: 25%;
+  float: left;
 }
 
 .menu {
