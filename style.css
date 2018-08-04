@@ -142,14 +142,15 @@ section {
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
-  max-width: 25%;
+  max-width: 50%;
   padding: 0 4px;
 }
 
 .column img {
   margin-top: 8px;
+  margin-left: 50%;
   vertical-align: middle;
-}
+  width: 100%;
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
