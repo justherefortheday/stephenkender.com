@@ -16,7 +16,7 @@ h1,h2,body,p {
 }
 
 header {
-  height:100vh;
+  height:70vh;
   background-color: #ffe61e;
   background-image:  url("https://stephenkender.com/splashbg.png");
     /* Now this will center the header text*/
@@ -63,15 +63,13 @@ body {
 
 .menublock {
   display: block;
-  height: 200px;
-  width: 200px;
+  height: 30vh;
+  width: 25%;
 }
 
 .menu {
   padding:8px;
-  float: left;
   background-position: center;
-  background-size: cover;
 }
 
 .menu:hover {
