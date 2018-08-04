@@ -64,14 +64,13 @@ body {
 .menublock {
   display: block;
   height: 30vh;
-  width: 25%;
-  float: left;
 }
 
 .menu {
   padding:8px;
   background-position: center;
   float: left;
+  width: 25%;
 }
 
 .menu:hover {
