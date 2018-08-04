@@ -70,6 +70,7 @@ body {
 .menu {
   padding:8px;
   background-position: center;
+  float: left;
 }
 
 .menu:hover {
