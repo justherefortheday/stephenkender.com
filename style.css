@@ -19,6 +19,31 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 275%;
+  text-align: center;
+  font-weight: 900;
+  line-height: 1.15em;
+  padding: 0px 10px 0px 10px;
+}
+
+h2 {
+  font-size: 150%;
+  padding: 0px 10px 0px 10px;
+}
+
+p {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 10px 0px 10px;
+}
+
+section {
+  padding: 10px;
+}
+
+
 header {
   height:100vh;
   display: flex;
@@ -47,7 +72,7 @@ body {
   text-shadow: 2px 2px #fffafa;
   transition: .2s ease-in-out;
   text-decoration: none;
-  line-height: 1.75em;
+  line-height: 2.5em;
 }
 
 .menutext:hover {
@@ -57,11 +82,13 @@ body {
 }
 
 .profile {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
   max-width: 550px;
   display: flex;
   align-content: center;
+  padding: 30px;;
 }
 
 .profile img {
@@ -123,28 +150,6 @@ body {
   padding:20px 10px 20px 10px;
 }
 
-h1 {
-  font-size: 275%;
-  text-align: center;
-  font-weight: 900;
-  line-height: 1.15em;
-  padding: 0px 10px 0px 10px;
-}
-
-h2 {
-  font-size: 150%;
-  padding: 0px 10px 0px 10px;
-}
-
-p {
-  width: 50%;
-  margin: auto;
-  padding: 0px 10px 0px 10px;
-}
-
-section {
-  padding: 10px;
-}
 
 /* image gallery time */
 .row {
