@@ -10,11 +10,9 @@ html {
 }
 
 body {
-  color: #040404;
   margin: 0px;
   font-family: neue-haas-unica, sans-serif;
 }
-
 
 a {
   text-decoration: none;
@@ -22,6 +20,7 @@ a {
 
 h1 {
   font-size: 275%;
+  color: #111111;
   text-align: center;
   font-weight: 700;
   line-height: 1.15em;
@@ -30,11 +29,13 @@ h1 {
 
 h2 {
   font-size: 150%;
+  color: #111111;
   padding: 0px 10px 0px 10px;
 }
 
 p {
   width: 50%;
+  color: #454545;
   margin-left: auto;
   margin-right: auto;
   padding: 0px 10px 0px 10px;
@@ -57,18 +58,26 @@ header {
   font-family: neue-haas-unica, sans-serif;
   text-align: left;
   font-weight: 400;
-  font-size: 22px;
-  color: #353535;
-  text-shadow: 2px 2px #fffafa;
+  font-size: 19px;
+  color: #252525;
+  text-shadow: 0px 0px .5px #fffafa;
   transition: .2s ease-in-out;
-  text-decoration: none;
   line-height: 2.5em;
 }
 
-.menutext:hover {
+.blue:hover {
   transition: .2s ease-in-out;
-  color: #35353588;
-  text-shadow: 0px 0px transparent;
+  text-shadow: 0px 0px .5px #8fcff9;
+}
+
+.orange:hover {
+  transition: .2s ease-in-out;
+  text-shadow: 0px 0px .5px #ff7d01;
+}
+
+.green:hover {
+  transition: .2s ease-in-out;
+  text-shadow: 0px 0px .5px #2dc22d;
 }
 
 .profile {
@@ -84,9 +93,6 @@ header {
 .profile img {
   width: 100%;
   margin: auto;
-  border-width: .6rem;
-  border-color: #ff733280;
-  border-style: solid;
   border-radius: 1%;
   box-shadow: #35353566 2px 2px 5px 1px;
 }
@@ -115,6 +121,7 @@ section {
   width: 100%;
   margin: 0;
   display: flex;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -125,6 +132,8 @@ section {
   justify-content: center;
   align-items: center;
   background: #8fcff9;
+  width: 60%;
+  margin-left: 20%;
 }
 
 .section-icon>img {
@@ -133,17 +142,15 @@ section {
 }
 
 .section-text {
-  width: 50%;
   height: 100vh;
   display: flex;
   text-align: left;
   justify-content: center;
-  align-items: center;
 }
 
 .section-text-wrapper {
   max-width: 85%;
-  padding: 75px 50px;
+  padding: 40px 50px;
 }
 
 .section-text-wrapper h1 {
@@ -156,11 +163,11 @@ section {
 .section-text-wrapper p {
   font-size: 25px;
   line-height: 1.5em;
-  margin: 0;
+  margin: auto;
 }
 
 hr {
-  width: 80%;
+  width: 70%;
   color: #35353566;
   margin: 0 auto 0 auto;
 }
