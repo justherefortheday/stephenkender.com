@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="full-width">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://stephenandcaroline.fun/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140628882-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-140628882-1');
+    </script>
+
+    <title>The best Caroline and Stephen out there</title>
+    <meta name="description" content="Website for the first and only ever marriage between a Stephen and a Caroline" />
+    <style>
+        body {
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        section:nth-of-type(even) {
+            flex-direction: row-reverse;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            max-width: 850px;
+            border: none;
+            border-radius: 25px;
+        }
+
+        .radio {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: #353535 3px solid;
+            margin: 0px 20px 0 0;
+            padding: 0px;
+            transition: .1s linear;
+            flex-shrink: 0;
+            -webkit-appearance: none;
+        }
+
+        .radio:focus {
+            background: #8fcff9;
+            border: #35353555 3px solid;
+            transition: .1s linear;
+        }
+
+        .radio:hover {
+            border: #8fcff9 3px solid;
+            transition: .1s linear;
+        }
+
+        .radio-option {
+            width: 100%;
+            padding: 15px 0px 15px 0px;
+            font-size: 25px;
+            line-height: 40px;
+            display: flex;
+            align-items: center;
+            font-family: "industry";
+            font-weight: bold;
+        }
+
+        #submit {
+            font-size: 25px;
+            background-color: #8fcff9;
+            float: left;
+        }
+
+        #submit:hover {
+            background-color: #ff9966;
+            border: #ff996655 8px solid;
+        }
+
+        #submit:focus {
+            background-color: #ff9966;
+            border: #ff996655 8px solid;
+        }
+
+        #thanks {
+            display: none;
+            font-family: "industry";
+            font-size: 25px;
+            float: left;
+            margin: 16px 20px auto 20px;
+            min-height: 70px;
+        }
+
+        @media screen and (max-width: 992px) {
+            body {
+                width: 100%;
+            }
+
+            section {
+                display: block;
+                height: auto;
+            }
+
+            p {
+                font-size: 22px;
+            }
+
+            iframe {
+                width: 100%;
+                border: none;
+                border-radius: 25px;
+            }
+
+            .radio-option {
+                justify-content: center;
+                font-size: 25px;
+            }
+
+            .radio:hover {
+                background: #8fcff9;
+                border: #35353555 3px solid;
+                transition: .1s linear;
+            }
+
+            #submit {
+                float: none;
+            }
+
+            #thanks {
+                float: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div class="banner">
+        <div class="yahoo"> We're Married Y'all!
+
+        </div>
+    </div>
+    <div class="stuff">
+        <div class="box1">Narragansett, RI
+            <br>
+            <a href="https://stephenandcaroline.fun/ri"><img src="https://stephenandcaroline.fun/img/rsvp.png"></a><br>
+            <div class="text">Click the plane for more info
+                <br><br> <span style="font-weight: bold;">'Gansett's cool, yo </span>
+            </div>
+        </div>
+        <div class="box2">Venue
+            <br>
+            <a href="https://stephenandcaroline.fun/#venue"><img
+                    src="https://stephenandcaroline.fun/img/venue.png"></a><br>
+            <div class="text">The Towers<br><br> <span style="font-weight: bold;">35 Ocean Road, Narragansett, RI
+                    02882</span></div>
+        </div>
+        <div class="box3">Date
+            <br>
+            <a href="https://stephenandcaroline.fun/#date"><img
+                    src="https://stephenandcaroline.fun/img/date.png"></a><br>
+            <div class="text">August 11th, 2019 <br><br> <span style="font-weight: bold;">Ceremony begins at
+                    3:00PM</span></div>
+        </div>
+        <div class="box4">FAQ's
+            <br>
+            <a href="https://stephenandcaroline.fun/faq"><img src="https://stephenandcaroline.fun/img/faq.png"></a><br>
+            <div class="text">Click the ? to gain all the world's knowledge <br><br> <span style="font-weight: bold;">Have fun,
+                    friend</span></div>
+        </div>
+
+    </div>
+
+    <section id="poll">
+        <div class="section-icon section-orange">
+            <img src="https://stephenandcaroline.fun/img/poll.svg">
+        </div>
+        <div class="section-text">
+            <div class="section-text-wrapper">
+                <h1>Poll of the Week</h1>
+                <br>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)"></iframe>
+                <form
+                    action="https://docs.google.com/forms/d/e/1FAIpQLSdL2XveidEYzbuDy_aXz7i_5LdfaexLP5nGLd5pvLHSQaT8Bg/formResponse"
+                    method="get" target="hidden_iframe" onsubmit="submitted=true;">
+                    <p>What part of the wedding are you looking forward to the most?</p>
+                    <br><br>
+                    <div class="radio-option"><input class="radio" name="entry.1683853731" type="radio"
+                            value="The Food" />
+                        The Food</div>
+                    <div class="radio-option"><input class="radio" name="entry.1683853731" type="radio"
+                            value="Someone getting embarrassed" />
+                        Someone embarrassing themselves</div>
+                    <div class="radio-option"><input class="radio" name="entry.1683853731" type="radio"
+                            value="Embarrassing myself" />
+                        Embarrassing myself</div>
+                    <div class="radio-option"><input class="radio" name="entry.1683853731" type="radio"
+                            value="The Food" />
+                        The food</div>
+                    <br>
+
+                    <input type="submit" id="submit" value="Submit" onclick="thanks()" />
+
+                    <div id="thanks">Thanks!</div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="section-icon">
+            <img src="https://stephenandcaroline.fun/img/who.svg">
+        </div>
+        <div class="section-text">
+            <div class="section-text-wrapper">
+                <h1>Caroline Millin & Stephen Kender</h1>
+                <p>We met in 8th grade a while ago.
+                    <br>
+                    Now we're here. </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="venue">
+        <div class="section-icon section-orange">
+            <img src="https://stephenandcaroline.fun/img/where.svg">
+        </div>
+        <div class="section-text">
+            <div class="section-text-wrapper">
+                <h1>The Towers, Narragansett</h1>
+                <br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.403666676781!2d-71.45809868431763!3d41.430462001286145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e5bbf292d5ca9b%3A0x1a9055b88dc53fa7!2sThe+Towers!5e0!3m2!1sen!2sus!4v1536289172707"
+                    frameborder="0" style="border:0;" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="date">
+        <div class="section-icon">
+            <img src="https://stephenandcaroline.fun/img/when.svg">
+        </div>
+        <div class="section-text">
+            <div class="section-text-wrapper">
+                <h1>Date</h1>
+                <p>August 11, 2019 is 8/11/19.
+                    <br>
+                    8 + 11 = 19. Get it? :D</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="potato">
+        <div class="section-icon section-orange">
+            <img src="https://stephenandcaroline.fun/img/potato.svg">
+        </div>
+        <div class="section-text">
+            <div class="section-text-wrapper">
+                <h1>Will Potato be in the wedding?</h1>
+                <p>He's a cat, and he doesn't like to do what we say.
+                    <br>
+                    <br>
+                    <br>
+                    So, no.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+    <script>
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200); // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200); // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () { // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0 // Scroll to top of body
+            }, 500);
+        });
+    </script>
+
+    <script>
+        $("#submit").click(function () {
+            $("#thanks").fadeIn(500).delay(500);
+            $("#thanks").fadeOut(500);
+        });
+    </script>
+</body>
+
+</html>

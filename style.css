@@ -120,6 +120,52 @@ body {
   opacity: .5;
 }
 
+.section-icon {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #8fcff9;
+}
+
+.section-icon>img {
+  width: 300px;
+}
+
+.section-orange {
+  background: #ffa77b;
+}
+
+.section-text {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-text-wrapper {
+  max-width: 85%;
+  padding: 75px 50px;
+}
+
+.section-text-wrapper h1 {
+  font-size: 35px;
+  line-height: 2.75rem;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.section-text-wrapper p {
+  font-size: 25px;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+
 .heading {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight:900;
