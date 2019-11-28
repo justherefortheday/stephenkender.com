@@ -17,12 +17,15 @@ h1,h2,body,p {
 
 header {
   height:100vh;
-  background-color: #ffe61e;
-  background-image:  url("https://stephenkender.com/splashbg.png");
-    /* Now this will center the header text*/
-
   display: flex;
   flex-flow: column;
+}
+
+.menu {
+  position: absolute;
+  float: left;
+  left: 30px;
+  top: 30px;
 }
 
 .menutext {
@@ -42,22 +45,20 @@ header {
   text-shadow: 0px 0px transparent;
 }
 
-.menublock {
-  display: block;
-  height: 30vh;
+.profile {
+  margin: auto;
+  width: 35%;
+  max-width: 300px;
 }
 
-.menu {
-  background-repeat: no-repeat;
-  background-position: center;
-  float: left;
-  width: 25%;
-  height: 30vh;
-}
-
-.menu:hover {
-  opacity: .8;
-  transition: .2s ease-in-out;
+.profile img {
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+  border-width: .6rem;
+  border-color: #ff733280;
+  border-style: solid;
+  border-radius: 50%;
 }
 
 body {
@@ -68,11 +69,13 @@ body {
 
 .logo {
   display: block;
-  width: 50%;
+  width: 20%;
   margin: auto;
+  max-width: 175px;
 }
 .logo img {
   width: 100%;
+  height: auto;
   transition: .3s ease-out;
 }
 
@@ -297,22 +300,7 @@ section {
   opacity: 1;
 }
 
-.profile {
-  margin: auto;
-  width: 35%;
-  max-width: 300px;
-  padding-bottom: 10px;
-}
 
-.profile img {
-  width: 100%;
-  max-width: 300px;
-  margin: auto;
-  border-width: .6rem;
-  border-color: #ff733280;
-  border-style: solid;
-  border-radius: 50%;
-}
 
 @media only screen and (min-width: 900px) {
   .logo {
