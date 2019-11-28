@@ -1,8 +1,6 @@
 /*
 Welcome to my attempt at a stylesheet! Let's see what I can do with this boy.
 */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900");
-@import url("https://fonts.googleapis.com/css?family=Special+Elite");
 
 
 html {
@@ -12,7 +10,7 @@ html {
 }
 
 h1,h2,body,p {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family:  neue-haas-unica, sans-serif;
 }
 
 a {
@@ -64,7 +62,7 @@ body {
 }
 
 .menutext {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family:  neue-haas-unica, sans-serif;
   text-align: left;
   font-weight: 600;
   font-size: 22px;
@@ -167,7 +165,7 @@ body {
 
 
 .heading {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family:  neue-haas-unica, sans-serif;
   font-weight:900;
   font-size: 9.5em;
   text-align: center;
@@ -176,7 +174,7 @@ body {
 }
 
 .subheading {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family:  neue-haas-unica, sans-serif;
   font-size: 110%;
   display: inline-block;
   width: 90%;
@@ -190,7 +188,7 @@ body {
   color: #242424;
   word-wrap: break-word;
   text-align: center;
-  font-family: Special Elite;
+  font-family: neue-haas-unica, serif;
   font-size: 16px;
   line-height: 1.35em;
   padding:20px 10px 20px 10px;
@@ -467,7 +465,7 @@ a:link:hover {
   display: inline-block;
   text-align: center;
   vertical-align: text-top;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family:  neue-haas-unica, sans-serif;
   font-style: italic;
   color: #cccccc;
   width: 49%;
@@ -477,7 +475,7 @@ a:link:hover {
 
 .caption {
   display: inline-block;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family:  neue-haas-unica, sans-serif;
   font-style: italic;
   color: #cccccc;
   width: 90%;
