@@ -169,7 +169,7 @@ section {
   height: 100vh;
 }
 
-.section-icon {
+.section-media {
   width: 50%;
   height: 100vh;
   display: flex;
@@ -179,7 +179,7 @@ section {
   background: #8fcff9;
 }
 
-.section-icon>img {
+.section-media>img {
   width: 300px;
 }
 
