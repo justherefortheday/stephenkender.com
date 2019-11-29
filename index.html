@@ -26,65 +26,42 @@
   </script>
 
   <style>
-  #navbar {
-  background-color: #333; /* Black background color */
-  position: fixed; /* Make it stick/fixed */
-  top: 0; /* Stay on top */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
-}
+    .menu {
+      background-color: #f1f1f1;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      transition: top 0.3s;
+      display: block;
+      padding-left: 20px;
+      
+    }
 
-/* Style the navbar links */
-#navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-}
+    .menu a {
+      float: left;
+      display: block;
+      text-align: center;
+      padding: 15px;
+    }
 
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-section {
-            width: 100%;
-            margin: 0;
-            display: flex;
-            height: 100vh;
-        }
-
-        section:nth-of-type(even) {
-            flex-direction: row-reverse;
-        }
+    .menu a:hover {
+      background-color: #e1e1e1 ;
+      color: black;
+    }
   </style>
 
 </head>
 
 <body>
   <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-  <div id="navbar">
-    <a href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-  </div> 
+
   <header>
-    <div class="menu">
-      <a href="#about">
-        <div class="menutext blue"> ABOUT STEPHEN</div>
-      </a>
-      <a href="#3d">
-        <div class="menutext orange"> 3D DESIGN</div>
-      </a>
-      <a href="#design">
-        <div class="menutext green"> GRAPHIC DESIGN</div>
-      </a>
-      <a href="#photography">
-        <div class="menutext blue"> PHOTOGRAPHY</div>
-      </a>
-    </div>
+      <div class="menu">
+          <a href="#about" class="blue">ABOUT STEPHEN</a>
+          <a href="#3d" class="green">3D DESIGN</a>
+          <a href="#design" class="orange">GRAPHIC DESIGN</a>
+          <a href="#photography" class="blue">PHOTOGRAPHY</a>
+        </div>
 
     <div class="logo">
       <a href="https://stephenkender.com/">
@@ -119,7 +96,8 @@ section {
       <div class="section-text-wrapper">
         <h1>3D DESIGN I DO</h1>
         <br>
-        <p>I mainly work in CAD designing car seats, but I try to do what I can on my laptop (who frequently likes to let me know it can't handle modeling).</p>
+        <p>I mainly work in CAD designing car seats, but I try to do what I can on my laptop (who frequently likes to
+          let me know it can't handle modeling).</p>
       </div>
     </div>
   </section>
@@ -132,12 +110,13 @@ section {
       <div class="section-text-wrapper">
         <h1>GRAPHIC DESIGN I DO ALSO</h1>
         <br>
-        <p>I've done a few logo designs and a few commissioned promotional campaigns, but by no means does that make me "good" or "competent".</p>
+        <p>I've done a few logo designs and a few commissioned promotional campaigns, but by no means does that make me
+          "good" or "competent".</p>
         <br>
       </div>
     </div>
   </section>
-<hr>
+  <hr>
   <section id="photography">
     <div class="section-media">
       <img src="https://stephenkender.com/icons/photo.svg">
@@ -146,7 +125,8 @@ section {
       <div class="section-text-wrapper">
         <h1>PHOTOGRAPHY TOO (KINDA)</h1>
         <br>
-        <p>I really enjoy bringing my camera places and only using it for 30 minutes and feel awkward for wasting my wifes time and then putting it away.</p>
+        <p>I really enjoy bringing my camera places and only using it for 30 minutes and feel awkward for wasting my
+          wifes time and then putting it away.</p>
       </div>
     </div>
   </section>
@@ -154,69 +134,69 @@ section {
 
   <div>
     <h1 style="color:#cc66ee">fun facts!</h1>
-  <br>
+    <br>
 
-  <section>
-    <div class="footer">this website brought to you with love by stephen's tip-tappin' fingers</div>
-  </section>
+    <section>
+      <div class="footer">this website brought to you with love by stephen's tip-tappin' fingers</div>
+    </section>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
-  <script>
-  var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "-50";
-  } else {
-    document.getElementById("navbar").style.top = "0px";
-  }
-  prevScrollpos = currentScrollPos;
-} 
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>
-        $(document).ready(function () {
-            // Add smooth scrolling to all links
-            $("a").on('click', function (event) {
-
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0px";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
     </script>
 
     <script>
-        // ===== Scroll to Top ==== 
-        $(window).scroll(function () {
-            if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
-                $('#return-to-top').fadeIn(200); // Fade in the arrow
-            } else {
-                $('#return-to-top').fadeOut(200); // Else fade out the arrow
-            }
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function () {
+
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
         });
-        $('#return-to-top').click(function () { // When arrow is clicked
-            $('body,html').animate({
-                scrollTop: 0 // Scroll to top of body
-            }, 500);
-        });
+      });
+    </script>
+
+    <script>
+      // ===== Scroll to Top ==== 
+      $(window).scroll(function () {
+        if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+          $('#return-to-top').fadeIn(200); // Fade in the arrow
+        } else {
+          $('#return-to-top').fadeOut(200); // Else fade out the arrow
+        }
+      });
+      $('#return-to-top').click(function () { // When arrow is clicked
+        $('body,html').animate({
+          scrollTop: 0 // Scroll to top of body
+        }, 500);
+      });
     </script>
 </body>
 
