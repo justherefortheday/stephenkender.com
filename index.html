@@ -27,17 +27,21 @@
 </head>
 
 <body>
+  <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <header>
     <div class="menu">
-      <a href="#design">
-        <div class="menutext blue"> PHOTOGRAPHY</div>
+      <a href="#about">
+        <div class="menutext blue"> ABOUT STEPHEN</div>
       </a>
       <a href="#3d">
-        <div class="menutext orange"> GRAPHIC DESIGN</div>
+        <div class="menutext orange"> 3D DESIGN</div>
       </a>
-      <a href="#typewriters">
-        <div class="menutext green"> TYPEWRITERS</div>
+      <a href="#design">
+        <div class="menutext green"> GRAPHIC DESIGN</div>
+      </a>
+      <a href="#photography">
+        <div class="menutext green"> PHOTOGRAPHY</div>
       </a>
     </div>
 
@@ -53,9 +57,9 @@
       a hobbyist photographer and graphic designer, and a typewriter fanatic.</p>
   </header>
   <hr>
-  <section id="3d">
+  <section id="about">
     <div class="section-icon ">
-      <img src="https://stephenandcaroline.fun/img/poll.svg">
+      <img src="https://stephenkender.com/icon/who.svg">
     </div>
     <div class="section-text">
       <div class="section-text-wrapper">
@@ -65,9 +69,9 @@
     </div>
   </section>
   <hr>
-  <section id="about">
+  <section id="3d">
     <div class="section-icon">
-      <img src="https://stephenandcaroline.fun/img/who.svg">
+      <img src="https://stephenkender.com/icon/3d.svg">
     </div>
     <div class="section-text">
       <div class="section-text-wrapper">
@@ -81,7 +85,7 @@
   <hr>
   <section id="design">
     <div class="section-icon ">
-      <img src="https://stephenandcaroline.fun/img/where.svg">
+      <img src="https://stephenkender.com/icon/design.svg">
     </div>
     <div class="section-text">
       <div class="section-text-wrapper">
@@ -91,9 +95,9 @@
     </div>
   </section>
 <hr>
-  <section id="date">
+  <section id="photography">
     <div class="section-icon">
-      <img src="https://stephenandcaroline.fun/img/when.svg">
+      <img src="https://stephenkender.com/icon/photo.svg">
     </div>
     <div class="section-text">
       <div class="section-text-wrapper">
@@ -105,47 +109,59 @@
     </div>
   </section>
   <hr>
-  <section id="potato">
-    <div class="section-icon ">
-      <img src="https://stephenandcaroline.fun/img/potato.svg">
-    </div>
-    <div class="section-text">
-      <div class="section-text-wrapper">
-        <h1>Will Potato be in the wedding?</h1>
-        <p>He's a cat, and he doesn't like to do what we say.
-          <br>
-          <br>
-          <br>
-          So, no.
-        </p>
-      </div>
-    </div>
-  </section>
 
   <div>
-    <h1 style="color:#cc66ee">about the author</h1>
-
-    <br>
-
-    <p style="text-align: center;">you would laugh at how much time went into making this measly
-      website.</p>
-    <br>
-    <div class="social">
-      <p style="text-align: left; width: 100%; padding:0;">Find me on the web (besides here)</p>
-      <a href="https://www.linkedin.com/in/stephenkender/" target="_blank">linkedin</a>
-      <br>
-      <a href="https://www.facebook.com/stephen.kender" target="_blank">facebook (doesn't work
-        tho cause of privacy settings)</a>
-      <br>
-      <a href="https://twitter.com/stevekender" target="_blank">twitter</a>
-    </div>
-  </div>
+    <h1 style="color:#cc66ee">fun facts!</h1>
   <br>
 
   <section>
     <div class="footer">this website brought to you with love by stephen's tip-tappin' fingers</div>
   </section>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+    <script>
+        // ===== Scroll to Top ==== 
+        $(window).scroll(function () {
+            if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200); // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200); // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function () { // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0 // Scroll to top of body
+            }, 500);
+        });
+    </script>
 </body>
 
 </html>
