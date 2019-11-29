@@ -179,20 +179,18 @@ section {
 }
 
 .section-icon>img {
-  width: auto;
-  height: auto;
+  height: 100%;
 }
 
 .section-text {
-  height: 100vh;
   display: flex;
   text-align: left;
   justify-content: center;
+  padding: 10px 0px;
 }
 
 .section-text-wrapper {
   max-width: 85%;
-  padding: 40px 50px;
 }
 
 .section-text-wrapper h1 {
@@ -219,23 +217,7 @@ hr {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other*/
 @media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-
-
-
   .carousel {
     position: relative;
     width: 50%;

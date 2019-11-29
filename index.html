@@ -25,11 +25,40 @@
     gtag('config', 'UA-109761733-1');
   </script>
 
+  <style>
+  #navbar {
+  background-color: #333; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+  </style>
+
 </head>
 
 <body>
   <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-
+  <div id="navbar">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+  </div> 
   <header>
     <div class="menu">
       <a href="#about">
@@ -42,7 +71,7 @@
         <div class="menutext green"> GRAPHIC DESIGN</div>
       </a>
       <a href="#photography">
-        <div class="menutext green"> PHOTOGRAPHY</div>
+        <div class="menutext blue"> PHOTOGRAPHY</div>
       </a>
     </div>
 
@@ -60,7 +89,7 @@
   <hr>
   <section id="about">
     <div class="section-icon ">
-      <img src="https://stephenkender.com/icons/who.svg">
+      <img src="https://stephenkender.com/icons/sk.svg">
     </div>
     <div class="section-text">
       <div class="section-text-wrapper">
@@ -122,6 +151,20 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+  <script>
+  var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "-50";
+  } else {
+    document.getElementById("navbar").style.top = "0px";
+  }
+  prevScrollpos = currentScrollPos;
+} 
+</script>
+
     <script>
         $(document).ready(function () {
             // Add smooth scrolling to all links
