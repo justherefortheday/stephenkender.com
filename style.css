@@ -207,6 +207,7 @@ section:nth-of-type(even) {
   font-size: 16px;
   line-height: 1.5em;
   margin: auto;
+  width: 100%;
 }
 
 hr {
@@ -220,43 +221,49 @@ hr {
   padding-bottom: 80px;
 }
 
-@media screen and (max-width: 600px) {
- .menu {
-   display: none;
- }
+@media screen and (max-width: 992px) {
+  .menu {
+    display: none;
+  }
 
-section {
-  display: block;
-  height: auto;
-}
+  section {
+    display: block;
+    height: auto;
+  }
 
- .section-media {
-  width: 100%;
-  height: 400px;
-}
-.section-media>img {
-  max-width: 75%;
-  max-height: 250px;
-  width: auto;
-  height: auto;
-}
-.section-text {
-  width: 100%;
-  height: auto;
-  text-align: center;
-  min-height: calc(100vh - 400px);
-}
-.section-text-wrapper h1 {
-  font-size: 1.75em;
-  line-height: 1.75rem;
-  padding-bottom: 15px;
-}
-.section-text-wrapper p {
-  font-size: 25px;
-  line-height: 1.5em;
-  margin: auto;
-}
- 
+  .section-media {
+    width: 100%;
+    height: 400px;
+  }
+
+  .section-media>img {
+    max-width: 75%;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+  }
+
+  .section-text {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    min-height: calc(100vh - 400px);
+  }
+
+  .section-text-wrapper h1 {
+    font-size: 1.75em;
+    line-height: 1.75rem;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .section-text-wrapper p {
+    font-size: 25px;
+    line-height: 1.5em;
+    margin: auto;
+    text-align: center;
+  }
+
   .carousel {
     position: relative;
     width: 50%;
@@ -398,142 +405,74 @@ section {
     opacity: 1;
   }
 
-
-
-  @media only screen and (min-width: 900px) {
-    .logo {
-      width: 45%;
-      max-width: 700px;
-    }
-
-    header {
-      /*PARRRRRRRAAAAALLLLLLLLLAAAAAXXXXXXXX*/
-
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
-
-  @media only screen and (max-width: 900px) and (min-width: 500px) {
-    .logo {
-      width: 60%;
-    }
-
-    .heading {
-      font-size: 4em;
-    }
-
-    p {
-      width: 65%;
-    }
-
-    .carousel {
-      width: 75%;
-      padding-bottom: 56.25%;
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    header {
-      background-image: url("https://stephenkender.com/splashbg_mobile.png");
-      width: 100%;
-    }
-
-    .logo {
-      width: 85%;
-    }
-
-    .heading {
-      font-size: 4em;
-      padding-left: 0px;
-    }
-
-    h1 {
-      font-size: 225%;
-      padding: 0px 10px 0px 10px;
-    }
-
-    p {
-      width: 90%;
-    }
-
-    .profile {
-      width: 58%;
-      padding-right: 10px;
-    }
-
-    .menutext {
-      font-size: 18px;
-    }
-
-    .carousel {
-      width: 90%;
-      padding-bottom: 67.5%;
-    }
-
-    .carousel2 {
-      width: 90%;
-      padding-bottom: 90%;
-    }
-
-    .carousel3 {
-      width: 90%;
-      padding-bottom: 59.85%;
-    }
-
-    .carousel4 {
-      width: 90%;
-      padding-bottom: 59.85%;
-    }
-  }
-
-  a:link {
-    text-decoration: none;
-    transition: all .2s ease-in;
-    color: #22c5ff;
-  }
-
-  a:link:visited {
-    transition: all .2s ease-in;
-    color: #de9cff;
-  }
-
-  a:link:hover {
-    color: #f44336;
-    transition: .2s ease-in-out;
-  }
-
-  .social {
+  h1 {
+    font-size: 225%;
     padding: 0px 10px 0px 10px;
   }
 
-  .halves {
-    display: inline-block;
-    text-align: center;
-    vertical-align: text-top;
-    font-family: neue-haas-unica, sans-serif;
-    font-style: italic;
-    color: #cccccc;
-    width: 49%;
-    margin: auto;
-    padding-bottom: 10px;
-  }
-
-  .caption {
-    display: inline-block;
-    font-family: neue-haas-unica, sans-serif;
-    font-style: italic;
-    color: #cccccc;
+  p {
     width: 90%;
-    padding-bottom: 10px;
   }
 
-  .footer {
-    font-style: italic;
-    color: #040404;
-    padding: 16px 10px 16px 10px;
-    margin: auto;
+  .carousel {
+    width: 90%;
+    padding-bottom: 67.5%;
   }
+
+  .carousel2 {
+    width: 90%;
+    padding-bottom: 90%;
+  }
+
+  .carousel3 {
+    width: 90%;
+    padding-bottom: 59.85%;
+  }
+
+  .carousel4 {
+    width: 90%;
+    padding-bottom: 59.85%;
+  }
+}
+
+a:link {
+  text-decoration: none;
+  transition: all .2s ease-in;
+  color: #22c5ff;
+}
+
+a:link:visited {
+  transition: all .2s ease-in;
+  color: #de9cff;
+}
+
+a:link:hover {
+  color: #f44336;
+  transition: .2s ease-in-out;
+}
+
+.social {
+  padding: 0px 10px 0px 10px;
+}
+
+.halves {
+  display: inline-block;
+  text-align: center;
+  vertical-align: text-top;
+  font-family: neue-haas-unica, sans-serif;
+  font-style: italic;
+  color: #cccccc;
+  width: 49%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.caption {
+  display: inline-block;
+  font-family: neue-haas-unica, sans-serif;
+  font-style: italic;
+  color: #cccccc;
+  width: 90%;
+  padding-bottom: 10px;
+}
 }
