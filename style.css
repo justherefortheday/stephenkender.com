@@ -242,9 +242,13 @@ hr {
     display: none;
   }
 
+  .profile {
+    width: 60%;
+  }
+
 header {
-  height: 85vh;
-  padding: none;
+  height: 80vh;
+  padding: 5vh;
 }
 
   section {
