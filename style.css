@@ -171,12 +171,11 @@ section {
 
 .section-icon {
   height: 10%;
+  padding: 10px 0 10px 0;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 60%;
-  margin-left: 20%;
 }
 
 .section-icon>img {
@@ -204,13 +203,13 @@ section {
 }
 
 .section-text-wrapper p {
-  font-size: 25px;
+  font-size: 16px;
   line-height: 1.5em;
   margin: auto;
 }
 
 hr {
-  width: 70%;
+  width: 45%;
   color: #35353566;
   margin: 0 auto 0 auto;
 }
