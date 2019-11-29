@@ -170,23 +170,26 @@ section {
 }
 
 .section-icon {
-  height: 10%;
-  padding: 10px 0 10px 0;
+  width: 50%;
+  height: 100vh;
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
+  background: #8fcff9;
 }
 
 .section-icon>img {
-  height: 100%;
+  width: 300px;
 }
 
 .section-text {
+  width: 50%;
+  height: 100vh;
   display: flex;
   text-align: left;
   justify-content: center;
-  padding: 10px 0px;
+  align-items: center;
 }
 
 .section-text-wrapper {
