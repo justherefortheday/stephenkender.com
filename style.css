@@ -54,7 +54,9 @@ header {
   top: 0;
   width: 100%;
   transition: top 0.3s;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .menu a {
@@ -70,14 +72,8 @@ header {
 }
 
 .menu img {
-  float: right;
   height: 35px;  
   padding: 15px;
-}
-
-.menu img:hover {
-  transition: .2s ease-in;
-  opacity: .5;
 }
 
 .blue:hover {
