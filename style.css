@@ -117,26 +117,6 @@ header {
   box-shadow: #35353566 2px 2px 5px 1px;
 }
 
-.logo {
-  display: block;
-  width: 20%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 30px;
-  max-width: 300px;
-}
-
-.logo img {
-  width: 100%;
-  height: auto;
-  transition: .3s ease-out;
-}
-
-.logo:hover img {
-  transition: .2s ease-in;
-  opacity: .5;
-}
-
 #return-to-top {
   position: fixed;
   bottom: 20px;
