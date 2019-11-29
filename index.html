@@ -31,12 +31,15 @@
   <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <div class="menu">
-      <a href="#about" class="blue">ABOUT STEPHEN</a>
-      <a href="#3d" class="green">3D DESIGN</a>
-      <img src="https://stephenkender.com/logo.svg" title="My personal logo - courtesy of Caroline Millin" alt="">
-      <a href="#design" class="orange">GRAPHIC DESIGN</a>
-      <a href="#photography" class="blue">PHOTOGRAPHY</a>
-    </div>
+    <a href="#about" class="blue">ABOUT STEPHEN</a>
+    <a href="#3d" class="green">3D DESIGN</a>
+    <img src="https://stephenkender.com/logo.svg" title="My personal logo - courtesy of Caroline Millin" alt="">
+    <a href="#design" class="orange">GRAPHIC DESIGN</a>
+    <a href="#photography" class="purple">PHOTOGRAPHY</a>
+  </div>
+
+  <div class="logo"> <img src="https://stephenkender.com/logo.svg" title="My personal logo - courtesy of Caroline Millin" alt="">
+  </div>
 
   <header>
     <div class="profile">
@@ -103,68 +106,68 @@
   </section>
   <hr>
 
-    <h1 style="color:#cc66ee">fun facts!</h1>
-    <br>
+  <h1 style="color:#cc66ee">fun facts!</h1>
+  <br>
 
-      <div class="footer">this website brought to you with love by stephen's tip-tappin' fingers</div>
+  <div class="footer">this website brought to you with love by stephen's tip-tappin' fingers</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <script>
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("navbar").style.top = "0px";
-        } else {
-          document.getElementById("navbar").style.top = "-50px";
-        }
-        prevScrollpos = currentScrollPos;
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0px";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
       }
-    </script>
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
 
-    <script>
-      $(document).ready(function () {
-        // Add smooth scrolling to all links
-        $("a").on('click', function (event) {
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
 
-          // Make sure this.hash has a value before overriding default behavior
-          if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-            // Store hash
-            var hash = this.hash;
+          // Store hash
+          var hash = this.hash;
 
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 800, function () {
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
 
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            });
-          } // End if
-        });
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
       });
-    </script>
+    });
+  </script>
 
-    <script>
-      // ===== Scroll to Top ==== 
-      $(window).scroll(function () {
-        if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
-          $('#return-to-top').fadeIn(200); // Fade in the arrow
-        } else {
-          $('#return-to-top').fadeOut(200); // Else fade out the arrow
-        }
-      });
-      $('#return-to-top').click(function () { // When arrow is clicked
-        $('body,html').animate({
-          scrollTop: 0 // Scroll to top of body
-        }, 500);
-      });
-    </script>
+  <script>
+    // ===== Scroll to Top ==== 
+    $(window).scroll(function () {
+      if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200); // Fade in the arrow
+      } else {
+        $('#return-to-top').fadeOut(200); // Else fade out the arrow
+      }
+    });
+    $('#return-to-top').click(function () { // When arrow is clicked
+      $('body,html').animate({
+        scrollTop: 0 // Scroll to top of body
+      }, 500);
+    });
+  </script>
 </body>
 
 </html>
