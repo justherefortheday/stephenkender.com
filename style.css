@@ -18,6 +18,14 @@ a {
   text-decoration: none;
 }
 
+a:link:visited {
+  color: #111;
+}
+
+a:link:hover {
+  color: #111;
+}
+
 h1 {
   font-size: 275%;
   color: #111111;
@@ -106,7 +114,7 @@ header {
   max-width: 350px;
   display: flex;
   align-content: center;
-  padding: 30px;
+  padding: 50px;
 }
 
 .profile img {
@@ -462,21 +470,6 @@ header {
   }
 }
 
-a:link {
-  text-decoration: none;
-  transition: all .2s ease-in;
-  color: #22c5ff;
-}
-
-a:link:visited {
-  transition: all .2s ease-in;
-  color: #de9cff;
-}
-
-a:link:hover {
-  color: #f44336;
-  transition: .2s ease-in-out;
-}
 
 .social {
   padding: 0px 10px 0px 10px;
