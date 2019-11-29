@@ -227,9 +227,11 @@ hr {
 
 @media screen and (max-width: 992px) {
 .logo {
-  display: block;
-  width: 30%;
-  margin-left: 35%;
+  display: flex;
+  height: calc(15vh - 20px);
+  margin-left: auto;
+  padding-top: 20px;
+  justify-content: center;
 }
 
 .logo img {
@@ -240,9 +242,15 @@ hr {
     display: none;
   }
 
+.header {
+  height: 85vh;
+  padding: none;
+}
+
   section {
     display: block;
     height: auto;
+    padding-bottom: 20px;
   }
 
   .section-media {
@@ -269,13 +277,14 @@ hr {
     line-height: 1.75rem;
     text-align: center;
     padding-bottom: 15px;
+    width: auto;
   }
 
   .section-text-wrapper p {
-    font-size: 25px;
+    font-size: 17px;
     line-height: 1.5em;
-    margin: auto;
     text-align: center;
+    width: auto;
   }
 
   .carousel {
