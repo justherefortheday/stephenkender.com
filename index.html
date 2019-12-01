@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   <link rel="stylesheet" type="text/css" href="https://stephenkender.com/style.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css" />
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109761733-1"></script>
@@ -99,12 +100,72 @@
   <hr>
   <section id="photography">
     <div class="section-media">
-      <div id="slick-images">
+      <!-- <div id="slick-images">
         <div><img src='https://stephenkender.com/img/date.png'></div>
         <div><img src='https://stephenkender.com/img/flower.jpg'></div>
         <div><img src='https://stephenkender.com/img/date.png'></div>
         <div><img src='https://stephenkender.com/img/flower.jpg'></div>
         <div><img src='https://stephenkender.com/img/date.png'></div>
+      </div>-->
+
+      <div class="loading">Carousel is loading...</div>
+      <div class="container">
+        <div class="synch-carousels">
+
+          <div class="left child">
+            <div class="gallery">
+              <div class="item">
+                <img src='https://stephenkender.com/img/date.png'>
+              </div>
+              <div class="item">
+                <img src='https://stephenkender.com/img/flower.jpg'>
+              </div>
+              <div class="item">
+                <img src='https://stephenkender.com/img/date.png'>
+              </div>
+              <div class="item">
+                <img src='https://stephenkender.com/img/flower.jpg'>
+              </div>
+              <div class="item">
+                <img src='https://stephenkender.com/img/date.png'>
+              </div>
+            </div>
+          </div>
+          <!--/left-->
+
+          <div class="right child">
+            <div class="gallery2">
+              <div class="item">
+                <img src='https://stephenkender.com/img/date.png'>
+              </div>
+              <div class="item">
+                <img src='https://stephenkender.com/img/flower.jpg'>
+              </div>
+              <div class="item">
+                <img src='https://stephenkender.com/img/date.png'>
+              </div>
+              <div class="item">
+                <img src='https://stephenkender.com/img/flower.jpg'>
+              </div>
+              <div class="item">
+                <img src='https://stephenkender.com/img/date.png'>
+              </div>
+            </div>
+            <div class="nav-arrows">
+              <button class="arrow-left">
+                <!--svg here-->O
+              </button>
+              <button class="arrow-right">
+                <!--svg here-->O
+              </button>
+            </div>
+            <div class="photos-counter">
+              <span></span><span></span>
+            </div>
+          </div>
+          <!--/right-->
+
+        </div>
       </div>
     </div>
     <div class="section-text">
@@ -168,6 +229,47 @@
           }
         }
       ]
+    });
+  </script>
+
+  <script>
+    const $left = $(".left");
+    const $gl = $(".gallery");
+    const $gl2 = $(".gallery2");
+    const $photosCounterFirstSpan = $(".photos-counter span:nth-child(1)");
+  </script>
+
+  <script>
+    $gl.slick({
+      rows: 0,
+      slidesToShow: 2,
+      arrows: false,
+      draggable: false,
+      useTransform: false,
+      mobileFirst: true,
+      responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 1023,
+          settings: {
+            slidesToShow: 1,
+            vertical: true
+          }
+        }
+      ]
+    });
+
+    $gl2.slick({
+      rows: 0,
+      useTransform: false,
+      prevArrow: ".arrow-left",
+      nextArrow: ".arrow-right",
+      fade: true,
+      asNavFor: $gl
     });
   </script>
 
