@@ -243,8 +243,14 @@ hr {
 
 .slick-slide img {
   width: auto;
-  height: auto;
-} 
+  height: 300px;
+}
+
+.slick-initialized .slick-slide {
+  display:flex !important;
+  justify-content: center !important;
+ }
+ 
 
 
 @media screen and (max-width: 992px) {
@@ -313,12 +319,9 @@ hr {
     width: auto;
   }
 
-  .slick-slide img {
-    width: auto;
-    height: 300px;
-  } 
-  
-
+  .slick-initialized .slick-slide {
+    display:block !important;
+   }
 
   h1 {
     font-size: 225%;
