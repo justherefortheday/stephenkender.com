@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   <link rel="stylesheet" type="text/css" href="https://stephenkender.com/style.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109761733-1"></script>
@@ -98,45 +100,23 @@
   <hr>
   <section id="photography">
     <div class="section-media">
-        <div class="loading">Carousel is loading...</div>
-        <div class="container">
-          <div class="synch-carousels">        
-            <div class="right child">
-              <div class="gallery2">
-                <div class="item">
-                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/gallery1.jpg" alt="" />
-                </div>
-                <div class="item">
+      <div class="container" style="margin: 0 auto; padding: 40px; width: 80%;">
+                <div class="single-item">
+                  <div><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/gallery1.jpg" alt="" /></div>
+                <div>
                   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/gallery2.jpg" alt="" />
                 </div>
-                <div class="item">
+                <div>
                   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/gallery3.jpg" alt="" />
                 </div>
-                <div class="item">
+                <div>
                   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/gallery4.jpg" alt="" />
                 </div>
-                <div class="item">
+                <div>
                   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/gallery5.jpg" alt="" />
                 </div>
               </div>
-              <div class="nav-arrows">
-                <button class="arrow-left">
-                  <!--SVGs from iconmonstr.com-->
-                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z"/></svg>
-                </button>
-                <button class="arrow-right">
-                  <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/></svg>
-                  </button>
-              </div>
-              <div class="photos-counter">
-                <span></span><span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-       
-    </div>
+</div>  </div>     
     <div class="section-text">
       <div class="section-text-wrapper">
         <h1>PHOTOGRAPHY TOO (KINDA)</h1>
@@ -203,83 +183,9 @@
   </script>
 
   <script>
-    const $left = $(".left");
-    const $gl = $(".gallery");
-    const $gl2 = $(".gallery2");
-    const $photosCounterFirstSpan = $(".photos-counter span:nth-child(1)");
-
-    $gl2.on("init", (event, slick) => {
-      $photosCounterFirstSpan.text(`${slick.currentSlide + 1}/`);
-      $(".photos-counter span:nth-child(2)").text(slick.slideCount);
-    });
-
-    $gl.slick({
-      rows: 0,
-      slidesToShow: 2,
-      arrows: false,
-      draggable: false,
-      useTransform: false,
-      mobileFirst: true,
-      responsive: [{
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 1023,
-          settings: {
-            slidesToShow: 1,
-            vertical: true
-          }
-        }
-      ]
-    });
-
-    $gl2.slick({
-      rows: 0,
-      useTransform: false,
-      prevArrow: ".arrow-left",
-      nextArrow: ".arrow-right",
-      fade: true,
-      asNavFor: $gl
-    });
-
-    function handleCarouselsHeight() {
-      if (window.matchMedia("(min-width: 1024px)").matches) {
-        const gl2H = $(".gallery2").height();
-        $left.css("height", gl2H);
-      } else {
-        $left.css("height", "auto");
-      }
-    }
-
-    $(window).on("load", () => {
-      handleCarouselsHeight();
-      setTimeout(() => {
-        $(".loading").fadeOut();
-        $("body").addClass("over-visible");
-      }, 300);
-    });
-
-    $(window).on(
-      "resize",
-      _.debounce(() => {
-        handleCarouselsHeight();
-        /*You might need this code in your projects*/
-        //$gl1.slick("resize");
-        //$gl2.slick("resize");
-      }, 200)
-    );
-
-    $(".gallery .item").on("click", function () {
-      const index = $(this).attr("data-slick-index");
-      $gl2.slick("slickGoTo", index);
-    });
-
-    $gl2.on("afterChange", (event, slick, currentSlide) => {
-      $photosCounterFirstSpan.text(`${slick.currentSlide + 1}/`);
-    });
+$(".single-item").slick({
+	dots: true
+});
   </script>
 
   <script>
