@@ -228,6 +228,18 @@ hr {
   margin: 0 auto 0 auto;
 }
 
+#slick-images {
+  width: 80%;
+}
+
+#slick-images div {
+  max-width: 100%;
+}
+
+#slick-images div>img {
+  max-width: 100%;
+}
+
 .footer {
   text-align: center;
   padding-bottom: 80px;
