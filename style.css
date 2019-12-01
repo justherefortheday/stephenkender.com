@@ -249,7 +249,8 @@ hr {
 
 .slick-next:before,
 .slick-prev:before {
- color:#444;
+ color:#444 !important;
+ font-size: 25px !important;
 }
 
 
