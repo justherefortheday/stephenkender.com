@@ -307,6 +307,10 @@ hr {
     margin: 0;
   }
 
+  .profile img {
+    width: 80%;
+  }
+
   header {
     min-height: 70vh;
     padding: 5vh;
