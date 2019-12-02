@@ -51,10 +51,12 @@ p {
 }
 
 header {
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   flex-flow: column;
   padding-top: 10vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
@@ -113,18 +115,24 @@ header {
 .profile {
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
-  max-width: 350px;
+  width: 80%;
+  min-height: 70vh;
   display: flex;
+  flex-flow: column;
   align-content: center;
-  padding: 100px 50px 50px 50px;
 }
 
 .profile img {
-  width: 100%;
+  width: 30%;
+  max-width: 450px;
   margin: auto;
   border-radius: 1%;
   box-shadow: #35353566 2px 2px 5px 1px;
+}
+
+.profile > p {
+  text-align: center;
+
 }
 
 #return-to-top {
@@ -248,13 +256,13 @@ hr {
 }
 
 .slick-track {
-  height: 300px;;
+  height: 500px;;
 }
 
 .slick-slide img {
   height: auto;
   max-width: 100%;
-  max-height: 300px;
+  max-height: 500px;
   margin: auto;
 }
 
@@ -262,12 +270,22 @@ hr {
   display:flex !important;
   justify-content: center !important;
   align-items: center !important;
-  max-height: 300px;
+  max-height: 500px;
  } 
  
 
 
 @media screen and (max-width: 992px) {
+  h1 {
+    font-size: 225%;
+    padding: 0px 10px 0px 10px;
+  }
+
+  p {
+    width: 90%;
+    font-size: 17px;
+  }
+  
   .logo {
     display: flex;
     height: calc(15vh - 20px);
@@ -285,11 +303,12 @@ hr {
   }
 
   .profile {
-    width: 60%;
+    width: 80%;
+    margin: 0;
   }
 
   header {
-    height: 70vh;
+    min-height: 70vh;
     padding: 5vh;
   }
 
@@ -302,6 +321,7 @@ hr {
   .section-media {
     width: 100%;
     min-height: 50vh;
+    height: auto;
   }
 
   .section-media>img {
@@ -333,13 +353,17 @@ hr {
     width: auto;
   }
 
-  h1 {
-    font-size: 225%;
-    padding: 0px 10px 0px 10px;
+  .slick-track {
+    height: 300px;
   }
+  
+  .slick-slide img {
+    max-height: 300px;
+  }
+  
+  .slick-initialized .slick-slide {
+    max-height: 300px;
+   } 
 
-  p {
-    width: 90%;
-    font-size: 17px;
-  }
+
 }
