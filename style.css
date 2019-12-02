@@ -334,6 +334,7 @@ hr {
     max-height: 250px;
     width: auto;
     height: auto;
+    padding: 30px;
   }
 
   .section-text {
