@@ -324,6 +324,11 @@ hr {
     display:block !important;
    }
 
+   .slick-slide img {
+    width: 100%;
+    height: auto;
+  }
+
   h1 {
     font-size: 225%;
     padding: 0px 10px 0px 10px;
