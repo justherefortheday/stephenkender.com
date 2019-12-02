@@ -236,6 +236,11 @@ hr {
   padding-bottom: 80px;
 }
 
+.single-item  p {
+  padding-bottom: 40px;
+  font-size: 14px;
+}
+
 .slick-next:before,
 .slick-prev:before {
  color:#444 !important;
