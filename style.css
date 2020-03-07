@@ -113,26 +113,58 @@ header {
 }
 
 .profile {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
   min-height: 70vh;
   display: flex;
-  flex-flow: column;
   align-content: center;
+  width: 100%;
+  margin: 0;
+  justify-content: center;
 }
 
-.profile img {
+.profile-pic {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.profile-text {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-text-wrapper {
+  max-width: 85%;
+}
+
+.profile-text-wrapper h1 {
+  font-size: 50px;
+  line-height: 2.75rem;
+  margin: 0;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+.profile-text-wrapper p {
+  font-size: 25px;
+  line-height: 1.5em;
+  margin: auto;
+  width: 100%;
+}
+
+.profile-pic img {
   width: 30%;
   max-width: 450px;
   margin: auto;
   border-radius: 1%;
   box-shadow: #35353566 2px 2px 5px 1px;
-}
-
-.profile > p {
-  text-align: center;
-
 }
 
 #return-to-top {
