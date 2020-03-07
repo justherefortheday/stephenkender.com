@@ -347,6 +347,42 @@ hr {
     max-width: 250px;
   }
 
+  .profile-pic {
+    width: 100%;
+    min-height: 50vh;
+    height: auto;
+  }
+
+  .profile-pic>img {
+    max-width: 75%;
+    max-height: 250px;
+    width: auto;       
+    height: auto;
+    padding: 30px;
+  }
+
+  .profile-text {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    min-height: 50vh;
+  }
+
+  .profile-text-wrapper h1 {
+    font-size: 1.75em;
+    line-height: 1.75rem;
+    text-align: center;
+    padding-bottom: 15px;
+    width: auto;
+  }
+
+  .profile-text-wrapper p {
+    font-size: 17px;
+    line-height: 1.5em;
+    text-align: center;
+    width: auto;
+  }
+
   header {
     min-height: 70vh;
     padding: 5vh;
