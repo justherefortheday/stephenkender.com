@@ -34,6 +34,137 @@
 </head>
 
 <body>
+  <style>
+    .menu img:hover {
+      opacity: 65%;
+      transition: all .1s ease-in-out;
+    }
+      
+      .marquee-container {
+          position: relative;
+          top: 10vh;
+          padding-top: 100px;
+          overflow: hidden;
+          height: 90vh;
+      }
+      .marquee-pic {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          padding-top: 50px;
+          cursor: pointer;
+      }
+      
+      .marquee-pic img {
+          border-radius: 20%;
+          height: 550px;
+          width: auto;
+          border: 8px solid;
+          border-color: blue;
+          -moz-animation: borderanimate 4s infinite;
+                 -webkit-animation: borderanimate 4s infinite;
+                 animation: borderanimate 4s infinite;
+      }
+
+      @keyframes borderanimate {
+    0% {border-color: blue;}
+    20%{border-color:purple;}
+    40%{border-color:red;}
+    60%{border-color:yellow;}
+    80%{border-color:green;}
+    100% {border-color: blue;}
+  }
+
+           .marquee {
+              height: 120px;
+              overflow: hidden;
+               background: red;
+                 -moz-animation: backgroundanimate 3s infinite;
+                 -webkit-animation: backgroundanimate 3s infinite;
+                 animation: backgroundanimate 3s infinite;
+          }
+      
+         @keyframes backgroundanimate {
+    0% {background-color: red;}
+    20%{background-color:yellow;}
+    40%{background-color:lime;}
+    60%{background-color:skyblue;}
+    80%{background-color:#b440f7;}
+    100% {background-color: red;}
+  }
+          
+          .marquee p {
+              position: absolute;
+              width: 100%;
+              margin: 0;
+              font-size: 80px;
+              font-family: serif;
+              white-space: nowrap;
+              line-height: 120px;
+              text-align: center;
+              -moz-transform: translateX(100%);
+              -webkit-transform: translateX(100%);
+              transform: translateX(100%);
+              -moz-animation: scroll-left 2s linear infinite;
+              -webkit-animation: scroll-left 2s linear infinite;
+              animation: scroll-left 20s linear infinite;  
+          }
+          
+          @-moz-keyframes scroll-left {
+              0% {
+                  -moz-transform: translateX(100%);
+              }
+              100% {
+                  -moz-transform: translateX(-100%);
+              }
+          }
+          
+          @-webkit-keyframes scroll-left {
+              0% {
+                  -webkit-transform: translateX(100%);
+              }
+              100% {
+                  -webkit-transform: translateX(-100%);
+              }
+          }
+          
+          @keyframes scroll-left {
+              0% {
+                  -moz-transform: translateX(100%);
+                  -webkit-transform: translateX(100%);
+                  transform: translateX(100%);
+              }
+              100% {
+                  -moz-transform: translateX(-100%);
+                  -webkit-transform: translateX(-100%);
+                  transform: translateX(-100%);
+              }
+          }
+      
+  
+          @media screen and (max-width: 992px) {
+            .marquee-container {
+              padding-top: 10px;
+            }
+
+            .marquee p {
+              font-size: 60px;
+              -moz-animation: scroll-left 2s linear infinite;
+              -webkit-animation: scroll-left 2s linear infinite;
+              animation: scroll-left 7s linear infinite;  
+            }
+
+            .marquee-pic img {
+          border-radius: 10%;
+          height: 300px;
+      }
+
+
+          }
+
+    
+  </style>
+
   <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <div class="menu">
@@ -48,6 +179,17 @@
   <div class="logo"> <img src="https://stephenkender.com/logo.svg"
       title="My personal logo - courtesy of Caroline Millin" alt="">
   </div>
+
+  <div class="marquee-container">
+
+    <div class="marquee">
+      <p> ↓↓↓ LOOK I MADE A CAR SEAT! ↓↓↓ </p> 
+    
+      
+    </div>
+    <div class="marquee-pic" onclick="javascript:window.location.href='https://uppababy.com/alta/'; return false;">
+        <img src="https://uppababy.com/wp-content/uploads/2020/02/alta-2020-sas-1.jpg">
+      </div></div>
 
   <header>
     <div class="profile">
