@@ -174,7 +174,7 @@ header {
   width: 60%;
   max-width: 450px;
   margin: auto;
-  border-radius: 1%;
+  border-radius: 80% 20% 50% 50% / 50% 38% 62% 50% ;
   box-shadow: #35353566 2px 2px 5px 1px;
 }
 

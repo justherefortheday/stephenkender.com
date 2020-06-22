@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:lr="http://adobe.com/lrg/0.0"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" xmlns:lr="http://adobe.com/lrg/0.0"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" xmlns:lr="http://adobe.com/lrg/0.0"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns:lr="http://adobe.com/lrg/0.0"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" media="screen" title="Custom Settings" href="assets/css/custom.css" >
+        <script src="assets/js/libs/modernizr.custom.23122.js"></script>
+    </head>
+    <body class=" row-spacing-lg" data-pagination-style="scroll" data-target-row-height="200">
+                        <div id="thumbnailContainer">
+            <div class="thumbnails"></div>
+        </div>
+        <div id="loupeContainer" class="show-corners">
+            <div class="background"></div>
+            <div class="image-container"></div>    
+            <div class="side-navigation">
+                <div class="hotspot" id="hotspotPrevLoupe">
+                    <div class="button" id="buttonPrevSideLoupe">
+                        <svg version="1.1" baseProfile="basic" id="svgIconPrevSideLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" xml:space="preserve"><path class="icon custom-colorable" fill="#231F20" d="M0,0l0,50h50V0L0,0z M18.491,25.05l9.707-9.264c0.418-0.399,1.092-0.403,1.506-0.008l1.498,1.43c0.413,0.395,0.41,1.039-0.009,1.438l-6.765,6.456l6.613,6.31c0.41,0.392,0.414,1.024,0.008,1.412l-1.471,1.404c-0.406,0.387-1.068,0.384-1.479-0.008l-6.612-6.311L18.491,25.05z"/></svg>
+                    </div>
+                </div>
+                <div class="hotspot" id="hotspotNextLoupe">
+                    <div class="button" id="buttonNextSideLoupe">
+                        <svg version="1.1" baseProfile="basic" id="svgIconNextSideLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 50 50" xml:space="preserve">
+                            <path class="icon custom-colorable" fill="#231F20" d="M0,0v50h50V0H0z M28.513,27.909l-6.612,6.311c-0.411,0.392-1.073,0.395-1.479,0.008l-1.471-1.404 c-0.406-0.388-0.402-1.02,0.008-1.412l6.613-6.31l-6.765-6.456c-0.419-0.399-0.422-1.043-0.009-1.438l1.498-1.43 c0.414-0.395,1.088-0.391,1.506,0.008l9.707,9.264L28.513,27.909z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="lateral-nav-container">
+                <ul class="lateral-nav">
+                    <li id="buttonPrev">
+                        <svg version="1.1" id="svgIconPrevLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
+                            </style>
+                            <path class="icon custom-colorable" d="M25.20105,14.76864l-8.2004,7.773l2.5314,2.3992l5.5858,5.2952c0.3469,0.3289,0.9064,0.3318,1.2497,0.0065
+                                l1.2431-1.1783c0.3429-0.3252,0.3398-0.8555-0.0071-1.1846l-5.5864-5.2948l5.7149-5.4171c0.3535-0.3349,0.3568-0.875,0.0074-1.2063
+                                l-1.2657-1.1995C26.12435,14.43064,25.55435,14.43354,25.20105,14.76864z"/>
+                        </svg>
+                    </li>
+                    <li class="count"><span id="countCurrent"></span> of <span id="countTotal"></span></li>
+                    <li id="buttonNext">
+                        <svg version="1.1" id="svgIconNextLoupe" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                            <style type="text/css">
+                                .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
+                            </style>
+                            <path class="icon custom-colorable" d="M19.79895,14.76864l8.2004,7.773l-2.5314,2.3992l-5.5858,5.2952c-0.3469,0.3289-0.9064,0.3318-1.2497,0.0065
+                                l-1.2431-1.1783c-0.3429-0.3252-0.3398-0.8555,0.0071-1.1846l5.5864-5.2948l-5.7149-5.4171
+                                c-0.3535-0.3349-0.3568-0.875-0.0074-1.2063l1.2657-1.1995C18.87565,14.43064,19.44565,14.43354,19.79895,14.76864z"/>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="info-container">
+                <div id="loupeMeta"></div>
+            </div>
+            <div id="loupeCloseButton">
+                <svg version="1.1" id="svgIconLoupeClose" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 45 45" style="enable-background:new 0 0 45 45;" xml:space="preserve">
+                    <path class="shape-x custom-colorable" d="M14.77881,17.30074l5.212,5.2222l-5.0831,5.0924c-0.3476,0.3484-0.5746,0.7624-0.2308,1.1067l1.5682,1.4763
+                        c0.3436,0.3443,0.8045,0.2596,1.1521-0.0886l5.0825-5.093l5.2119,5.222c0.3536,0.3547,0.9244,0.3578,1.2741,0.0073l1.2677-1.27
+                        c0.3497-0.3507,0.3465-0.9224-0.0071-1.2768l-5.2119-5.2221l5.0828-5.0925c0.3475-0.3485,0.5429-0.8259,0.1994-1.1702
+                        l-1.6474-1.4921c-0.3438-0.3443-0.6936-0.1803-1.0411,0.1679l-5.0828,5.0929l-5.212-5.222
+                        c-0.3537-0.3546-0.9241-0.3577-1.2742-0.007l-1.2672,1.2698C14.42171,16.37464,14.42491,16.94624,14.77881,17.30074z"/>
+                </svg>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var LR = LR || {};
+            LR.images = [                                                                                        {"id": "181313", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "DSC_0448", "title": "", "caption" : "NIKON D5300 | 1/640 sec at f / 5.6 | ISO 400 | 300 mm"},
+                         {"id": "183283", "largeWidth": "1200", "largeHeight": "282", "exportFilename": "_DSC0655-Pano", "title": "", "caption" : "NIKON Z 6 | 1/1000 sec at f / 7.1 | ISO 100 | 39 mm"},
+                         {"id": "181913", "largeWidth": "1200", "largeHeight": "675", "exportFilename": "_DSC1179", "title": "", "caption" : "NIKON Z 6 | 1/640 sec at f / 6.3 | ISO 1000 | 600 mm"},
+                         {"id": "183285", "largeWidth": "1200", "largeHeight": "798", "exportFilename": "_DSC1258", "title": "", "caption" : "NIKON Z 6 | 1/800 sec at f / 6.3 | ISO 200 | 600 mm"},
+                         {"id": "181909", "largeWidth": "798", "largeHeight": "1200", "exportFilename": "_DSC1080", "title": "", "caption" : "NIKON Z 6 | 1/640 sec at f / 7.1 | ISO 110 | 44 mm"},
+                         {"id": "183286", "largeWidth": "1200", "largeHeight": "798", "exportFilename": "_DSC1275", "title": "", "caption" : "NIKON Z 6 | 1/1000 sec at f / 6.3 | ISO 640 | 600 mm"},
+                         {"id": "181905", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "DSC_0081", "title": "", "caption" : "NIKON D5300 | 1/400 sec at f / 5.3 | ISO 320 | 240 mm"},
+                         {"id": "183272", "largeWidth": "1200", "largeHeight": "576", "exportFilename": "DSC_0468-1", "title": "", "caption" : "NIKON D5300 | 1/500 sec at f / 13 | ISO 160 | 300 mm"},
+                         {"id": "186745", "largeWidth": "1200", "largeHeight": "798", "exportFilename": "_DSC0987", "title": "", "caption" : "NIKON Z 6 | 1/200 sec at f / 6.3 | ISO 200 | 70 mm"},
+                         {"id": "181912", "largeWidth": "1200", "largeHeight": "798", "exportFilename": "_DSC1174", "title": "", "caption" : "NIKON Z 6 | 1/640 sec at f / 6.3 | ISO 1000 | 600 mm"},
+                         {"id": "181915", "largeWidth": "900", "largeHeight": "1200", "exportFilename": "_DSC1157", "title": "", "caption" : "NIKON Z 6 | 1/400 sec at f / 9.0 | ISO 1000 | 600 mm"},
+                         {"id": "183265", "largeWidth": "1200", "largeHeight": "798", "exportFilename": "_DSC0080", "title": "", "caption" : "NIKON Z 6 | 1/5000 sec at f / 4.5 | ISO 125 | 26 mm"},
+                         {"id": "181903", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "DSC_0124", "title": "", "caption" : "NIKON D5300 | 1/4000 sec at f / 1.8 | ISO 100 | 35 mm"},
+                         {"id": "181910", "largeWidth": "1200", "largeHeight": "798", "exportFilename": "_DSC1147", "title": "", "caption" : "NIKON Z 6 | 1/400 sec at f / 9.0 | ISO 1000 | 600 mm"},
+                         {"id": "181917", "largeWidth": "798", "largeHeight": "1200", "exportFilename": "_DSC1203", "title": "", "caption" : "NIKON Z 6 | 1/1250 sec at f / 9.0 | ISO 500 | 600 mm"},
+                         {"id": "181900", "largeWidth": "1200", "largeHeight": "675", "exportFilename": "DSC_0105", "title": "", "caption" : "NIKON D5300 | 1/400 sec at f / 9.0 | ISO 400 | 180 mm"},
+                         {"id": "183269", "largeWidth": "1200", "largeHeight": "798", "exportFilename": "_DSC0149", "title": "", "caption" : "NIKON Z 6 | 1/640 sec at f / 11 | ISO 280 | 24 mm"},
+                         {"id": "186744", "largeWidth": "1200", "largeHeight": "798", "exportFilename": "_DSC0969", "title": "", "caption" : "NIKON Z 6 | 1/250 sec at f / 13 | ISO 100 | 33 mm"},
+                         {"id": "183263", "largeWidth": "1200", "largeHeight": "675", "exportFilename": "DSC_0265", "title": "", "caption" : "NIKON D5300 | 1/640 sec at f / 8.0 | ISO 400 | 300 mm"},
+                         {"id": "183271", "largeWidth": "1200", "largeHeight": "406", "exportFilename": "_DSC0387-Pano", "title": "", "caption" : "NIKON Z 6 | 1/1250 sec at f / 10 | ISO 100 | 29.5 mm"},
+                         {"id": "183274", "largeWidth": "1200", "largeHeight": "675", "exportFilename": "DSC_0482", "title": "", "caption" : "NIKON D5300 | 1/500 sec at f / 10 | ISO 160 | 170 mm"},
+                         {"id": "183275", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "DSC_0517", "title": "", "caption" : "NIKON D5300 | 1/640 sec at f / 10 | ISO 160 | 300 mm"},
+                         {"id": "119007", "largeWidth": "1200", "largeHeight": "798", "exportFilename": "_DSC0600", "title": "", "caption" : "NIKON Z 6 | 1/250 sec at f / 4.0 | ISO 140 | 65 mm"},
+                         {"id": "183281", "largeWidth": "1200", "largeHeight": "260", "exportFilename": "_DSC0608-Pano", "title": "", "caption" : "NIKON Z 6 | 1/400 sec at f / 11 | ISO 125 | 24 mm"},
+                         {"id": "183282", "largeWidth": "1200", "largeHeight": "675", "exportFilename": "_DSC0627", "title": "", "caption" : "NIKON Z 6 | 1/320 sec at f / 7.1 | ISO 100 | 24 mm"},
+                         {"id": "183278", "largeWidth": "1200", "largeHeight": "675", "exportFilename": "DSC_0649", "title": "", "caption" : "NIKON D5300 | 1/1000 sec at f / 8.0 | ISO 250 | 300 mm"},
+                         {"id": "177152", "largeWidth": "1200", "largeHeight": "798", "exportFilename": "_DSC1227", "title": "", "caption" : "NIKON Z 6 | 1/200 sec at f / 6.3 | ISO 10000 | 600 mm"},
+                         {"id": "183279", "largeWidth": "1200", "largeHeight": "675", "exportFilename": "DSC_0734", "title": "", "caption" : "NIKON D5300 | 1/1000 sec at f / 8.0 | ISO 160 | 300 mm"},
+                         {"id": "183280", "largeWidth": "1200", "largeHeight": "675", "exportFilename": "DSC_0737", "title": "", "caption" : "NIKON D5300 | 1/1000 sec at f / 8.0 | ISO 160 | 300 mm"},
+                         {"id": "183284", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "DSC_0850", "title": "", "caption" : "NIKON D5300 | 1/2000 sec at f / 8.0 | ISO 250 | 280 mm"},
+                         {"id": "187545", "largeWidth": "1200", "largeHeight": "798", "exportFilename": "_DSC0886", "title": "", "caption" : "NIKON Z 6 | 1/1250 sec at f / 4.0 | ISO 125 | 82 mm"},
+                         {"id": "186748", "largeWidth": "1200", "largeHeight": "798", "exportFilename": "_DSC1009", "title": "", "caption" : "NIKON Z 6 | 1/400 sec at f / 4.0 | ISO 100 | 59 mm"},
+                         {"id": "186750", "largeWidth": "1200", "largeHeight": "798", "exportFilename": "_DSC1046", "title": "", "caption" : "NIKON Z 6 | 1/1250 sec at f / 4.0 | ISO 100 | 24 mm"},
+                         {"id": "181899", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "DSC_0093", "title": "", "caption" : "NIKON D5300 | 1/1000 sec at f / 4.5 | ISO 100 | 55 mm"},
+                         {"id": "181902", "largeWidth": "1200", "largeHeight": "800", "exportFilename": "DSC_0054", "title": "", "caption" : "NIKON D5300 | 1/500 sec at f / 5.0 | ISO 320 | 165 mm"},
+                                    ]        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/libs/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="assets/js/libs/jquery.velocity.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
