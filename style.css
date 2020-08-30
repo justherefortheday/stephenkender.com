@@ -27,7 +27,7 @@ a:link:hover {
 }
 
 h1 {
-  font-size: 275%;
+  font-size: 250%;
   color: #111111;
   text-align: center;
   font-weight: 700;
@@ -154,7 +154,7 @@ header {
 }
 
 .profile-text-wrapper h1 {
-  font-size: 135px;
+  font-size: 120px;
   line-height: 8.75rem;
   margin: 0;
   padding-bottom: 75px;
