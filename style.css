@@ -319,6 +319,10 @@ hr {
 
 
 @media screen and (max-width: 992px) {
+  #support {
+    width: 90% !important;
+  }
+  
   h1 {
     font-size: 225%;
     padding: 0px 10px 0px 10px;
