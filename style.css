@@ -56,7 +56,7 @@ a:link:visited {
 }
 
 a:link:hover {
-  color: #111;
+  color: rgb(211, 143, 87);
 }
 
 .stronglink {
@@ -76,6 +76,7 @@ h2 {
   font-size: 150%;
   color: #111111;
   padding: 0px 10px 0px 10px;
+  font-weight: 600;
 }
 
 p {
@@ -129,10 +130,12 @@ header {
   display: flex;
   align-items: center;
   height: 100%;
+  letter-spacing: 1.5px;
 }
 
 .menu a:hover {
   color: #454545;
+  transition: .15s ease-in-out;
 }
 
 .menu img {
@@ -149,23 +152,23 @@ header {
 }
 
 .blue:hover {
-  transition: .1s ease-in-out;
-  text-shadow: 0px 0px 1px #8fcff9;
+  transition: .15s ease-in-out;
+  text-shadow: 0px 0px 1.5px #8fcff9;
 }
 
 .orange:hover {
-  transition: .1s ease-in-out;
-  text-shadow: 0px 0px 1px #ff7d01;
+  transition: .15s ease-in-out;
+  text-shadow: 0px 0px 1.5px #ff7d01;
 }
 
 .green:hover {
-  transition: .1s ease-in-out;
-  text-shadow: 0px 0px 1px #2dc22d;
+  transition: .15s ease-in-out;
+  text-shadow: 0px 0px 1.5px #2dc22d;
 }
 
 .purple:hover {
-  transition: .1s ease-in-out;
-  text-shadow: 0px 0px 1px #ad11dd;
+  transition: .15s ease-in-out;
+  text-shadow: 0px 0px 1.5px #ad11dd;
 }
 
 .profile {
@@ -327,10 +330,11 @@ section:nth-of-type(even) {
 
 .section-text-wrapper h1 {
   font-size: 50px;
-  line-height: 2.75rem;
+  line-height: 3.75rem;
   margin: 0;
   padding-bottom: 25px;
   text-align: left;
+  letter-spacing: 2px;
 }
 
 .section-text-wrapper p {
