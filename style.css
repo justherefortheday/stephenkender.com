@@ -145,6 +145,7 @@ header {
 
 .menu img:hover {
   opacity: 65%;
+  transition: all .1s ease-in-out;
 }
 
 .logo {
@@ -209,6 +210,7 @@ header {
   padding-bottom: 75px;
   text-align: left;
   color: #444;
+  letter-spacing: 3px;
 }
 
 .profile-text-wrapper p {
@@ -415,6 +417,10 @@ hr {
     width: 100%;
   }
 
+  .menu-container {
+    display: none;
+  }
+
   .menu {
     display: none;
   }
@@ -427,9 +433,8 @@ hr {
 
   .profile-pic {
     width: 100%;
-    min-height: 30vh;
+    min-height: 45vh;
     height: auto;
-    padding-bottom: 35px;
   }
 
   .profile-pic>img {
@@ -443,7 +448,7 @@ hr {
     width: 100%;
     height: auto;
     text-align: left;
-    min-height: 35vh;
+    min-height: 40vh;
   }
 
   .profile-text-wrapper {
@@ -456,6 +461,7 @@ hr {
     text-align: left;
     padding-bottom: 25px;
     width: auto;
+    letter-spacing: 2px;
   }
 
   .profile-text-wrapper p {
@@ -478,7 +484,7 @@ hr {
 
   .section-media {
     width: 100%;
-    min-height: 50vh;
+    min-height: 45vh;
     height: auto;
   }
 
@@ -494,7 +500,7 @@ hr {
     width: 100%;
     height: auto;
     text-align: center;
-    min-height: 50vh;
+    min-height: 45vh;
   }
 
   .section-text-wrapper h1 {
@@ -510,6 +516,10 @@ hr {
     line-height: 1.5em;
     text-align: center;
     width: auto;
+  }
+
+  #3d {
+    padding-bottom: 35px;
   }
 
   .slick-track {
