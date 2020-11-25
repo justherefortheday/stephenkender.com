@@ -218,6 +218,8 @@ header {
   animation-name: changeColor;
   animation-iteration-count: infinite;
   animation-duration: 7s;
+  animation-timing-function: 2s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 @keyframes changeColor {
