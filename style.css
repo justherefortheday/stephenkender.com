@@ -1,7 +1,39 @@
 /*
 Welcome to my attempt at a stylesheet! Let's see what I can do with this boy.
 */
+@font-face {
+  font-family: 'Avenir';
+  src: url('https://stephenkender.com/fonts/AvenirNextLTPro-Light.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Avenir';
+  src: url('https://stephenkender.com/fonts/AVENIRNEXTLTPRO-LIGHTIT.otf');
+  font-weight: 400;
+  font-style: italic;
+}
 
+@font-face {
+  font-family: 'Avenir';
+  src: url('https://stephenkender.com/fonts/AvenirNextLTPro-Regular.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('https://stephenkender.com/fonts/AvenirNextLTPro-Bold.otf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('https://stephenkender.com/fonts/AvenirNextLTPro-Heavy.otf');
+  font-weight: 900;
+  font-style: normal;
+}
 
 html {
   background: #fafafa;
@@ -11,7 +43,8 @@ html {
 
 body {
   margin: 0px;
-  font-family: neue-haas-unica, sans-serif;
+  font-family: "Avenir", sans-serif;
+  font-weight: 400;
 }
 
 a {
@@ -26,11 +59,15 @@ a:link:hover {
   color: #111;
 }
 
+.stronglink {
+  font-weight: 600;
+}
+
 h1 {
   font-size: 250%;
   color: #111111;
   text-align: center;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.15em;
   padding: 0px 10px 0px 10px;
 }
@@ -57,28 +94,38 @@ header {
   padding-top: 10vh;
   justify-content: center;
   align-items: center;
+  max-width: 1800px;
+  margin: auto;
+}
+
+.menu-container {
+  width: 100%;
+  border-bottom: solid 6px #82d2f9;
+  display: flex;
+  height: 10vh;
+  position: fixed;
+  margin: auto;
+  justify-content: center;
+  background-color: #f7f7f7;
+  z-index: 999;
 }
 
 .menu {
-  background-color: #f7f7f7;
   color: #111111;
-  width: 84%;
-  padding-left: 8%;
-  padding-right: 8%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  z-index: 999;
-  border-bottom: solid 6px #82d2f9;
-  height: 10vh;
+  max-width: 1800px;
 }
 
 .menu a {
   text-align: center;
   padding: 10px;
   color: #111;
-  font-size: 26px;
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   height: 100%;
@@ -137,7 +184,6 @@ header {
   text-align: center;
   justify-content: center;
   align-items: center;
-  
 }
 
 .profile-text {
@@ -168,14 +214,20 @@ header {
   margin: auto;
   width: 100%;
   font-style: italic;
+  font-weight: 400;
 }
 
 .profile-pic img {
   width: 60%;
   max-width: 450px;
   margin: auto;
-  border-radius: 80% 20% 50% 50% / 50% 38% 62% 50% ;
+  border-radius: 80% 20% 50% 50% / 50% 38% 62% 50%;
   box-shadow: #35353566 2px 2px 5px 1px;
+  transition: .5s ease-in-out;
+}
+
+.profile-pic img:hover {
+  border-radius: 42% 53% 45% 50% / 61% 46% 52% 19%
 }
 
 #return-to-top {
@@ -230,8 +282,19 @@ section {
   display: flex;
   justify-content: center;
   height: 100vh;
+  width: 93%;
+  margin: auto;
+  max-width: 1800px;
 }
 
+#support {
+  display: block; 
+  margin: 5% 20% 500% 20%; 
+  width: 60%; 
+  text-align: center; 
+  min-height: 100vh; 
+  height: auto;
+}
 section:nth-of-type(even) {
   flex-direction: row-reverse;
 }
@@ -282,24 +345,26 @@ hr {
   color: #35353566;
   margin: 0 auto 0 auto;
 }
+
 .footer {
   text-align: center;
   padding-bottom: 80px;
 }
 
-.single-item  p {
+.single-item p {
   padding-bottom: 40px;
   font-size: 14px;
 }
 
 .slick-next:before,
 .slick-prev:before {
- color:#444 !important;
- font-size: 25px !important;
+  color: #444 !important;
+  font-size: 25px !important;
 }
 
 .slick-track {
-  height: 500px;;
+  height: 500px;
+  ;
 }
 
 .slick-slide img {
@@ -310,12 +375,12 @@ hr {
 }
 
 .slick-initialized .slick-slide {
-  display:flex !important;
+  display: flex !important;
   justify-content: center !important;
   align-items: center !important;
   max-height: 500px;
- } 
- 
+}
+
 
 
 @media screen and (max-width: 992px) {
@@ -323,7 +388,7 @@ hr {
     width: 90% !important;
     margin-bottom: 10000%;
   }
-  
+
   h1 {
     font-size: 225%;
     padding: 0px 10px 0px 10px;
@@ -333,7 +398,7 @@ hr {
     width: 90%;
     font-size: 17px;
   }
-  
+
   .logo {
     display: flex;
     height: calc(15vh - 20px);
@@ -366,7 +431,7 @@ hr {
   .profile-pic>img {
     max-width: 75%;
     max-height: 250px;
-    width: auto;       
+    width: auto;
     height: auto;
   }
 
@@ -376,8 +441,9 @@ hr {
     text-align: left;
     min-height: 35vh;
   }
+
   .profile-text-wrapper {
-   max-width: 100%;
+    max-width: 100%;
   }
 
   .profile-text-wrapper h1 {
@@ -445,14 +511,14 @@ hr {
   .slick-track {
     height: 300px;
   }
-  
+
   .slick-slide img {
     max-height: 300px;
   }
-  
+
   .slick-initialized .slick-slide {
     max-height: 300px;
-   } 
+  }
 
 
 }
