@@ -214,7 +214,7 @@ header {
   letter-spacing: 3px;
   animation-name: changeColor;
   animation-iteration-count: infinite;
-  animation-duration: 15s;
+  animation-duration: 20s;
 }
 
 
@@ -222,23 +222,27 @@ header {
   0% {
     color: #111111;
   }
+
   20% {
     color: #ff7d01;
   }
+
   40% {
     color: #ad11dd;
   }
+
   60% {
     color: #2dc22d;
   }
+
   80% {
     color: #8fcff9;
   }
+
   100% {
     color: #111111;
   }
 }
-
 
 .profile-text-wrapper p {
   font-size: 25px;
@@ -255,11 +259,37 @@ header {
   margin: auto;
   border-radius: 80% 20% 50% 50% / 50% 38% 62% 50%;
   box-shadow: #35353566 2px 2px 5px 1px;
-  transition: .5s ease-in-out;
+  animation-name: blob;
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
 
-.profile-pic img:hover {
-  border-radius: 42% 53% 45% 50% / 61% 46% 52% 19%
+@keyframes blob {
+  0% {
+    border-radius: 80% 20% 50% 50% / 50% 38% 62% 50%;
+  }
+
+  20% {
+    border-radius: 42% 53% 45% 50% / 61% 46% 52% 19%
+  }
+
+  40% {
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%
+  }
+
+  60% {
+    border-radius: 27% 53% 37% 35% / 24% 28% 60% 67%;
+  }
+
+  80% {
+    border-radius: 63% 32% 30% 50% / 81% 46% 52% 19%;
+  }
+
+  100% {
+    border-radius: 30% 70% 20% 50% / 40% 38% 62% 50%;
+  }
 }
 
 #return-to-top {
