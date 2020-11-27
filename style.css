@@ -212,15 +212,11 @@ header {
   text-align: left;
   color: #444;
   letter-spacing: 3px;
-}
-
-.profile-text-wrapper h1:hover {
   animation-name: changeColor;
   animation-iteration-count: infinite;
-  animation-duration: 7s;
-  animation-timing-function: 2s ease-in-out;
-  animation-fill-mode: forwards;
+  animation-duration: 15s;
 }
+
 
 @keyframes changeColor {
   0% {
@@ -494,9 +490,6 @@ hr {
     padding-bottom: 25px;
     width: auto;
     letter-spacing: 2px;
-    animation-name: changeColor;
-    animation-iteration-count: infinite;
-    animation-duration: 7s;
   }
 
   .profile-text-wrapper p {
