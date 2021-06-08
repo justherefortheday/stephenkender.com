@@ -93,7 +93,7 @@ header {
   min-height: 90vh;
   display: flex;
   flex-flow: column;
-  padding-top: 10vh;
+  /*padding-top: 10vh;*/
   justify-content: center;
   align-items: center;
   max-width: 1800px;
@@ -106,6 +106,8 @@ header {
   display: flex;
   height: 10vh;
   position: fixed;
+  top: 0px;
+  left: 0px;
   margin: auto;
   justify-content: center;
   background-color: #f7f7f7;
