@@ -128,6 +128,29 @@ header {
   max-width: 1800px;
 }
 
+.mobile-menu-container {
+  width: 100%;
+  border-bottom: solid 6px #82d2f9;
+  display: none;
+  height: 10vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: auto;
+  justify-content: center;
+  background-color: #f7f7f7;
+  z-index: 999;
+}
+
+.mobile-menu {
+  color: #111111;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1800px;
+}
+
 .menu a {
   text-align: center;
   padding: 10px;

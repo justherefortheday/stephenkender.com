@@ -51,7 +51,13 @@
           title="My personal logo - courtesy of Caroline Millin" alt=""></a>
       <a href="#design" class="green">graphic design</a>
       <a href="#3d" class="purple">3d design</a>
+    </div>
+  </div>
 
+  <div class="mobile-menu-container">
+    <div class="mobile-menu">
+      <a id="top-logo" href="https://stephenkender.com"><img src="https://stephenkender.com/logo.svg"
+          title="My personal logo - courtesy of Caroline Millin" alt=""></a>
     </div>
   </div>
 
@@ -69,13 +75,13 @@
           <p>1. See <span style="font-style: normal"> Steven</span> (pg.121)</p>
           <p>2. Someone who went through the trouble of buying a domain and building a website from scratch, only to
             realize that he has like, 3 things to offer the world</p>
-                <div class="prof-buttons-container">
-          <a class="prof-buttons" href="#about">About Me</a>
-          <a class="prof-buttons" href="#photography">Photography</a>
-          <a class="prof-buttons" href="#design">Design</a>
-          <a class="prof-buttons" href="#3d">3D Modeling</a>
+          <div class="prof-buttons-container">
+            <a class="prof-buttons" href="#about">About Me</a>
+            <a class="prof-buttons" href="#photography">Photography</a>
+            <a class="prof-buttons" href="#design">Design</a>
+            <a class="prof-buttons" href="#3d">3D Modeling</a>
+          </div>
         </div>
-      </div>
       </div>
 
     </div>
@@ -419,24 +425,25 @@
 
   <script>
     // ===== Scroll to Top ==== 
-   $(window).scroll(function () {
-    if ($(window).width() > 992) { 
-    if ($(this).scrollTop() >= 500) {
-        $('#menu-js').css("display", "flex");
-      } else {
-        $('#menu-js').css("display", "none");
-      }
-    }
-else {
-  if ($(this).scrollTop() >= 500) {
-        $('#menu-js').css("display", "flex");
-        $('#top-logo').css("display", "flex");
-      } else {
-        $('#menu-js').css("display", "none");
-        $('#top-logo').css("display", "none");
-}
-    });
+    $(window).scroll(function () {
+            if (($(this).scrollTop() >= 500) && (screen.width > 992)) {
+              $('#menu-js').css("display", "flex");
+            } else {
+              $('#menu-js').css("display", "none");
+            }
+          });
   </script>
+
+<script>
+  // ===== Scroll to Top ==== 
+  $(window).scroll(function () {
+          if (($(this).scrollTop() >= 500) && (screen.width <= 992)) {
+            $('.mobile-menu-container').css("display", "flex");
+          } else {
+            $('.mobile-menu-container').css("display", "none");
+          }
+        });
+</script>
 
 
 </body>
