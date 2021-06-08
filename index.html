@@ -47,7 +47,7 @@
     <div class="menu">
       <a href="#about" class="blue">about stephen</a>
       <a href="#photography" class="orange">photography</a>
-      <a href="https://stephenkender.com"><img src="https://stephenkender.com/logo.svg"
+      <a id="top-logo" href="https://stephenkender.com"><img src="https://stephenkender.com/logo.svg"
           title="My personal logo - courtesy of Caroline Millin" alt=""></a>
       <a href="#design" class="green">graphic design</a>
       <a href="#3d" class="purple">3d design</a>
@@ -419,13 +419,23 @@
 
   <script>
     // ===== Scroll to Top ==== 
-   // $(window).scroll(function () {
-     // if ($(this).scrollTop() >= 500) {
-       // $('#menu-js').css("display", "flex");
-      //} else {
-        //$('#menu-js').css("display", "none");
-      //}
-    //});
+   $(window).scroll(function () {
+    if ($(window).width() > 992) { 
+    if ($(this).scrollTop() >= 500) {
+        $('#menu-js').css("display", "flex");
+      } else {
+        $('#menu-js').css("display", "none");
+      }
+    }
+else {
+  if ($(this).scrollTop() >= 500) {
+        $('#menu-js').css("display", "flex");
+        $('#top-logo').css("display", "flex");
+      } else {
+        $('#menu-js').css("display", "none");
+        $('#top-logo').css("display", "none");
+}
+    });
   </script>
 
 
