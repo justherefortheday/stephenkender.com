@@ -399,10 +399,10 @@
     $(window).scroll(function () {
       if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
         $('#return-to-top').fadeIn(200);
-        $('#menu-js').fadeIn(200); // Fade in the things
+        $('#menu-js').css("display", "flex"); // Fade in the things
       } else {
         $('#return-to-top').fadeOut(200);
-        $('#menu-js').fadeOut(200); // Else fade out the things
+        $('#menu-js').css("display", "none"); // Else fade out the things
       }
     });
     $('#return-to-top').click(function () { // When arrow is clicked
