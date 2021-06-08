@@ -103,7 +103,7 @@ header {
 .menu-container {
   width: 100%;
   border-bottom: solid 6px #82d2f9;
-  display: flex;
+  display: none;
   height: 10vh;
   position: fixed;
   top: 0px;
