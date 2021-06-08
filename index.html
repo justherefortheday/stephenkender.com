@@ -60,13 +60,9 @@
   </div>
 
   <header>
-
-
-  
-
     <div class="profile">
       <div class="profile-pic">
-        <img src="https://stephenkender.com/img/profile.jpg" title="Me at my best" alt="it me"></div>
+        <img src="https://stephenkender.com/img/photo-1.jpg" title="hey there" alt="hey there"></div>
       <div class="profile-text">
         <div class="profile-text-wrapper">
           <h1>STEPHEN (n)</h1>
@@ -74,6 +70,12 @@
           <p>2. Someone who went through the trouble of buying a domain and building a website from scratch, only to
             realize that he has like, 3 things to offer the world</p>
         </div>
+      </div>
+<div class="prof-buttons-container">
+  <div class="prof-buttons"><a href="#about" >about stephen</a></div>
+  <div class="prof-buttons"><a href="#photography" >about stephen</a></div>
+  <div class="prof-buttons"><a href="#design" >about stephen</a></div>
+  <div class="prof-buttons"><a href="#3d" >about stephen</a></div>
       </div>
     </div>
   </header>
@@ -397,12 +399,10 @@
   <script>
     // ===== Scroll to Top ==== 
     $(window).scroll(function () {
-      if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);
-        $('#menu-js').css("display", "flex"); // Fade in the things
+      if ($(this).scrollTop() >= 500) { // If page is scrolled more than 500px
+        $('#return-to-top').fadeIn(200); // Fade in the things
       } else {
-        $('#return-to-top').fadeOut(200);
-        $('#menu-js').fadeOut(200); // Else fade out the things
+        $('#return-to-top').fadeOut(200); // Else fade out the things
       }
     });
     $('#return-to-top').click(function () { // When arrow is clicked
@@ -411,6 +411,17 @@
       }, 500);
     });
   </script>
+
+<script>
+  // ===== Scroll to Top ==== 
+  $(window).scroll(function () {
+    if ($(this).scrollTop() >= 500) { 
+      $('#menu-js').css("display", "flex"); 
+    } else {
+      $('#menu-js').css("display", "none"); 
+    }
+  });
+</script>
 
 
 </body>

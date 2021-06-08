@@ -219,7 +219,6 @@ header {
   animation-duration: 20s;
 }
 
-
 @keyframes changeColor {
   0% {
     color: #111111;
@@ -244,6 +243,23 @@ header {
   100% {
     color: #111111;
   }
+}
+
+.prof-buttons-container {
+  height: auto;
+  display: block;
+  
+}
+
+.prof-buttons {
+  width: 60%;
+  padding: 15px;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+  background-color: #ddd;
+  
 }
 
 .profile-text-wrapper p {
