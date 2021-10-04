@@ -79,7 +79,7 @@ h1 {
 }
 
 h2 {
-  font-size: 150%;
+  font-size: 200%;
   color: #111111;
   padding: 0px 10px 0px 10px;
   font-weight: 600;
@@ -203,6 +203,25 @@ header {
   text-shadow: 0px 0px 1.5px #ad11dd;
 }
 
+.about-column {
+  width: 30%;
+  height: 100vh;
+	position: fixed;
+	left: 0;
+  display: flex;
+	margin: auto;
+	border-right: #CEE3FF 20px solid;
+}
+
+.about-column-content {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+	flex-flow: column;
+}
+
 .profile {
   min-height: 70vh;
   display: flex;
@@ -214,8 +233,7 @@ header {
 
 .profile-pic {
   width: 40%;
-  height: 100vh;
-  display: flex;
+	height: auto;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -314,7 +332,6 @@ header {
 .profile-pic img {
   width: 85%;
   max-width: 650px;
-  margin: auto;
   border-radius: 80% 20% 50% 50% / 50% 38% 62% 50%;
   box-shadow: #35353566 2px 2px 5px 1px;
   animation-name: blob;
@@ -397,14 +414,11 @@ header {
 }
 
 section {
-  width: 100%;
-  margin: 0;
+  width: 65%;
+  margin: 0 0 0 32.5%;
   display: flex;
   justify-content: center;
   height: 100vh;
-  width: 93%;
-  margin: auto;
-  max-width: 1800px;
 }
 
 #support {
@@ -427,6 +441,7 @@ section:nth-of-type(even) {
   text-align: center;
   justify-content: center;
   align-items: center;
+	flex-flow: column
 }
 
 .section-media>img {
@@ -465,10 +480,12 @@ section:nth-of-type(even) {
 hr {
   width: 45%;
   color: #35353566;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 0 42.5%;
 }
 
 .footer {
+	  width: 70%;
+  margin: 0 0 0 30%;
   text-align: center;
   padding-bottom: 80px;
 }
@@ -549,9 +566,8 @@ hr {
   }
 
   .profile-pic {
-    width: 100%;
-    min-height: 30vh;
-    height: auto;
+	width: 100%;
+	height: auto;
   }
 
   .profile-pic>img {
