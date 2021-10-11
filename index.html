@@ -352,27 +352,27 @@
     var page3Top = $("#3d").offset().top;
 
     if (scrollPos >= page1Top && scrollPos < page2Top) {
-      $("#menu-1").addClass("active");
-      $("#menu-2").removeClass("active");
-      $("#menu-3").removeClass("active");
+      $("#menu-1").addClass("about-active");
+      $("#menu-2").removeClass("about-active");
+      $("#menu-3").removeClass("about-active");
     } else {
-      $("#link_1").removeClass("active");
+      $("#link_1").removeClass("about-active");
     }
 
     if (scrollPos >= page2Top && scrollPos < page3Top) {
-      $("#menu-2").addClass("active");
-      $("#menu-1").removeClass("active");
-      $("#menu-3").removeClass("active");
+      $("#menu-2").addClass("about-active");
+      $("#menu-1").removeClass("about-active");
+      $("#menu-3").removeClass("about-active");
     } else {
-      $("#menu-2").removeClass("active");
+      $("#menu-2").removeClass("about-active");
     }
     
     if (scrollPos >= page3Top) {
-      $("#menu-3").addClass("active");
-      $("#menu-1").removeClass("active");
-      $("#menu-2").removeClass("active");
+      $("#menu-3").addClass("about-active");
+      $("#menu-1").removeClass("about-active");
+      $("#menu-2").removeClass("about-active");
     } else {
-      $("#menu-3").removeClass("active");
+      $("#menu-3").removeClass("about-active");
     }
 
   });
