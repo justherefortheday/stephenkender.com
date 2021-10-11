@@ -79,7 +79,7 @@ h1 {
 }
 
 h2 {
-  font-size: 350%;
+  font-size: 310%;
   color: #111111;
   padding: 0px 10px 0px 10px;
   font-weight: 600;
@@ -146,22 +146,7 @@ header {
   margin: 25px auto 10px auto;
 }
 
-.profile-text {
-  width: 60%;
-  height: 100vh;
-  display: flex;
-  text-align: left;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  flex-flow: column;
-}
-
-.profile-text-wrapper {
-  max-width: 95%;
-}
-
-.profile-text-wrapper h1 {
+.colorchange-text {
   font-size: 100px;
   line-height: 8.75rem;
   margin: 0;
@@ -231,42 +216,6 @@ header {
   }
 }
 
-.prof-buttons-container {
-  height: auto;
-  display: block;
-  width: 95%;
-}
-
-.prof-buttons {
-  width: 35%;
-  padding: 10px 20px;
-  font-size: 23px;
-  font-weight: 900;
-  text-align: left;
-  margin: 1px 0px 20px 0px;
-  background-color: #fafafa;
-  border-radius: 18px;
-  box-shadow: 10px 10px aqua;
-  border: 1px solid aqua;
-  display: block;
-  text-transform: uppercase;
-}
-
-.prof-buttons:hover {
-  transition: .04s ease-in-out;
-  box-shadow: 5px 5px orange;
-  border: 1px solid orange;
-}
-
-.profile-text-wrapper p {
-  font-size: 16px;
-  line-height: 1.5em;
-  margin: auto;
-  width: 100%;
-  font-style: italic;
-  font-weight: 400;
-}
-
 .profile-pic img {
   width: 85%;
   max-width: 650px;
@@ -312,7 +261,6 @@ header {
   background: #000000b3;
   width: 100px;
   height: 65px;
-  display: block;
   text-decoration: none;
   -webkit-border-radius: 35px;
   -moz-border-radius: 35px;
@@ -451,7 +399,7 @@ hr {
 
 
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
   .about-column {
     width: 100%;
     height: 100vh;
@@ -476,7 +424,7 @@ hr {
   }
 
   #about {
-    padding-top: 20vh;
+    padding-top: 15vh;
     height: 65vh;
   }
 
@@ -509,7 +457,7 @@ hr {
   }
 
   .profile-pic {
-	width: 800%;
+	width: 80%;
 	height: auto;
   }
 
@@ -519,42 +467,8 @@ hr {
     height: auto;
   }
 
-  .profile-text {
-    width: 100%;
-    height: auto;
-    text-align: left;
-    min-height: 40vh;
-  }
-
-  .profile-text-wrapper {
+  .colorchange-text {
     max-width: 100%;
-  }
-
-  .profile-text-wrapper h1 {
-    font-size: 35px;
-    line-height: 1em;
-    text-align: left;
-    padding-bottom: 15px;
-    width: auto;
-    letter-spacing: 2px;
-  }
-
-  .profile-text-wrapper p {
-    line-height: 1.5em;
-    text-align: left;
-    width: auto;
-  }
-
-  .prof-buttons-container{
-    padding: 20px 0 50px 0;
-  }
-
-  .prof-buttons {
-    width: calc(100% - 40px);
-    padding: 13px 20px;
-    font-size: 26px;
-    box-shadow: 5px 5px orange;
-    border: 1px solid orange;
   }
 
   header {
@@ -592,8 +506,8 @@ hr {
   }
 
   .section-text-wrapper h1 {
-    font-size: 1.75em;
-    line-height: 1.75rem;
+    font-size: 3.75em;
+    line-height: 3.75rem;
     text-align: center;
     padding-bottom: 15px;
     width: auto;
