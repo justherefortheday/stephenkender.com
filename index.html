@@ -194,6 +194,7 @@
       </div>
 		</div></div>
     <div class="section-text">
+      
       <div class="section-text-wrapper">
         <h1>GRAPHIC <span style="color: #2dc22d">DESIGN</span> TOO</h1>
         <br>
@@ -347,9 +348,17 @@
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop();
     
+	var pageTop = $("#about").offset().top;
     var page1Top = $("#photography").offset().top;
     var page2Top = $("#design").offset().top;
     var page3Top = $("#3d").offset().top;
+	  var page4Top = $(".footer").offset().top;
+	  
+	 if (scrollPos >= pageTop && scrollPos < page1Top) {
+      $("#menu-1").removeClass("about-active");
+      $("#menu-2").removeClass("about-active");
+      $("#menu-3").removeClass("about-active");
+    } 
 
     if (scrollPos >= page1Top && scrollPos < page2Top) {
       $("#menu-1").addClass("about-active");
@@ -367,13 +376,19 @@
       $("#menu-2").removeClass("about-active");
     }
     
-    if (scrollPos >= page3Top) {
+    if (scrollPos >= page3Top && scrollPos < footer) {
       $("#menu-3").addClass("about-active");
       $("#menu-1").removeClass("about-active");
       $("#menu-2").removeClass("about-active");
     } else {
       $("#menu-3").removeClass("about-active");
     }
+	  
+	  	 if (scrollPos >= footer) {
+      $("#menu-1").removeClass("about-active");
+      $("#menu-2").removeClass("about-active");
+      $("#menu-3").removeClass("about-active");
+    } 
 
   });
 });
