@@ -146,8 +146,8 @@ header {
   margin: 25px auto 10px auto;
 }
 
-.colorchange-text {
-  font-size: 100px;
+.colorchange-text h1 {
+  font-size: 150px;
   line-height: 8.75rem;
   margin: 0;
   padding-bottom: 5px;
@@ -467,8 +467,9 @@ hr {
     height: auto;
   }
 
-  .colorchange-text {
+  .colorchange-text h1 {
     max-width: 100%;
+    font-size: 75px;
   }
 
   header {
