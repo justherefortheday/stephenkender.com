@@ -186,7 +186,8 @@ header {
 }
 
 .about-active {
-	color: #FF7200;	
+	color: #FF7200 !important;	
+	  transition: all 0.3s ease;
 }
 
 @keyframes changeColor {
