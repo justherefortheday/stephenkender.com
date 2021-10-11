@@ -458,7 +458,7 @@ hr {
     position: static;
     display: flex;
     margin: auto;
-    border-right: #CEE3FF 20px solid;
+    border-right: none;
   }
   
   .about-column-content {
@@ -473,6 +473,11 @@ hr {
   #logo-img {
     width: 80%;
     margin: 25px auto 10px auto;
+  }
+
+  #about {
+    padding-top: 20vh;
+    height: 65vh;
   }
 
   h1 {
@@ -612,6 +617,7 @@ hr {
   margin: 0 auto 0 auto;
   text-align: center;
   padding-bottom: 80px;
+  padding-top: 50px;
 }
 
   #3d {
