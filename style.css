@@ -185,8 +185,18 @@ header {
 	color: #111;
 }
 
-.about-active {
+.orange-active {
 	color: #FF7200 !important;	
+	  transition: all 0.3s ease;
+}
+
+.green-active {
+	color: #00C84D !important;	
+	  transition: all 0.3s ease;
+}
+
+.blue-active {
+	color: #2EB4FF !important;	
 	  transition: all 0.3s ease;
 }
 
