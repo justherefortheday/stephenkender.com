@@ -54,15 +54,15 @@ a {
 }
 
 a:link:visited {
-  color: #333;
+  color: #111;
 }
 
 a:link:hover {
-  color: orange;
+  color: #111;
 }
 
 a:hover {
-  color: orange;
+  color: #111;
 }
 
 .stronglink {
@@ -103,104 +103,6 @@ header {
   align-items: center;
   max-width: 1800px;
   margin: auto;
-}
-
-.menu-container {
-  width: 100%;
-  border-bottom: solid 6px #82d2f9;
-  display: none;
-  height: 10vh;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  margin: auto;
-  justify-content: center;
-  background-color: #f7f7f7;
-  z-index: 999;
-}
-
-.menu {
-  color: #111111;
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1800px;
-}
-
-.mobile-menu-container {
-  width: 100%;
-  border-bottom: solid 6px #82d2f9;
-  display: none;
-  height: 10vh;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  margin: auto;
-  justify-content: center;
-  background-color: #f7f7f7;
-  z-index: 999;
-}
-
-.mobile-menu {
-  color: #111111;
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1800px;
-}
-
-.menu a {
-  text-align: center;
-  padding: 10px;
-  color: #111;
-  font-weight: 900;
-  font-size: 20px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  height: 100%;
-  letter-spacing: 1.5px;
-}
-
-.menu a:hover {
-  color: #454545;
-  transition: .15s ease-in-out;
-}
-
-.menu img {
-  height: calc(10vh - 20px);
-  padding: 10px;
-}
-
-.menu img:hover {
-  opacity: 65%;
-  transition: all .1s ease-in-out;
-}
-
-.logo {
-  display: none;
-}
-
-.blue:hover {
-  transition: .15s ease-in-out;
-  text-shadow: 0px 0px 1.5px #8fcff9;
-}
-
-.orange:hover {
-  transition: .15s ease-in-out;
-  text-shadow: 0px 0px 1.5px #ff7d01;
-}
-
-.green:hover {
-  transition: .15s ease-in-out;
-  text-shadow: 0px 0px 1.5px #2dc22d;
-}
-
-.purple:hover {
-  transition: .15s ease-in-out;
-  text-shadow: 0px 0px 1.5px #ad11dd;
 }
 
 .about-column {
@@ -265,6 +167,26 @@ header {
   animation-name: changeColor;
   animation-iteration-count: infinite;
   animation-duration: 20s;
+}
+
+.about-section {
+	display: inline-block;
+}
+
+#menu-1 {
+	color: #111;
+}
+
+#menu-2 {
+	color: #111;
+}
+
+#menu-3 {
+	color: #111;
+}
+
+.about-active {
+	color: #FF7200;	
 }
 
 @keyframes changeColor {
