@@ -147,8 +147,8 @@ header {
 }
 
 .colorchange-text h1 {
-  font-size: 150px;
-  line-height: 8.75rem;
+  font-size: 130px !important;
+  line-height: 125px !important;
   margin: 0;
   padding-bottom: 5px;
   text-align: left;
@@ -469,7 +469,8 @@ hr {
 
   .colorchange-text h1 {
     max-width: 100%;
-    font-size: 75px;
+    font-size: 75px  !important;
+    line-height: 80px !important;
   }
 
   header {
@@ -507,8 +508,8 @@ hr {
   }
 
   .section-text-wrapper h1 {
-    font-size: 3.75em;
-    line-height: 3.75rem;
+    font-size: 2.25em;
+    line-height: 2.75rem;
     text-align: center;
     padding-bottom: 15px;
     width: auto;
