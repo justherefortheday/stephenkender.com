@@ -24,12 +24,6 @@
 </head>
 
 <body>
-  <style>
-    ul {
-      list-style-type: circle;
-      padding-left: 0;
-    }
-  </style>
 
   <a id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
@@ -311,7 +305,7 @@
   <script>
     // ===== Scroll to Top ==== 
     $(window).scroll(function () {
-            if (($(this).scrollTop() >= 500) && (screen.width > 992)) {
+            if (($(this).scrollTop() >= 500) && (screen.width > 1300)) {
               $('#menu-js').css("display", "flex");
             } else {
               $('#menu-js').css("display", "none");
@@ -322,7 +316,7 @@
 <script>
   // ===== Scroll to Top ==== 
   $(window).scroll(function () {
-          if (($(this).scrollTop() >= 500) && (screen.width <= 992)) {
+          if (($(this).scrollTop() >= 500) && (screen.width <= 1300)) {
             $('.mobile-menu-container').css("display", "flex");
           } else {
             $('.mobile-menu-container').css("display", "none");
