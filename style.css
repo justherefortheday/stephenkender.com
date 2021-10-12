@@ -94,17 +94,6 @@ p {
   font-size: 25px;
 }
 
-header {
-  min-height: 90vh;
-  display: flex;
-  flex-flow: column;
-  /*padding-top: 10vh;*/
-  justify-content: center;
-  align-items: center;
-  max-width: 1800px;
-  margin: auto;
-}
-
 .about-column {
   width: 30%;
   height: 100vh;
@@ -407,7 +396,7 @@ hr {
   .about-column {
     width: 100%;
     height: auto;
-    padding: 50px 0 150px 0;
+    padding: 35px 0 150px 0;
     position: static;
     display: flex;
     margin: auto;
@@ -425,7 +414,7 @@ hr {
 
   #logo-img {
     width: 69%;
-    margin: 25px auto 50px auto;
+    margin: 25px auto 35px auto;
   }
 
   #about {
@@ -447,18 +436,16 @@ hr {
     font-size: 17px;
   }
 
-  .menu-container {
-    display: none;
+  #menu-1 {
+    color: #FF7200 !important;	
   }
-
-  .menu {
-    display: none;
+  
+  #menu-2 {
+    color: #00C84D !important;	
   }
-
-  .profile {
-    width: 90%;
-    margin: 0;
-    flex-flow: column;
+  
+  #menu-3 {
+    color: #2EB4FF !important;	
   }
 
   .profile-pic {
