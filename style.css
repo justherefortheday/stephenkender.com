@@ -407,7 +407,7 @@ hr {
   .about-column {
     width: 100%;
     height: auto;
-    padding: 115px 0 150px 0;
+    padding: 50px 0 150px 0;
     position: static;
     display: flex;
     margin: auto;
@@ -424,8 +424,8 @@ hr {
   }
 
   #logo-img {
-    width: 80%;
-    margin: 25px auto 75px auto;
+    width: 69%;
+    margin: 25px auto 50px auto;
   }
 
   #about {
