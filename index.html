@@ -302,40 +302,17 @@
     });
   </script>
 
-  <script>
-    // ===== Scroll to Top ==== 
-    $(window).scroll(function () {
-            if (($(this).scrollTop() >= 500) && (screen.width > 1300)) {
-              $('#menu-js').css("display", "flex");
-            } else {
-              $('#menu-js').css("display", "none");
-            }
-          });
-  </script>
-
-<script>
-  // ===== Scroll to Top ==== 
-  $(window).scroll(function () {
-          if (($(this).scrollTop() >= 500) && (screen.width <= 1300)) {
-            $('.mobile-menu-container').css("display", "flex");
-          } else {
-            $('.mobile-menu-container').css("display", "none");
-          }
-        });
-</script>
-
 <script>
 	$(document).ready(function() {
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop();
     
-	  var pageTop = $("#about").offset().top;
     var page1Top = $("#photography").offset().top;
     var page2Top = $("#design").offset().top;
     var page3Top = $("#3d").offset().top;
 	  var footer = $(".footer").offset().top;
 	  
-	 if (scrollPos >= pageTop) {
+	 if ($(window).scrollTop() < 1200) {
       $("#menu-1").addClass("orange-active");
       $("#menu-2").addClass("green-active");
       $("#menu-3").addClass("blue-active");
