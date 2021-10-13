@@ -335,7 +335,7 @@
     var page3Top = $("#3d").offset().top;
 	  var footer = $(".footer").offset().top;
 	  
-	 if (scrollPos < page1Top) {
+	 if (scrollPos >= pageTop) {
       $("#menu-1").addClass("orange-active");
       $("#menu-2").addClass("green-active");
       $("#menu-3").addClass("blue-active");
