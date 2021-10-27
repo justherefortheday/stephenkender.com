@@ -32,7 +32,10 @@
       <div class="profile-pic">
         <img src="https://stephenkender.com/img/photo-1.jpg" title="hey there" alt="hey there"></div>
         <img id="logo-img" src="https://stephenkender.com/img/logo.png">
-          <h2 style="width: 85%">i do <a id="menu-1" class="about-section" href="#photography">photography</a>, <a id="menu-2" class="about-section" href="#design">graphic design</a>, and <a id="menu-3" href="#3d" class="about-section">3d design</a></h2>
+          <h2 style="width: 93%">i do 
+			  <span><a id="menu-1" class="about-section" href="#photography">photography</a>,</span> 
+			  <span><a id="menu-2" class="about-section" href="#design">graphic design</a>,</span> 
+			  <span> and <a id="menu-3" href="#3d" class="about-section">3d design</a></span></h2>
             <br>
 		</div></div>
 	<section id="about">
@@ -313,7 +316,7 @@
     var page3Top = $("#3d").offset().top;
 	  var footer = $(".footer").offset().top;
 	  
-	if (scrollPos >= pageTop && scrollPos < page1Top) {
+	if (scrollPos >= pageTop) {
       $("#menu-1").removeClass("black-inactive");
       $("#menu-2").removeClass("black-inactive");
       $("#menu-3").removeClass("black-inactive");
