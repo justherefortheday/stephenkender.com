@@ -17,14 +17,14 @@ Welcome to my attempt at a stylesheet! Let's see what I can do with this boy.
 
 @font-face {
   font-family: Poppins;
-  src: url('https://stephenkender.com/fonts/Poppins-Medium.ttf');
+  src: url('https://stephenkender.com/fonts/Poppins-Medium.ttf') format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: Poppins;
-  src: url('https://stephenkender.com/fonts/Poppins-ExtraBold');
+  src: url('https://stephenkender.com/fonts/Poppins-ExtraBold') format("truetype");
   font-weight: 600;
   font-style: normal;
 }
