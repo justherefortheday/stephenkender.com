@@ -79,11 +79,9 @@ h1 {
 h2 {
   font-size: 2.4vw;
   color: #111111;
-  padding: 115px 10px 0px 10px;
+  padding: 4vh 10px 0px 10px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-	text-overflow: clip;
-	overflow: hidden;
 	line-height: 120%;
 }
 
@@ -143,7 +141,6 @@ p {
   width: 90%;
   height: 75%;
   display: flex;
-  text-align: left;
   justify-content: center;
   align-items: center;
   border: 45px #ffeb0d solid;
@@ -428,7 +425,7 @@ hr {
   .about-column {
     width: 100%;
     height: auto;
-    padding: 35px 0 150px 0;
+    padding: 60px 0 150px 0;
     position: static;
     display: flex;
     margin: auto;
@@ -450,7 +447,7 @@ hr {
   }
 
   #about {
-    padding-top: 150px;
+    padding-top: 0px;
     height: 650px;
   }
 
@@ -460,7 +457,7 @@ hr {
   }
 
   h2 {
-    font-size: 250%;
+    font-size: 10vw;
   }
 
   p {
@@ -469,11 +466,11 @@ hr {
   }
 
   #menu-1 {
-    color: #FF7200 !important;	
+    color: #ff6540 !important;	
   }
   
   #menu-2 {
-    color: #00C84D !important;	
+    color: #275fff !important;	
   }
   
   #menu-3 {
@@ -490,6 +487,26 @@ hr {
     width: auto;
     height: auto;
   }
+	
+.intro-section-wrapper {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: none;
+}
+
+.intro-section-text {
+    max-width: 80%;
+	margin: auto;
+}
+
+.intro-section-text p{
+margin: auto 0;
+}
+
+.intro-section-text h1 {
+  font-size: 10vw !important;
+}
 
   .colorchange-text h1 {
     max-width: 100%;
@@ -504,15 +521,15 @@ hr {
 
   section {
     width: 100%;
-    margin: 0 auto 0 auto;
+    margin: 100px auto;
     display: block;
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
 
   .section-media {
     width: 100%;
-    min-height: 45vh;
+    min-height: 25vh;
     height: auto;
   }
 
@@ -532,10 +549,10 @@ hr {
   }
 
   .section-text-wrapper h1 {
-    font-size: 2.25em;
-    line-height: 2.75rem;
+    font-size: 7vw;
+    line-height: 120%;
     text-align: center;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     width: auto;
   }
 
