@@ -32,7 +32,7 @@
       <div class="profile-pic">
         <img src="https://stephenkender.com/img/photo-1.jpg" title="hey there" alt="hey there"></div>
         <img id="logo-img" src="https://stephenkender.com/img/logo.png">
-          <h2 style="width: 85%">i do <a id="menu-1" class="about-section orange-active" href="#photography">photography</a>, <a id="menu-2" class="about-section blue-active" href="#design">graphic design</a>, and <a id="menu-3" href="#3d" class="about-section yellow-active">3d design</a></h2>
+          <h2 style="width: 85%">i do <a id="menu-1" class="about-section" href="#photography">photography</a>, <a id="menu-2" class="about-section" href="#design">graphic design</a>, and <a id="menu-3" href="#3d" class="about-section">3d design</a></h2>
             <br>
 		</div></div>
 	<section id="about">
@@ -307,45 +307,46 @@
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop();
     
+	var pageTop = $("body").offset().top;  
     var page1Top = $("#photography").offset().top;
     var page2Top = $("#design").offset().top;
     var page3Top = $("#3d").offset().top;
 	  var footer = $(".footer").offset().top;
 	  
-	 if (scrollPos >= 0 && scrollPos < page1Top) {
-      $("#menu-1").addClass("orange-active");
-      $("#menu-2").addClass("blue-active");
-      $("#menu-3").addClass("yellow-active");
-    } 
+	if (scrollPos >= pageTop && scrollPos < page1Top) {
+      $("#menu-1").removeClass("black-inactive");
+      $("#menu-2").removeClass("black-inactive");
+      $("#menu-3").removeClass("black-inactive");
+    }
 
     if (scrollPos >= page1Top && scrollPos < page2Top) {
-      $("#menu-1").addClass("orange-active");
-      $("#menu-2").removeClass("blue-active");
-      $("#menu-3").removeClass("yellow-active");
+      $("#menu-1").removeClass("black-inactive");
+      $("#menu-2").addClass("black-inactive");
+      $("#menu-3").addClass("black-inactive");
     } else {
-      $("#menu-1").removeClass("orange-active");
+      $("#menu-1").addClass("black-inactive");
     }
 
     if (scrollPos >= page2Top && scrollPos < page3Top) {
-      $("#menu-2").addClass("blue-active");
-      $("#menu-1").removeClass("orange-active");
-      $("#menu-3").removeClass("yellow-active");
+      $("#menu-2").removeClass("black-inactive");
+      $("#menu-1").addClass("black-inactive");
+      $("#menu-3").addClass("black-inactive");
     } else {
-      $("#menu-2").removeClass("blue-active");
+      $("#menu-2").addClass("black-inactive");
     }
     
     if (scrollPos >= page3Top && scrollPos < footer) {
-      $("#menu-3").addClass("yellow-active");
-      $("#menu-1").removeClass("orange-active");
-      $("#menu-2").removeClass("blue-active");
+      $("#menu-3").removeClass("black-inactive");
+      $("#menu-1").addClass("black-inactive");
+      $("#menu-2").addClass("black-inactive");
     } else {
-      $("#menu-3").removeClass("yellow-active");
+      $("#menu-3").addClass("black-inactive");
     }
 	  
 	  	 if (scrollPos >= footer) {
-      $("#menu-1").removeClass("orange-active");
-      $("#menu-2").removeClass("blue-active");
-      $("#menu-3").removeClass("yellow-active");
+      $("#menu-1").addClass("black-inactive");
+      $("#menu-2").addClass("black-inactive");
+      $("#menu-3").addClass("black-inactive");
     } 
 
   });
