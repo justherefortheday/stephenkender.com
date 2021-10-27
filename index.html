@@ -32,7 +32,7 @@
       <div class="profile-pic">
         <img src="https://stephenkender.com/img/photo-1.jpg" title="hey there" alt="hey there"></div>
         <img id="logo-img" src="https://stephenkender.com/img/logo.png">
-          <h2 style="width: 85%">i do <a id="menu-1" class="about-section" href="#photography">photography</a>, <a id="menu-2" class="about-section" href="#design">graphic design</a>, and <a id="menu-3" href="#3d" class="about-section">3d design</a></h2>
+          <h2 style="width: 85%">i do <a id="menu-1" class="about-section orange-active" href="#photography">photography</a>, <a id="menu-2" class="about-section blue-active" href="#design">graphic design</a>, and <a id="menu-3" href="#3d" class="about-section yellow-active">3d design</a></h2>
             <br>
 		</div></div>
 	<section id="about">
@@ -110,7 +110,7 @@
     </div>
     <div class="section-text">
       <div class="section-text-wrapper">
-        <h1><span style="color: #ff7d01">PHOTO</span>GRAPHY</h1>
+        <h1><span style="color: #ff6540">PHOTO</span>GRAPHY</h1>
         <br>
         <p>I like photography. Do with that what you will.
           <br>
@@ -177,7 +177,7 @@
     <div class="section-text">
       
       <div class="section-text-wrapper">
-        <h1>GRAPHIC <span style="color: #2dc22d">DESIGN</span> TOO</h1>
+        <h1>GRAPHIC <span style="color: #275fff">DESIGN</span> TOO</h1>
         <br>
         <p>I've designed a bunch of crap and have done a poor job keeping track of it all but here's a few logos/wedding
           things/other aforementioned crap.</p>
@@ -213,7 +213,7 @@
     </div>
     <div class="section-text">
       <div class="section-text-wrapper">
-        <h1><span style="color: #2EB4FF">3D</span> DESIGN I DO ALSO</h1>
+        <h1><span style="color: #ffeb0d">3D</span> DESIGN I DO ALSO</h1>
         <br>
         <p>My job is to be an engineer and make stuff in 3d.
           I like it enough that I'd like to do it in my free time, but CAD licenses are expensive and I'm just sticking
@@ -314,38 +314,38 @@
 	  
 	 if (scrollPos >= 0 && scrollPos < page1Top) {
       $("#menu-1").addClass("orange-active");
-      $("#menu-2").addClass("green-active");
-      $("#menu-3").addClass("blue-active");
+      $("#menu-2").addClass("blue-active");
+      $("#menu-3").addClass("yellow-active");
     } 
 
     if (scrollPos >= page1Top && scrollPos < page2Top) {
       $("#menu-1").addClass("orange-active");
-      $("#menu-2").removeClass("green-active");
-      $("#menu-3").removeClass("blue-active");
+      $("#menu-2").removeClass("blue-active");
+      $("#menu-3").removeClass("yellow-active");
     } else {
       $("#menu-1").removeClass("orange-active");
     }
 
     if (scrollPos >= page2Top && scrollPos < page3Top) {
-      $("#menu-2").addClass("green-active");
+      $("#menu-2").addClass("blue-active");
       $("#menu-1").removeClass("orange-active");
-      $("#menu-3").removeClass("blue-active");
+      $("#menu-3").removeClass("yellow-active");
     } else {
-      $("#menu-2").removeClass("green-active");
+      $("#menu-2").removeClass("blue-active");
     }
     
     if (scrollPos >= page3Top && scrollPos < footer) {
-      $("#menu-3").addClass("blue-active");
+      $("#menu-3").addClass("yellow-active");
       $("#menu-1").removeClass("orange-active");
-      $("#menu-2").removeClass("green-active");
+      $("#menu-2").removeClass("blue-active");
     } else {
-      $("#menu-3").removeClass("blue-active");
+      $("#menu-3").removeClass("yellow-active");
     }
 	  
 	  	 if (scrollPos >= footer) {
       $("#menu-1").removeClass("orange-active");
-      $("#menu-2").removeClass("green-active");
-      $("#menu-3").removeClass("blue-active");
+      $("#menu-2").removeClass("blue-active");
+      $("#menu-3").removeClass("yellow-active");
     } 
 
   });
