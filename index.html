@@ -311,13 +311,12 @@
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop();
     
-	var pageTop = $("body").offset().top;  
     var page1Top = $("#photography").offset().top;
     var page2Top = $("#design").offset().top;
     var page3Top = $("#3d").offset().top;
 	  var footer = $(".footer").offset().top;
 	  
-	if (scrollPos >= pageTop) {
+	if (scrollPos < page1Top ) {
       $("#menu-1").removeClass("black-inactive");
       $("#menu-2").removeClass("black-inactive");
       $("#menu-3").removeClass("black-inactive");
@@ -327,30 +326,23 @@
       $("#menu-1").removeClass("black-inactive");
       $("#menu-2").addClass("black-inactive");
       $("#menu-3").addClass("black-inactive");
-    } else {
-      $("#menu-1").addClass("black-inactive");
-    }
+    } 
 
     if (scrollPos >= page2Top && scrollPos < page3Top) {
       $("#menu-2").removeClass("black-inactive");
       $("#menu-1").addClass("black-inactive");
       $("#menu-3").addClass("black-inactive");
-    } else {
-      $("#menu-2").addClass("black-inactive");
     }
-    
     if (scrollPos >= page3Top && scrollPos < footer) {
       $("#menu-3").removeClass("black-inactive");
       $("#menu-1").addClass("black-inactive");
       $("#menu-2").addClass("black-inactive");
-    } else {
-      $("#menu-3").addClass("black-inactive");
-    }
+    } 
 	  
-	  	 if (scrollPos >= footer) {
-      $("#menu-1").addClass("black-inactive");
-      $("#menu-2").addClass("black-inactive");
-      $("#menu-3").addClass("black-inactive");
+	if (scrollPos >= footer) {
+      $("#menu-1").removeClass("black-inactive");
+      $("#menu-2").removeClass("black-inactive");
+      $("#menu-3").removeClass("black-inactive");
     } 
 
   });

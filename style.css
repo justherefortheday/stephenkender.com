@@ -138,8 +138,8 @@ p {
 }
 
 .intro-section-wrapper {
-  width: 90%;
-  height: 75%;
+  width: 75%;
+  height: 69%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -149,7 +149,7 @@ p {
 
 .intro-section-text {
     max-width: 100%;
-	margin: 85px;
+	margin: 50px;
 	display: flex;
 	justify-content: center;
     align-items: center;
@@ -165,7 +165,7 @@ p {
 }
 
 .intro-section-text h1 {
-  font-size: 7vw !important;
+  font-size: 6vw !important;
   line-height: 120% !important;
   margin: 0;
   padding-bottom: 15px;
@@ -402,7 +402,6 @@ hr {
 
 .slick-track {
   height: 500px;
-  ;
 }
 
 .slick-slide img {
@@ -474,7 +473,7 @@ hr {
   }
   
   #menu-3 {
-    color: #2EB4FF !important;	
+    color: #ffeb0d !important;	
   }
 
   .profile-pic {
