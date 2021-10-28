@@ -143,7 +143,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 45px #ffeb0d solid;
+  border: 45px #19cfff solid;
   border-radius: 69px;
 }
 
@@ -182,7 +182,8 @@ p {
 
 .menu-text {
 	display: inline-block;
-	transition: all 0.3s ease;
+	text-decoration: underline wavy 3px;
+	transitions: all .3s ease;
 }
 
 #menu-1 {
@@ -202,6 +203,7 @@ p {
 
 .black-inactive {
 	color: #111 !important;	
+	text-transform: none !important;
     transition: all 0.3s ease;
 }
 
