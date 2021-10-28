@@ -202,8 +202,7 @@ p {
 
 .black-inactive {
 	color: #111 !important;	
-	background: #fafafa;
-	  transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 @keyframes changeColor {
