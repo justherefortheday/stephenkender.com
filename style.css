@@ -182,22 +182,24 @@ p {
 
 .menu-text {
 	display: inline-block;
-	text-decoration: underline wavy 3px;
-	transitions: all .3s ease;
+	transition: all .3s ease;
 }
 
 #menu-1 {
 	color: #ff6540;
+  text-decoration: underline wavy 3px;
 	transition: all 0.3s ease;
 }
 
 #menu-2 {
 	color: #275fff;
+  text-decoration: underline wavy 3px;
 	transition: all 0.3s ease;
 }
 
 #menu-3 {
 	color: #ffeb0d;
+  text-decoration: underline wavy 3px;
 	transition: all 0.3s ease;
 }
 
@@ -501,11 +503,13 @@ hr {
 }
 
 .intro-section-text p{
+  font-size: 20px;
 margin: auto 0;
+padding-bottom: 25px;
 }
 
 .intro-section-text h1 {
-  font-size: 10vw !important;
+  font-size: 11vw !important;
 }
 
   .colorchange-text h1 {
@@ -549,7 +553,7 @@ margin: auto 0;
   }
 
   .section-text-wrapper h1 {
-    font-size: 7vw;
+    font-size: 8vw;
     line-height: 120%;
     text-align: center;
     padding-bottom: 30px;
