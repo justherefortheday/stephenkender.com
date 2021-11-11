@@ -94,6 +94,10 @@ p {
   font-family: 'Avenir', sans-serif;
   font-size: 25px;
 }
+#about  {
+  height: 100vh;
+  padding: 0 !important;
+}
 
 .about-column {
   width: 30%;
@@ -321,7 +325,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
 }
 
 section:nth-of-type(even) {
@@ -330,7 +334,7 @@ section:nth-of-type(even) {
 
 .section-media {
   width: 50%;
-  height: 100vh;
+  height: auto;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -344,11 +348,12 @@ section:nth-of-type(even) {
 
 .section-text {
   width: 50%;
-  height: 100vh;
+  height: auto;
   display: flex;
   text-align: left;
   justify-content: center;
   align-items: center;
+  padding: 200px 0;
 }
 
 .section-text-wrapper {
@@ -383,10 +388,11 @@ hr {
   margin: 0 0 0 30%;
   text-align: center;
   padding-bottom: 80px;
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-flow: column;
   justify-content: center;
+  padding-top: 120px;
 }
 
 .single-item p {
