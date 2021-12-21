@@ -147,8 +147,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 45px #19cfff solid;
-  border-radius: 69px;
 }
 
 .intro-section-text {
@@ -496,8 +494,6 @@ hr {
 .intro-section-wrapper {
   width: 100%;
   height: auto;
-  border: none;
-  border-radius: none;
 }
 
 .intro-section-text {
