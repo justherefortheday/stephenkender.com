@@ -94,6 +94,45 @@ p {
   font-family: 'Avenir', sans-serif;
   font-size: 25px;
 }
+
+/* HEY HERES WHERE THE TEST STUFF STARTS*/
+
+.boxes {
+	width: 90%;
+	max-width: 1080px;
+	height: 300px;
+	display: block;
+	margin: auto;
+}
+
+#box-1 {
+	background-color: #4A5B3B;
+	color: #F9B53C;
+}
+
+#box-2 {
+	background-color: #F45C3A;
+	color: #1E2B48;	
+}
+
+#box-3 {
+	background-color: #927161;
+	color: #F1E8DB;
+}
+
+#box-4 {
+	background-color: #D09F6C;
+	color: #222;
+}
+
+
+
+
+
+
+
+/* HEY HERES WHERE THE TEST STUFF ENDS*/
+
 #about  {
   height: 100vh;
   padding: 0 !important;
