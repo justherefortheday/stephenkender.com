@@ -67,9 +67,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 250%;
-  color: #111111;
-  text-align: center;
+  font-size: 48px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   line-height: 1.15em;
@@ -78,7 +76,6 @@ h1 {
 
 h2 {
   font-size: 2.4vw;
-  color: #111111;
   padding: 4vh 10px 0px 10px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -87,9 +84,6 @@ h2 {
 
 p {
   width: 50%;
-  color: #454545;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0px 10px 0px 10px;
   font-family: 'Avenir', sans-serif;
   font-size: 25px;
@@ -98,16 +92,49 @@ p {
 /* HEY HERES WHERE THE TEST STUFF STARTS*/
 
 .boxes {
-	width: 90%;
-	max-width: 1080px;
-	height: 300px;
+    width: 90%;
+    max-width: 1080px;
+    height: 400px;
+    display: flex;
+    margin: 40px auto 40px auto;
+	text-align: left;
+	box-shadow: 1px 1px 6px 2px #33333355;
+}
+
+.box-text {
+	width: 60%;
 	display: block;
-	margin: auto;
+	text-align: left;
+	margin-left: 5%;
+}
+
+.box-img {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	object-fit: contain;
+	overflow: hidden;
+	transition: all 0.3s ease;
+
+}
+
+.box-img:hover {
+	width: 50%;
+	transition: all 0.3s ease;
+}
+
+.box-img img{
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
 }
 
 #box-1 {
-	background-color: #4A5B3B;
-	color: #F9B53C;
+    background-color: #4A5B3B;
+    color: #F9B53C;
+    font-size: 36px;
 }
 
 #box-2 {
