@@ -1,3 +1,4 @@
+@import url("../webfonts/Axiforma_Black/stylesheet.css");
 /*
 Welcome to my attempt at a stylesheet! Let's see what I can do with this boy.
 */
@@ -33,16 +34,40 @@ Welcome to my attempt at a stylesheet! Let's see what I can do with this boy.
   font-display: swap;
 }
 
+@font-face {
+font-family: dejanire-headline, serif;
+font-weight: 900;
+font-style: normal;
+}
+
+@font-face {
+font-family: pedestria-mvb, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+@font-face {
+font-family: freight-big-pro, serif;
+font-weight: 900;
+font-style: normal;
+}@font-face {
+font-family: freight-display-pro, serif;
+font-weight: 900;
+font-style: normal;
+}
+
+
+
+
 html {
-  background: #fafafa;
+  background: #393F4D;
   -webkit-font-smoothing: antialiased;
   text-align: left;
 }
 
 body {
-  margin: 0px;
-  font-family: 'Avenir', sans-serif;
-  font-weight: 400;
+    margin: 0px;
+    font-family: "Axiforma Black";
+    font-weight: 400;
 }
 
 a {
@@ -67,10 +92,9 @@ a:hover {
 }
 
 h1 {
-  font-size: 250%;
-  color: #111111;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-size: 58px;
+font-family: freight-display-pro, serif;
+	letter-spacing: 110%;
   font-weight: 600;
   line-height: 1.15em;
   padding: 0px 10px 0px 10px;
@@ -78,7 +102,6 @@ h1 {
 
 h2 {
   font-size: 2.4vw;
-  color: #111111;
   padding: 4vh 10px 0px 10px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -86,14 +109,84 @@ h2 {
 }
 
 p {
-  width: 50%;
-  color: #454545;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0px 10px 0px 10px;
-  font-family: 'Avenir', sans-serif;
+  font-family: pedestria-mvb, sans-serif;
   font-size: 25px;
 }
+
+/* HEY HERES WHERE THE TEST STUFF STARTS*/
+
+.boxes {
+    width: 90%;
+    max-width: 1080px;
+    height: 400px;
+    display: flex;
+    margin: 40px auto 40px auto;
+	text-align: left;
+	box-shadow: 1px 1px 6px 2px #4445;
+	border-radius: 35px;
+}
+
+.box-text {
+	width: 60%;
+	display: block;
+	text-align: left;
+	margin-left: 5%;
+}
+
+.box-img {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	object-fit: contain;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	border-radius: 35px;
+}
+
+.box-img:hover {
+	width: 50%;
+	transition: all 0.3s ease;
+}
+
+.box-img img{
+	height: 150%;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+#box-1 {
+    background-color: #4A5B3B;
+    color: #F9B53C;
+    font-size: 36px;
+}
+
+#box-2 {
+	background-color: #F45C3A;
+	color: #1E2B48;	
+}
+
+#box-3 {
+	background-color: #927161;
+	color: #F1E8DB;
+}
+
+#box-4 {
+	background-color: #D09F6C;
+	color: #222;
+}
+
+
+
+
+
+
+
+/* HEY HERES WHERE THE TEST STUFF ENDS*/
+
 #about  {
   height: 100vh;
   padding: 0 !important;
@@ -136,9 +229,8 @@ p {
 }
 
 #logo-img {
-  width: 100%;
-  max-width: 500px;
-  margin: 25px auto 10px auto;
+  width: 30%;
+  margin: 35px 35% 35px 35%;
 }
 
 .intro-section-wrapper {
@@ -383,7 +475,7 @@ hr {
 
 .footer {
 	width: 70%;
-  margin: 0 0 0 30%;
+  margin: 0 15% 0 15%;
   text-align: center;
   padding-bottom: 80px;
   height: auto;
@@ -444,29 +536,13 @@ hr {
     flex-flow: column;
   }
 
-  #logo-img {
-    width: 69%;
-    margin: 25px auto 35px auto;
-  }
 
   #about {
     padding-top: 0px;
     height: 650px;
   }
 
-  h1 {
-    font-size: 225%;
-    padding: 0px 10px 0px 10px;
-  }
 
-  h2 {
-    font-size: 10vw;
-  }
-
-  p {
-    width: 90%;
-    font-size: 17px;
-  }
 
   #menu-1 {
     color: #ff6540 !important;	
