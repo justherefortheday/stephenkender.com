@@ -145,7 +145,10 @@ p {
 	overflow: hidden;
 	transition: all 0.3s ease;
 	border-radius: 35px;
-}
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	  }
 
 .box-img:hover {
 	width: 50%;
@@ -157,6 +160,19 @@ p {
 	object-fit: cover;
 	overflow: hidden;
 }
+	  
+	  #box-img-1 {
+		  background-image: url('https://stephenkender.com/img/box-1.jpg')
+	  }  
+	  #box-img-2 {
+		  background-image: url('https://stephenkender.com/img/box-2.jpg')
+	  } 
+	  #box-img-3 {
+		  background-image: url('https://stephenkender.com/img/box-3.jpg')
+	  }  
+	  #box-img-4 {
+		  background-image: url('https://stephenkender.com/img/box-4.jpg')
+	  }  
 
 #box-1 {
     background-color: #4A5B3B;
@@ -527,7 +543,7 @@ hr {
 }
 
 .box-text {
-	width: 100%;
+	width: 90%;
 	min-height: 60%;
 	display: block;
 	text-align: left;
@@ -545,7 +561,7 @@ hr {
 }
 
 .box-img:hover {
-height: 40%;
+	height: 40%;
 	width: 100%;
 }
 
@@ -559,6 +575,10 @@ height: 40%;
   width: 50%;
   margin: 35px 25% 35px 25%;
 }
+	
+	h1 {
+		font-size: 48px;
+	}
 
 /* HEY HERES WHERE THE TEST STUFF ENDS*/
 
