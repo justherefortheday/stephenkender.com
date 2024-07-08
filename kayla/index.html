@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="How long can we make the website descripti" />
+    <link rel="stylesheet" type="text/css" href="styletest.css">
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 1px;
+            box-sizing: content-box;
+        }
+
+        html {
+            background: #222;
+            -webkit-font-smoothing: antialiased;
+            text-align: left;
+        }
+
+        body {
+            height: 100vh;
+            color: #33ff33;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: top;
+        }
+
+        .container {
+            position: relative;
+            display: inline-block;
+            width: 500px;
+        }
+
+        .text,
+        .text2 {
+            font-family: 'Courier New', monospace;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 2px;
+            width: auto;
+            /* Added margin for spacing between text lines */
+        }
+
+        .text_hide,
+        .text_hide2 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #222;
+            width: auto;
+        }
+
+        .text_cursor,
+        .text_cursor2 {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: transparent;
+            border-left: 3px solid #33ff33;
+            width: auto;
+        }
+    </style>
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+    <div class="container">
+        <div class="text_hide"></div>
+        <div class="text">Welcome to your first test, Kayla.</div>
+        <div class="text_cursor"></div>
+    </div>
+    </br>
+    <div class="container">
+        <div class="text_hide2"></div>
+        <div class="text2">There are no wrong answers.</div>
+        <div class="text_cursor2"></div>
+    </div>
+
+
+</body>
+
+<script>
+    // Function to animate typing effect for a text element
+    function animateTyping(textElement, hideElement, cursorElement) {
+        let text_array = textElement.innerHTML.split("");
+        let text_array_slice = textElement.innerHTML.split(" ");
+        let text_len = text_array.length;
+
+        const word_len = text_array_slice.map((word) => {
+            return word.length;
+        });
+
+        console.log(word_len);
+
+        let timings = {
+            easing: `steps(${Number(word_len[0] + 1)}, end)`,
+            delay: 300,
+            duration: 600,
+            fill: 'forwards'
+        };
+
+        let cursor_timings = {
+            duration: 600,
+            iterations: Infinity,
+            easing: 'cubic-bezier(0,.26,.44,.93)'
+        };
+
+        cursorElement.animate([{
+                opacity: 0
+            },
+            {
+                opacity: 0,
+                offset: 0.7
+            },
+            {
+                opacity: 1
+            }
+        ], cursor_timings);
+
+        if (text_array_slice.length == 1) {
+            timings.easing = `steps(${Number(word_len[0])}, end)`;
+
+            hideElement.animate([{
+                    left: '0%'
+                },
+                {
+                    left: `${(100 / text_len) * (word_len[0])}%`
+                }
+            ], timings);
+
+            cursorElement.animate([{
+                    left: '0%'
+                },
+                {
+                    left: `${(100 / text_len) * (word_len[0])}%`
+                }
+            ], timings);
+        } else {
+            hideElement.animate([{
+                    left: '0%'
+                },
+                {
+                    left: `${(100 / text_len) * (word_len[0] + 1)}%`
+                }
+            ], timings);
+
+            cursorElement.animate([{
+                    left: '0%'
+                },
+                {
+                    left: `${(100 / text_len) * (word_len[0] + 1)}%`
+                }
+            ], timings);
+        }
+
+        let left_instance = 0;
+
+        for (let i = 1; i < text_array_slice.length; i++) {
+            const single_word_len = word_len[i];
+            console.log(single_word_len);
+
+            if (i == 1) {
+                left_instance = (100 / text_len) * (word_len[i - 1] + 1);
+                console.log(left_instance);
+            }
+
+            let timings_2 = {
+                easing: `steps(${Number(single_word_len + 1)}, end)`,
+                delay: (2 * (i + 1) + (2 * i)) * (200),
+                duration: 600,
+                fill: 'forwards'
+            };
+
+            if (i == (text_array_slice.length - 1)) {
+                timings_2.easing = `steps(${Number(single_word_len)}, end)`;
+                hideElement.animate([{
+                        left: `${left_instance}%`
+                    },
+                    {
+                        left: `${left_instance + ((100 / text_len) * (word_len[i]))}%`
+                    }
+                ], timings_2);
+
+                cursorElement.animate([{
+                        left: `${left_instance}%`
+                    },
+                    {
+                        left: `${left_instance + ((100 / text_len) * (word_len[i]))}%`
+                    }
+                ], timings_2);
+            } else {
+                hideElement.animate([{
+                        left: `${left_instance}%`
+                    },
+                    {
+                        left: `${left_instance + ((100 / text_len) * (word_len[i] + 1))}%`
+                    }
+                ], timings_2);
+
+                cursorElement.animate([{
+                        left: `${left_instance}%`
+                    },
+                    {
+                        left: `${left_instance + ((100 / text_len) * (word_len[i] + 1))}%`
+                    }
+                ], timings_2);
+            }
+
+            left_instance = left_instance + ((100 / text_len) * (word_len[i] + 1));
+        }
+    }
+
+    // Run animation for first text
+    animateTyping(
+        document.querySelector(".text"),
+        document.querySelector(".text_hide"),
+        document.querySelector(".text_cursor")
+    );
+    function hideCursorOne() {
+        document.getElementsByClassName("text_cursor").style.display = "none"
+    }
+    // Run animation for second text after a delay
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text2"),
+            document.querySelector(".text_hide2"),
+            document.querySelector(".text_cursor2")
+        );
+        },5000); // Delay added to start the second animation after 5 seconds
+</script>
+
+
+</html>
