@@ -28,26 +28,30 @@
             flex-direction: column;
             justify-content: left;
             align-items: top;
+			font-family: 'Courier New', monospace;
+            text-shadow: 1px .5px 4px #3f3;			
         }
 
         .container {
             position: relative;
             display: inline-block;
-            width: 500px;
+            width: 450px;
         }
 
         .text,
-        .text2 {
-            font-family: 'Courier New', monospace;
-            font-size: 20px;
+        .text2,
+        .text3,
+        .text4 {
+            font-size: 16px;
             font-weight: 500;
-            margin-bottom: 2px;
+            margin-bottom: 1px;
             width: auto;
-            /* Added margin for spacing between text lines */
         }
 
         .text_hide,
-        .text_hide2 {
+        .text_hide2,
+        .text_hide3,
+        .text_hide4 {
             position: absolute;
             top: 0;
             bottom: 0;
@@ -58,7 +62,9 @@
         }
 
         .text_cursor,
-        .text_cursor2 {
+        .text_cursor2,
+        .text_cursor3,
+        .text_cursor4 {
             position: absolute;
             top: 0;
             bottom: 0;
@@ -68,6 +74,63 @@
             border-left: 3px solid #33ff33;
             width: auto;
         }
+		
+		.secret_password_box {
+			padding: 10px;
+			display: block;
+			width: auto;
+		}
+		
+		.password {
+			display: block;
+			opacity: 0;
+			transition: all .7s ease;
+		}
+		input {
+		  margin: 0.2rem 0;
+		  background-color: #3f3;
+		  border: none;
+		  border-radius: 1px;
+		  color: #222;
+		  font-family: Courier New;
+		  font-weight: 900;
+		  caret-color: transparent;
+		}
+
+		input:focus,
+		select:focus,
+		textarea:focus,
+		button:focus {
+			outline: none;
+		}
+
+		.cursor {
+			position: relative;
+			opacity: 0;
+			transition: all .7s ease;
+		}
+		.cursor i {
+			position: absolute;
+			width: 10px;
+			height: 70%;
+			background-color: #222;
+			left: 0px;
+			top: 10%;
+			animation-name: blink;
+			animation-duration: 800ms;
+			animation-iteration-count: infinite;
+			opacity: 1;
+		}
+
+		.cursor input:focus + i {
+			display: none;
+		}
+
+		@keyframes blink {
+			from { opacity: 1; }
+			to { opacity: 0; }
+		}
+		
     </style>
 
 
@@ -82,7 +145,7 @@
 
     <div class="container">
         <div class="text_hide"></div>
-        <div class="text">Welcome to your first test, Kayla.</div>
+        <div class="text">First test attempt let's see.</div>
         <div class="text_cursor"></div>
     </div>
     </br>
@@ -91,6 +154,24 @@
         <div class="text2">There are no wrong answers.</div>
         <div class="text_cursor2"></div>
     </div>
+    </br>
+    <div class="container">
+        <div class="text_hide3"></div>
+        <div class="text3">Here is your first clue.</div>
+        <div class="text_cursor3"></div>
+    </div>
+    </br>
+    <div class="container">
+        <div class="text_hide4"></div>
+        <div class="text4">What is a pirate's favorite letter?</div>
+        <div class="text_cursor4"></div>
+    </div>
+    </br>
+	<div class="cursor">
+	<input type="text" id="name" name="name" required minlength="4" maxlength="10"/>
+	  <i></i>
+	</div>
+		
 
 
 </body>
@@ -243,6 +324,32 @@
             document.querySelector(".text_cursor2")
         );
         },5000); // Delay added to start the second animation after 5 seconds
+		
+    // Run animation for third text after a delay
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text3"),
+            document.querySelector(".text_hide3"),
+            document.querySelector(".text_cursor3")
+        );
+        },10000); // Delay added to start the second animation after 5 seconds
+		
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text4"),
+            document.querySelector(".text_hide4"),
+            document.querySelector(".text_cursor4"),
+			);
+        },15000); // Delay added to start the second animation after 5 seconds
+		
+    setTimeout(function () {
+        animateTyping(
+			document.querySelector(".cursor").style.opacity = 1
+			);
+        },21000); // Delay added to start the second animation after 5 seconds
+		
+		
+
 </script>
 
 
