@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="styletest.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.5.6/jquery.smoothState.min.js" integrity="sha512-SKtzgfNYpXndILHPbGDJA3CwwqHeXdFS8YeP3R02N+OBHmbGm7O43mVsTviWi285EnmwBGFw0YjI1c7+hU2HNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.5.6/jquery.smoothState.min.js"
+        integrity="sha512-SKtzgfNYpXndILHPbGDJA3CwwqHeXdFS8YeP3R02N+OBHmbGm7O43mVsTviWi285EnmwBGFw0YjI1c7+hU2HNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script href="transition.js"></script>
 </head>
 
@@ -21,26 +23,26 @@
 <body>
 
     <!-- Home page -->
-<div class="m-scene" id="main">
-    <div class="m-header scene_element scene_element--fadein">
-          </div>
-    <div class="m-page scene_element scene_element--fadein">
+    <div class="m-scene" id="main">
+        <div class="m-header scene_element scene_element--fadein">
+        </div>
+        <div class="m-page scene_element scene_element--fadein">
+        </div>
     </div>
-  </div>
 
     <div class="container">
         <div class="text_hide"></div>
-        <div class="text">Welcome, Kayla.</div>
+        <div class="text">Again here we go.</div>
         <div class="text_cursor"></div>
     </div>
     <div class="container">
         <div class="text_hide2"></div>
-        <div class="text2">Bet you're wondering what the code is.</div>
+        <div class="text2">There are no wrong answers.</div>
         <div class="text_cursor2"></div>
     </div>
     <div class="container">
         <div class="text_hide3"></div>
-        <div class="text3">Answer these and you may just find out.</div>
+        <div class="text3">Here is your first clue.</div>
         <div class="text_cursor3"></div>
     </div>
     <div class="container">
@@ -49,8 +51,8 @@
         <div class="text_cursor4"></div>
     </div>
     <div class="cursor">
-        <form>
-            <input type="text" id="answer" name="answer" required/>
+        <form id="answerform">
+            <input type="text" id="answer" name="answer" required />
             <i class="blinky"></i>
             <button type="button" id="submitButton">
                 <i class="fa-solid fa-angles-right"></i>
@@ -284,7 +286,6 @@
         }
     });
 </script>
-
 
 
 </html>
