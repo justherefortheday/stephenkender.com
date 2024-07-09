@@ -240,10 +240,17 @@
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
 
-            if (answer === "o") {
+            if (answer === "r") {
                 window.location.href = 'index3.html'; // Replace with your actual URL
             } else {
                 displayErrorMessage("X"); // Display error message
+            }
+        });
+
+        // Add event listener for Enter key press
+        answerInput.addEventListener('keypress', function (e) {
+            if (e.keyCode === 13) {
+                submitButton.click(); // Simulate a click on the submit button
             }
         });
 
