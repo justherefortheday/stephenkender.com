@@ -24,10 +24,8 @@
 <!-- Detail page -->
 <div class="m-scene" id="main">
     <div class="m-aside scene_element scene_element--fadein">
-      ...
     </div>
     <div class="m-right-panel m-page scene_element scene_element--fadein">
-      ...
     </div>
   </div>
 
@@ -38,7 +36,7 @@
     </div>
     <div class="container">
         <div class="text_hide2"></div>
-        <div class="text2">There ARE wrong answers.</div>
+        <div class="text2">There ARE wrong answers now.</div>
         <div class="text_cursor2"></div>
     </div>
     <div class="container">
@@ -53,7 +51,7 @@
     </div>
     <div class="cursor">
         <form>
-            <input type="text" id="answer" name="answer" required minlength="1" maxlength="10" />
+            <input type="text" id="answer" name="answer" required/>
             <i class="blinky"></i>
             <button type="button" id="submitButton">
                 <i class="fa-solid fa-angles-right"></i>
@@ -242,7 +240,7 @@
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
 
-            if (answer === "oh") {
+            if (answer === "o") {
                 window.location.href = 'index3.html'; // Replace with your actual URL
             } else {
                 displayErrorMessage("X"); // Display error message
