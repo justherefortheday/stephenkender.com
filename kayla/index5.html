@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="styletest.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.5.6/jquery.smoothState.min.js" integrity="sha512-SKtzgfNYpXndILHPbGDJA3CwwqHeXdFS8YeP3R02N+OBHmbGm7O43mVsTviWi285EnmwBGFw0YjI1c7+hU2HNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.5.6/jquery.smoothState.min.js"
+        integrity="sha512-SKtzgfNYpXndILHPbGDJA3CwwqHeXdFS8YeP3R02N+OBHmbGm7O43mVsTviWi285EnmwBGFw0YjI1c7+hU2HNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script href="transition.js"></script>
-
 </head>
 
 
@@ -21,14 +22,13 @@
 
 <body>
 
-<!-- Detail page -->
-<div class="m-scene" id="main">
-    <div class="m-aside scene_element scene_element--fadein">
-   </div>
-    <div class="m-right-panel m-page scene_element scene_element--fadein">
+    <!-- Home page -->
+    <div class="m-scene" id="main">
+        <div class="m-header scene_element scene_element--fadein">
+        </div>
+        <div class="m-page scene_element scene_element--fadein">
+        </div>
     </div>
-  </div>
-
     <div class="container">
         <div class="text_hide"></div>
         <div class="text">Fuck you.</div>
@@ -50,14 +50,19 @@
         <div class="text_cursor4"></div>
     </div>
     <div class="cursor">
-        <form>
-            <input type="text" id="answer" name="answer" required/>
+        <form id="answerform">
+            <input type="text" id="answer" name="answer" required />
             <i class="blinky"></i>
             <button type="button" id="submitButton">
                 <i class="fa-solid fa-angles-right"></i>
             </button>
             <span id="message"></span> <!-- Message span -->
         </form>
+    </div>
+    <div class="container">
+        <div class="text_hide5"></div>
+        <div class="text5">What is a pirate's favorite letter?</div>
+        <div class="text_cursor5"></div>
     </div>
 
 
