@@ -237,6 +237,13 @@
         const answerInput = document.getElementById('answer');
         const messageSpan = document.getElementById('message');
 
+        // Add event listener for Enter key press
+        answerInput.addEventListener('keypress', function (e) {
+            if (e.keyCode === 13) {
+                submitButton.click(); // Simulate a click on the submit button
+            }
+        });
+
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
 
@@ -246,14 +253,7 @@
                 displayErrorMessage("X"); // Display error message
             }
         });
-
-        // Add event listener for Enter key press
-        answerInput.addEventListener('keypress', function (e) {
-            if (e.keyCode === 13) {
-                submitButton.click(); // Simulate a click on the submit button
-            }
-        });
-
+        
         function displayErrorMessage(message) {
             messageSpan.textContent = message; // Set error message text
 
