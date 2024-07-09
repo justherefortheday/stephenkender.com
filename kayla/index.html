@@ -30,17 +30,17 @@
 
     <div class="container">
         <div class="text_hide"></div>
-        <div class="text">Again here we go.</div>
+        <div class="text">Welcome, Kayla.</div>
         <div class="text_cursor"></div>
     </div>
     <div class="container">
         <div class="text_hide2"></div>
-        <div class="text2">There are no wrong answers.</div>
+        <div class="text2">Bet you're wondering what the code is.</div>
         <div class="text_cursor2"></div>
     </div>
     <div class="container">
         <div class="text_hide3"></div>
-        <div class="text3">Here is your first clue.</div>
+        <div class="text3">Answer these and you may just find out.</div>
         <div class="text_cursor3"></div>
     </div>
     <div class="container">
@@ -240,15 +240,28 @@
         const submitButton = document.getElementById('submitButton');
         const answerInput = document.getElementById('answer');
         const messageSpan = document.getElementById('message');
-       
-        // Add event listener for Enter key press
-        answerInput.addEventListener('keypress', function (e) {
-            e.preventDefault();
-            if (e.keyCode === "13") {
-                submitButton.click(); // Simulate a click on the submit button
+
+
+        document.getElementById('answerform').addEventListener('keypress', function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById('submitButton').click(); // Simulate a click on the submit button
             }
         });
-              
+
+        document.getElementById('answerform').addEventListener('keypress', function (event) {
+            if (event.key === "Return") {
+                event.preventDefault();
+                document.getElementById('submitButton').click(); // Simulate a click on the submit button
+            }
+        });
+
+        document.getElementById('answerform').addEventListener('keypress', function (event) {
+            if (event.key === "13") {
+                event.preventDefault();
+                document.getElementById('submitButton').click(); // Simulate a click on the submit button
+            }
+        });
 
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
@@ -271,6 +284,7 @@
         }
     });
 </script>
+
 
 
 </html>
