@@ -248,6 +248,13 @@
             }
         });
 
+        // Add event listener for Enter key press
+        answerInput.addEventListener('keypress', function (e) {
+            if (e.keyCode === 13) {
+                submitButton.click(); // Simulate a click on the submit button
+            }
+        });
+
         function displayErrorMessage(message) {
             messageSpan.textContent = message; // Set error message text
 
@@ -258,7 +265,6 @@
         }
     });
 </script>
-
 
 
 </html>
