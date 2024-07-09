@@ -256,15 +256,7 @@
                 submitButton.click(); // Simulate a click on the submit button
             }
         });
- 
-        // Add event listener for Enter key press
-        answerInput.addEventListener('keypress', function (e) {
-            e.preventDefault();
-            if (e.keyCode === "Return") {
-                submitButton.click(); // Simulate a click on the submit button
-            }
-        });
-               
+              
 
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
