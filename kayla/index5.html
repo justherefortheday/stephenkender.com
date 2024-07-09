@@ -31,17 +31,17 @@
 
     <div class="container">
         <div class="text_hide"></div>
-        <div class="text">Gottem! You suck.</div>
+        <div class="text">Fuck you.</div>
         <div class="text_cursor"></div>
     </div>
     <div class="container">
         <div class="text_hide2"></div>
-        <div class="text2">How's it taste? You're so close.</div>
+        <div class="text2">Well I guess this was expected.</div>
         <div class="text_cursor2"></div>
     </div>
     <div class="container">
         <div class="text_hide3"></div>
-        <div class="text3">You'll never get this one.</div>
+        <div class="text3">But you'll never get this one.</div>
         <div class="text_cursor3"></div>
     </div>
     <div class="container">
@@ -237,30 +237,28 @@
         const answerInput = document.getElementById('answer');
         const messageSpan = document.getElementById('message');
 
-        // Add event listener for Enter key press
-        answerInput.addEventListener('keypress', function (e) {
-            e.preventDefault();
-            if (e.keyCode === 13) {
-                submitButton.click(); // Simulate a click on the submit button
+
+        document.getElementById('answerform').addEventListener('keypress', function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById('submitButton').click(); // Simulate a click on the submit button
             }
         });
 
-        // Add event listener for Enter key press
-        answerInput.addEventListener('keypress', function (e) {
-            e.preventDefault();
-            if (e.keyCode === "Enter") {
-                submitButton.click(); // Simulate a click on the submit button
+        document.getElementById('answerform').addEventListener('keypress', function (event) {
+            if (event.key === "Return") {
+                event.preventDefault();
+                document.getElementById('submitButton').click(); // Simulate a click on the submit button
             }
         });
- 
-        // Add event listener for Enter key press
-        answerInput.addEventListener('keypress', function (e) {
-            e.preventDefault();
-            if (e.keyCode === "Return") {
-                submitButton.click(); // Simulate a click on the submit button
+
+        document.getElementById('answerform').addEventListener('keypress', function (event) {
+            if (event.key === "13") {
+                event.preventDefault();
+                document.getElementById('submitButton').click(); // Simulate a click on the submit button
             }
         });
-               
+
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
 
@@ -270,6 +268,7 @@
                 displayErrorMessage("X"); // Display error message
             }
         });
+
 
         function displayErrorMessage(message) {
             messageSpan.textContent = message; // Set error message text
@@ -281,6 +280,7 @@
         }
     });
 </script>
+
 
 
 
