@@ -14,6 +14,7 @@
         integrity="sha512-SKtzgfNYpXndILHPbGDJA3CwwqHeXdFS8YeP3R02N+OBHmbGm7O43mVsTviWi285EnmwBGFw0YjI1c7+hU2HNQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script href="transition.js"></script>
+
 </head>
 
 
@@ -22,43 +23,38 @@
 
 <body>
 
-    <!-- Home page -->
+    <!-- Detail page -->
     <div class="m-scene" id="main">
-        <div class="m-header scene_element scene_element--fadein">
+        <div class="m-aside scene_element scene_element--fadein">
         </div>
-        <div class="m-page scene_element scene_element--fadein">
+        <div class="m-right-panel m-page scene_element scene_element--fadein">
         </div>
     </div>
 
     <div class="container">
         <div class="text_hide"></div>
-        <div class="text"><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i></div>
+        <div class="text">Fuck you I'm mad now. Next one.</div>
         <div class="text_cursor"></div>
     </div>
     <div class="container">
         <div class="text_hide2"></div>
-        <div class="text2">HACK IN PROGRESS.....</div>
+        <div class="text2">I run but don't walk.</div>
         <div class="text_cursor2"></div>
     </div>
     <div class="container">
         <div class="text_hide3"></div>
-        <div class="text3">Hehe just kidding.</div>
+        <div class="text3">I have a bed but don't sleep.</div>
         <div class="text_cursor3"></div>
     </div>
     <div class="container">
         <div class="text_hide4"></div>
-        <div class="text4">Hi Kayla!</div>
+        <div class="text4">I have a mouth but no butthole.</div>
         <div class="text_cursor4"></div>
     </div>
     <div class="container">
         <div class="text_hide5"></div>
-        <div class="text5">Answer these riddles for your secret code.</div>
+        <div class="text5">What am I?</div>
         <div class="text_cursor5"></div>
-    </div>
-    <div class="container">
-        <div class="text_hide6"></div>
-        <div class="text6">Type "fuck yeah" if you're in.</div>
-        <div class="text_cursor6"></div>
     </div>
     <div class="cursor">
         <form id="answerform">
@@ -70,9 +66,6 @@
             <span id="message"></span> <!-- Message span -->
         </form>
     </div>
-
-
-
 </body>
 
 <script>
@@ -226,7 +219,7 @@
             document.querySelector(".text_cursor3"),
             document.querySelector(".text_cursor2").style.display = "none"
         );
-    }, 7000);
+    }, 5200);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text4"),
@@ -234,7 +227,7 @@
             document.querySelector(".text_cursor4"),
             document.querySelector(".text_cursor3").style.display = "none"
         );
-    }, 8000);
+    }, 8500);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text5"),
@@ -242,21 +235,13 @@
             document.querySelector(".text_cursor5"),
             document.querySelector(".text_cursor4").style.display = "none"
         );
-    }, 10000);
-    setTimeout(function () {
-        animateTyping(
-            document.querySelector(".text6"),
-            document.querySelector(".text_hide6"),
-            document.querySelector(".text_cursor6"),
-            document.querySelector(".text_cursor5").style.display = "none"
-        );
-    }, 13000);
+    }, 11500);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".cursor").style.opacity = 1,
-            document.querySelector(".text_cursor6").style.display = "none"
+            document.querySelector(".text_cursor5").style.display = "none"
         );
-    }, 15500);
+    }, 13000);
 </script>
 
 <script>
@@ -290,8 +275,8 @@
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
 
-            if (answer === "fuck yeah" || answer === "fuck yeah!") {
-                window.location.href = 'kayla1.html'; // Replace with your actual URL
+            if (answer === "river" || answer === "a river") {
+                window.location.href = 'justin5.html'; // Replace with your actual URL
             } else {
                 displayErrorMessage("X"); // Display error message
             }
@@ -308,6 +293,7 @@
         }
     });
 </script>
+
 
 
 </html>

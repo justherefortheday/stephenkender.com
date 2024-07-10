@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +15,7 @@
     <script href="transition.js"></script>
 </head>
 
-
-
-
-
 <body>
-
     <!-- Home page -->
     <div class="m-scene" id="main">
         <div class="m-header scene_element scene_element--fadein">
@@ -30,31 +24,35 @@
         </div>
     </div>
 
-
     <div class="container">
         <div class="text_hide"></div>
-        <div class="text">Good job! One down, many to go.</div>
+        <div class="text"><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i><i class="fa-solid fa-skull-crossbones"></i></div>
         <div class="text_cursor"></div>
     </div>
     <div class="container">
         <div class="text_hide2"></div>
-        <div class="text2">Having fun   ?</div>
+        <div class="text2">YOUR IP IS LEAKING.....</div>
         <div class="text_cursor2"></div>
     </div>
     <div class="container">
         <div class="text_hide3"></div>
-        <div class="text3">I don't care.</div>
+        <div class="text3">Lol gottem.</div>
         <div class="text_cursor3"></div>
     </div>
     <div class="container">
         <div class="text_hide4"></div>
-        <div class="text4">Next riddle.</div>
+        <div class="text4">Hey Alicia!</div>
         <div class="text_cursor4"></div>
     </div>
     <div class="container">
         <div class="text_hide5"></div>
-        <div class="text5">What can you fill with empty hands?</div>
+        <div class="text5">Got some riddles for ya.</div>
         <div class="text_cursor5"></div>
+    </div>
+    <div class="container">
+        <div class="text_hide6"></div>
+        <div class="text6">Type "hellz yeah" if you're in.</div>
+        <div class="text_cursor6"></div>
     </div>
     <div class="cursor">
         <form id="answerform">
@@ -66,9 +64,6 @@
             <span id="message"></span> <!-- Message span -->
         </form>
     </div>
-
-
-
 </body>
 
 <script>
@@ -214,7 +209,7 @@
             document.querySelector(".text_cursor2"),
             document.querySelector(".text_cursor").style.display = "none"
         );
-    }, 3000);
+    }, 2900);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text3"),
@@ -222,7 +217,7 @@
             document.querySelector(".text_cursor3"),
             document.querySelector(".text_cursor2").style.display = "none"
         );
-    }, 4800);
+    }, 7000);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text4"),
@@ -230,7 +225,7 @@
             document.querySelector(".text_cursor4"),
             document.querySelector(".text_cursor3").style.display = "none"
         );
-    }, 6500);
+    }, 8000);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text5"),
@@ -238,13 +233,21 @@
             document.querySelector(".text_cursor5"),
             document.querySelector(".text_cursor4").style.display = "none"
         );
-    }, 8500);
+    }, 10000);
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text6"),
+            document.querySelector(".text_hide6"),
+            document.querySelector(".text_cursor6"),
+            document.querySelector(".text_cursor5").style.display = "none"
+        );
+    }, 13000);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".cursor").style.opacity = 1,
-            document.querySelector(".text_cursor5").style.display = "none"
+            document.querySelector(".text_cursor6").style.display = "none"
         );
-    }, 11000);
+    }, 15500);
 </script>
 
 <script>
@@ -278,13 +281,12 @@
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
 
-            if (answer === "gloves" || answer === "glove" || answer === "a glove" || answer === "a pair of gloves" || answer === "a pair of gloves") {
-                window.location.href = 'index4.html'; // Replace with your actual URL
+            if (answer === "hellz yeah" || answer === "hellz yeah!" || answer === "fuck yeah" || answer === "fuck yeah!") {
+                window.location.href = 'alicia1.html'; // Replace with your actual URL
             } else {
                 displayErrorMessage("X"); // Display error message
             }
         });
-
 
         function displayErrorMessage(message) {
             messageSpan.textContent = message; // Set error message text
@@ -296,8 +298,6 @@
         }
     });
 </script>
-
-
 
 
 </html>
