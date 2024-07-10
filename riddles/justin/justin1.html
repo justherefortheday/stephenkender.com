@@ -34,23 +34,28 @@
 
     <div class="container">
         <div class="text_hide"></div>
-        <div class="text">Fuck yeah! A new sucke.. I mean participant.</div>
+        <div class="text">Don't worry Mr. DM.</div>
         <div class="text_cursor"></div>
     </div>
     <div class="container">
         <div class="text_hide2"></div>
-        <div class="text2">I won't go easy on you just FYI.</div>
+        <div class="text2">Just gotta answer some riddles.</div>
         <div class="text_cursor2"></div>
     </div>
     <div class="container">
         <div class="text_hide3"></div>
-        <div class="text3">Here is your first riddle.</div>
+        <div class="text3">Then you can get your code.</div>
         <div class="text_cursor3"></div>
     </div>
     <div class="container">
         <div class="text_hide4"></div>
-        <div class="text4">What letter comes next: OTTFFSS?</div>
+        <div class="text4">The more there is, the less you see.</div>
         <div class="text_cursor4"></div>
+    </div>
+    <div class="container">
+        <div class="text_hide5"></div>
+        <div class="text5">What am I?</div>
+        <div class="text_cursor5"></div>
     </div>
     <div class="cursor">
         <form id="answerform">
@@ -62,11 +67,7 @@
             <span id="message"></span> <!-- Message span -->
         </form>
     </div>
-    <div class="container">
-        <div class="text_hide5"></div>
-        <div class="text5">What is a pirate's favorite letter?</div>
-        <div class="text_cursor5"></div>
-    </div>
+
 
 
 </body>
@@ -233,10 +234,18 @@
     }, 8700);
     setTimeout(function () {
         animateTyping(
-            document.querySelector(".cursor").style.opacity = 1,
+            document.querySelector(".text5"),
+            document.querySelector(".text_hide5"),
+            document.querySelector(".text_cursor5"),
             document.querySelector(".text_cursor4").style.display = "none"
         );
-    }, 11000);
+    }, 10700);
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".cursor").style.opacity = 1,
+            document.querySelector(".text_cursor5").style.display = "none"
+        );
+    }, 12000);
 </script>
 
 <script>
@@ -273,7 +282,7 @@
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
 
-            if (answer === "e" || answer === "eight" || answer === "the letter e" || answer === "letter e") {
+            if (answer === "dark" || answer === "darkness") {
                 window.location.href = 'justin2.html'; // Replace with your actual URL
             } else {
                 displayErrorMessage("X"); // Display error message
