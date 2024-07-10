@@ -33,23 +33,28 @@
 
     <div class="container">
         <div class="text_hide"></div>
-        <div class="text">Welp, you're halfway there.</div>
+        <div class="text">Good job! One down, many to go.</div>
         <div class="text_cursor"></div>
     </div>
     <div class="container">
         <div class="text_hide2"></div>
-        <div class="text2">Isn't this fun   ?</div>
+        <div class="text2">Having fun   ?</div>
         <div class="text_cursor2"></div>
     </div>
     <div class="container">
         <div class="text_hide3"></div>
-        <div class="text3">See how you fare with this.</div>
+        <div class="text3">I don't care.</div>
         <div class="text_cursor3"></div>
     </div>
     <div class="container">
         <div class="text_hide4"></div>
-        <div class="text4">What spot causes the aforementioned face?</div>
+        <div class="text4">Next riddle.</div>
         <div class="text_cursor4"></div>
+    </div>
+    <div class="container">
+        <div class="text_hide5"></div>
+        <div class="text5">What can you fill with empty hands?</div>
+        <div class="text_cursor5"></div>
     </div>
     <div class="cursor">
         <form id="answerform">
@@ -61,11 +66,7 @@
             <span id="message"></span> <!-- Message span -->
         </form>
     </div>
-    <div class="container">
-        <div class="text_hide5"></div>
-        <div class="text5">What is a pirate's favorite letter?</div>
-        <div class="text_cursor5"></div>
-    </div>
+
 
 
 </body>
@@ -213,7 +214,7 @@
             document.querySelector(".text_cursor2"),
             document.querySelector(".text_cursor").style.display = "none"
         );
-    }, 2900);
+    }, 3000);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text3"),
@@ -221,7 +222,7 @@
             document.querySelector(".text_cursor3"),
             document.querySelector(".text_cursor2").style.display = "none"
         );
-    }, 5800);
+    }, 4800);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text4"),
@@ -229,11 +230,19 @@
             document.querySelector(".text_cursor4"),
             document.querySelector(".text_cursor3").style.display = "none"
         );
-    }, 8700);
+    }, 6500);
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text5"),
+            document.querySelector(".text_hide5"),
+            document.querySelector(".text_cursor5"),
+            document.querySelector(".text_cursor4").style.display = "none"
+        );
+    }, 8500);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".cursor").style.opacity = 1,
-            document.querySelector(".text_cursor4").style.display = "none"
+            document.querySelector(".text_cursor5").style.display = "none"
         );
     }, 11000);
 </script>
@@ -269,7 +278,7 @@
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
 
-            if (answer === "g") {
+            if (answer === "gloves" || answer === "glove" || answer === "a glove" || answer === "a pair of gloves" || answer === "a pair of gloves") {
                 window.location.href = 'index4.html'; // Replace with your actual URL
             } else {
                 displayErrorMessage("X"); // Display error message

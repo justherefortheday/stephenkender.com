@@ -14,6 +14,7 @@
         integrity="sha512-SKtzgfNYpXndILHPbGDJA3CwwqHeXdFS8YeP3R02N+OBHmbGm7O43mVsTviWi285EnmwBGFw0YjI1c7+hU2HNQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script href="transition.js"></script>
+
 </head>
 
 
@@ -22,32 +23,38 @@
 
 <body>
 
-    <!-- Home page -->
+    <!-- Detail page -->
     <div class="m-scene" id="main">
-        <div class="m-header scene_element scene_element--fadein">
+        <div class="m-aside scene_element scene_element--fadein">
         </div>
-        <div class="m-page scene_element scene_element--fadein">
+        <div class="m-right-panel m-page scene_element scene_element--fadein">
         </div>
     </div>
+
     <div class="container">
         <div class="text_hide"></div>
-        <div class="text">Fuck you.</div>
+        <div class="text">Fuck you. Next one.</div>
         <div class="text_cursor"></div>
     </div>
     <div class="container">
         <div class="text_hide2"></div>
-        <div class="text2">Well I guess this was expected.</div>
+        <div class="text2">I run but don't walk.</div>
         <div class="text_cursor2"></div>
     </div>
     <div class="container">
         <div class="text_hide3"></div>
-        <div class="text3">But you'll never get this one.</div>
+        <div class="text3">I have a bed but don't sleep.</div>
         <div class="text_cursor3"></div>
     </div>
     <div class="container">
         <div class="text_hide4"></div>
-        <div class="text4">E.</div>
+        <div class="text4">I have a mouth but no butthole.</div>
         <div class="text_cursor4"></div>
+    </div>
+    <div class="container">
+        <div class="text_hide5"></div>
+        <div class="text5">What am I?</div>
+        <div class="text_cursor5"></div>
     </div>
     <div class="cursor">
         <form id="answerform">
@@ -59,13 +66,6 @@
             <span id="message"></span> <!-- Message span -->
         </form>
     </div>
-    <div class="container">
-        <div class="text_hide5"></div>
-        <div class="text5">What is a pirate's favorite letter?</div>
-        <div class="text_cursor5"></div>
-    </div>
-
-
 </body>
 
 <script>
@@ -219,7 +219,7 @@
             document.querySelector(".text_cursor3"),
             document.querySelector(".text_cursor2").style.display = "none"
         );
-    }, 5800);
+    }, 5200);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text4"),
@@ -227,13 +227,21 @@
             document.querySelector(".text_cursor4"),
             document.querySelector(".text_cursor3").style.display = "none"
         );
-    }, 8700);
+    }, 8500);
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text5"),
+            document.querySelector(".text_hide5"),
+            document.querySelector(".text_cursor5"),
+            document.querySelector(".text_cursor4").style.display = "none"
+        );
+    }, 11500);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".cursor").style.opacity = 1,
-            document.querySelector(".text_cursor4").style.display = "none"
+            document.querySelector(".text_cursor5").style.display = "none"
         );
-    }, 11000);
+    }, 13000);
 </script>
 
 <script>
@@ -267,7 +275,7 @@
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
 
-            if (answer === "e") {
+            if (answer === "river" || answer === "a river") {
                 window.location.href = 'index6.html'; // Replace with your actual URL
             } else {
                 displayErrorMessage("X"); // Display error message
@@ -285,7 +293,6 @@
         }
     });
 </script>
-
 
 
 
