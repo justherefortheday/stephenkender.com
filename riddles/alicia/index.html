@@ -1,27 +1,23 @@
 <!DOCTYPE HTML>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="How long can we make the website descripti" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="styletest.css">
+    <link rel="stylesheet" type="text/css" href="https://stephenkender.com/riddles/styletest.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.5.6/jquery.smoothState.min.js"
         integrity="sha512-SKtzgfNYpXndILHPbGDJA3CwwqHeXdFS8YeP3R02N+OBHmbGm7O43mVsTviWi285EnmwBGFw0YjI1c7+hU2HNQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script href="transition.js"></script>
+    <script href="https://stephenkender.com/riddles/transition.js"></script>
+
+
 </head>
 
-
-
-
-
 <body>
-
     <!-- Home page -->
     <div class="m-scene" id="main">
         <div class="m-header scene_element scene_element--fadein">
@@ -37,27 +33,27 @@
     </div>
     <div class="container">
         <div class="text_hide2"></div>
-        <div class="text2">HACK IN PROGRESS.....</div>
+        <div class="text2">YOUR IP IS LEAKING.....</div>
         <div class="text_cursor2"></div>
     </div>
     <div class="container">
         <div class="text_hide3"></div>
-        <div class="text3">Hehe just kidding.</div>
+        <div class="text3">Lol gottem.</div>
         <div class="text_cursor3"></div>
     </div>
     <div class="container">
         <div class="text_hide4"></div>
-        <div class="text4">Hi Kayla!</div>
+        <div class="text4">Hey Alicia!</div>
         <div class="text_cursor4"></div>
     </div>
     <div class="container">
         <div class="text_hide5"></div>
-        <div class="text5">Answer these riddles for your secret code.</div>
+        <div class="text5">Got some riddles for ya.</div>
         <div class="text_cursor5"></div>
     </div>
     <div class="container">
         <div class="text_hide6"></div>
-        <div class="text6">Type "fuck yeah" if you're in.</div>
+        <div class="text6">Type "hellz yeah" if you're in.</div>
         <div class="text_cursor6"></div>
     </div>
     <div class="cursor">
@@ -70,9 +66,6 @@
             <span id="message"></span> <!-- Message span -->
         </form>
     </div>
-
-
-
 </body>
 
 <script>
@@ -290,13 +283,12 @@
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
 
-            if (answer === "fuck yeah" || answer === "fuck yeah!") {
-                window.location.href = 'kayla1.html'; // Replace with your actual URL
+            if (answer === "hellz yeah" || answer === "hellz yeah!" || answer === "fuck yeah" || answer === "fuck yeah!") {
+                window.location.href = 'alicia1.html'; // Replace with your actual URL
             } else {
                 displayErrorMessage("X"); // Display error message
             }
         });
-
 
         function displayErrorMessage(message) {
             messageSpan.textContent = message; // Set error message text

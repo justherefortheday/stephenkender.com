@@ -8,12 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="How long can we make the website descripti" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="styletest.css">
+    <link rel="stylesheet" type="text/css" href="https://stephenkender.com/riddles/styletest.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.5.6/jquery.smoothState.min.js"
         integrity="sha512-SKtzgfNYpXndILHPbGDJA3CwwqHeXdFS8YeP3R02N+OBHmbGm7O43mVsTviWi285EnmwBGFw0YjI1c7+hU2HNQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script href="transition.js"></script>
+    <script href="https://stephenkender.com/riddles/transition.js"></script>
+
+
 </head>
 
 
@@ -30,31 +32,45 @@
         </div>
     </div>
 
-
     <div class="container">
         <div class="text_hide"></div>
-        <div class="text">Good job! One down, many to go.</div>
+        <div class="text">You made it!! Let's review...</div>
         <div class="text_cursor"></div>
     </div>
     <div class="container">
         <div class="text_hide2"></div>
-        <div class="text2">Having fun   ?</div>
+        <div class="text2"><span style="text-decoration:underline;">E</span></div>
         <div class="text_cursor2"></div>
     </div>
     <div class="container">
         <div class="text_hide3"></div>
-        <div class="text3">I don't care.</div>
+        <div class="text3"><span style="text-decoration:underline;">G</span>loves</div>
         <div class="text_cursor3"></div>
     </div>
     <div class="container">
         <div class="text_hide4"></div>
-        <div class="text4">Next riddle.</div>
+        <div class="text4">An <span style="text-decoration:underline;">u</span>mbrella</div>
         <div class="text_cursor4"></div>
     </div>
     <div class="container">
         <div class="text_hide5"></div>
-        <div class="text5">What can you fill with empty hands?</div>
+        <div class="text5">A <span style="text-decoration:underline;">r</span>iver</div>
         <div class="text_cursor5"></div>
+    </div>
+    <div class="container">
+        <div class="text_hide6"></div>
+        <div class="text6">An <span style="text-decoration:underline;">o</span>nion</div>
+        <div class="text_cursor6"></div>
+    </div>
+    <div class="container">
+        <div class="text_hide7"></div>
+        <div class="text7">You have all you need now.</div>
+        <div class="text_cursor7"></div>
+    </div>
+    <div class="container">
+        <div class="text_hide8"></div>
+        <div class="text8">What could your code be?</div>
+        <div class="text_cursor8"></div>
     </div>
     <div class="cursor">
         <form id="answerform">
@@ -63,8 +79,13 @@
             <button type="button" id="submitButton">
                 <i class="fa-solid fa-angles-right"></i>
             </button>
-            <span id="message"></span> <!-- Message span -->
+            <span id="message"></span>
         </form>
+    </div>
+    <div class="container">
+        <div class="text_hide9"></div>
+        <div class="text9">Why don't you try that on your thingy?</div>
+        <div class="text_cursor9"></div>
     </div>
 
 
@@ -214,7 +235,7 @@
             document.querySelector(".text_cursor2"),
             document.querySelector(".text_cursor").style.display = "none"
         );
-    }, 3000);
+    }, 2000);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text3"),
@@ -222,7 +243,7 @@
             document.querySelector(".text_cursor3"),
             document.querySelector(".text_cursor2").style.display = "none"
         );
-    }, 4800);
+    }, 2800);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text4"),
@@ -230,7 +251,7 @@
             document.querySelector(".text_cursor4"),
             document.querySelector(".text_cursor3").style.display = "none"
         );
-    }, 6500);
+    }, 4000);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text5"),
@@ -238,13 +259,37 @@
             document.querySelector(".text_cursor5"),
             document.querySelector(".text_cursor4").style.display = "none"
         );
-    }, 8500);
+    }, 5100);
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text6"),
+            document.querySelector(".text_hide6"),
+            document.querySelector(".text_cursor6"),
+            document.querySelector(".text_cursor5").style.display = "none"
+        );
+    }, 6500);
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text7"),
+            document.querySelector(".text_hide7"),
+            document.querySelector(".text_cursor7"),
+            document.querySelector(".text_cursor6").style.display = "none"
+        );
+    }, 7800);
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text8"),
+            document.querySelector(".text_hide8"),
+            document.querySelector(".text_cursor8"),
+            document.querySelector(".text_cursor7").style.display = "none"
+        );
+    }, 9900);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".cursor").style.opacity = 1,
-            document.querySelector(".text_cursor5").style.display = "none"
+            document.querySelector(".text_cursor8").style.display = "none"
         );
-    }, 11000);
+    }, 12500);
 </script>
 
 <script>
@@ -257,29 +302,36 @@
         document.getElementById('answerform').addEventListener('keypress', function (event) {
             if (event.key === "Enter") {
                 event.preventDefault();
-                document.getElementById('submitButton').click(); // Simulate a click on the submit button
+                document.getElementById('submitButton')
+            .click(); // Simulate a click on the submit button
             }
         });
 
         document.getElementById('answerform').addEventListener('keypress', function (event) {
             if (event.key === "Return") {
                 event.preventDefault();
-                document.getElementById('submitButton').click(); // Simulate a click on the submit button
+                document.getElementById('submitButton')
+            .click(); // Simulate a click on the submit button
             }
         });
 
         document.getElementById('answerform').addEventListener('keypress', function (event) {
             if (event.key === "13") {
                 event.preventDefault();
-                document.getElementById('submitButton').click(); // Simulate a click on the submit button
+                document.getElementById('submitButton')
+            .click(); // Simulate a click on the submit button
             }
         });
 
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
 
-            if (answer === "gloves" || answer === "glove" || answer === "a glove" || answer === "a pair of gloves" || answer === "a pair of gloves") {
-                window.location.href = 'justin3.html'; // Replace with your actual URL
+            if (answer === "rogue" || answer === "rogue?") {
+                    animateTyping(
+                        document.querySelector(".text9"),
+                        document.querySelector(".text_hide9"),
+                        document.querySelector(".text_cursor9"),
+                    );
             } else {
                 displayErrorMessage("X"); // Display error message
             }
@@ -296,8 +348,6 @@
         }
     });
 </script>
-
-
 
 
 </html>

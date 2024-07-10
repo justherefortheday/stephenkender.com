@@ -8,12 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="How long can we make the website descripti" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="styletest.css">
+    <link rel="stylesheet" type="text/css" href="https://stephenkender.com/riddles/styletest.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.5.6/jquery.smoothState.min.js"
         integrity="sha512-SKtzgfNYpXndILHPbGDJA3CwwqHeXdFS8YeP3R02N+OBHmbGm7O43mVsTviWi285EnmwBGFw0YjI1c7+hU2HNQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script href="transition.js"></script>
+    <script href="https://stephenkender.com/riddles/transition.js"></script>
+
+
 </head>
 
 
@@ -32,23 +34,33 @@
 
     <div class="container">
         <div class="text_hide"></div>
-        <div class="text">Fuck yeah! A new sucke.. I mean participant.</div>
+        <div class="text">Hey! Stop beating my riddles.</div>
         <div class="text_cursor"></div>
     </div>
     <div class="container">
         <div class="text_hide2"></div>
-        <div class="text2">I won't go easy on you just FYI.</div>
+        <div class="text2">This was supposed to be harder.</div>
         <div class="text_cursor2"></div>
     </div>
     <div class="container">
         <div class="text_hide3"></div>
-        <div class="text3">Here is your first riddle.</div>
+        <div class="text3">LMAO thats what he said.</div>
         <div class="text_cursor3"></div>
     </div>
     <div class="container">
         <div class="text_hide4"></div>
-        <div class="text4">What letter comes next: OTTFFSS?</div>
+        <div class="text4">Alright, next question.</div>
         <div class="text_cursor4"></div>
+    </div>
+    <div class="container">
+        <div class="text_hide5"></div>
+        <div class="text5">I'll admit I'm starting to have fun.</div>
+        <div class="text_cursor5"></div>
+    </div>
+    <div class="container">
+        <div class="text_hide6"></div>
+        <div class="text6">What goes up when the rain comes down?</div>
+        <div class="text_cursor6"></div>
     </div>
     <div class="cursor">
         <form id="answerform">
@@ -60,13 +72,6 @@
             <span id="message"></span> <!-- Message span -->
         </form>
     </div>
-    <div class="container">
-        <div class="text_hide5"></div>
-        <div class="text5">What is a pirate's favorite letter?</div>
-        <div class="text_cursor5"></div>
-    </div>
-
-
 </body>
 
 <script>
@@ -231,10 +236,27 @@
     }, 8700);
     setTimeout(function () {
         animateTyping(
-            document.querySelector(".cursor").style.opacity = 1,
+            document.querySelector(".text5"),
+            document.querySelector(".text_hide5"),
+            document.querySelector(".text_cursor5"),
             document.querySelector(".text_cursor4").style.display = "none"
         );
-    }, 11000);
+    }, 10000);
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text6"),
+            document.querySelector(".text_hide6"),
+            document.querySelector(".text_cursor6"),
+            document.querySelector(".text_cursor5").style.display = "none"
+        );
+    }, 13000);
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".cursor").style.opacity = 1,
+            document.querySelector(".text_cursor6").style.display = "none"
+        );
+    }, 16000);
+
 </script>
 
 <script>
@@ -247,36 +269,32 @@
         document.getElementById('answerform').addEventListener('keypress', function (event) {
             if (event.key === "Enter") {
                 event.preventDefault();
-                document.getElementById('submitButton')
-            .click(); // Simulate a click on the submit button
+                document.getElementById('submitButton').click(); // Simulate a click on the submit button
             }
         });
 
         document.getElementById('answerform').addEventListener('keypress', function (event) {
             if (event.key === "Return") {
                 event.preventDefault();
-                document.getElementById('submitButton')
-            .click(); // Simulate a click on the submit button
+                document.getElementById('submitButton').click(); // Simulate a click on the submit button
             }
         });
 
         document.getElementById('answerform').addEventListener('keypress', function (event) {
             if (event.key === "13") {
                 event.preventDefault();
-                document.getElementById('submitButton')
-            .click(); // Simulate a click on the submit button
+                document.getElementById('submitButton').click(); // Simulate a click on the submit button
             }
         });
 
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
 
-            if (answer === "e" || answer === "eight" || answer === "the letter e" || answer === "letter e") {
-                window.location.href = 'alicia2.html'; // Replace with your actual URL
+            if (answer === "umbrella" || answer === "an umbrella") {
+                window.location.href = 'justin4.html'; // Replace with your actual URL
             } else {
                 displayErrorMessage("X"); // Display error message
             }
-
         });
 
 
