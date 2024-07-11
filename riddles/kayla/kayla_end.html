@@ -33,44 +33,44 @@
     </div>
 
     <div class="container">
-        <div class="text_hide"></div>
+        <div class="hide_text"></div>
         <div class="text">You made it!! Let's review...</div>
-        <div class="text_cursor"></div>
+        <div class="hacker_cursor"></div>
     </div>
     <div class="container">
-        <div class="text_hide2"></div>
+        <div class="hide_text2"></div>
         <div class="text2"><span style="text-decoration:underline;">E</span></div>
-        <div class="text_cursor2"></div>
+        <div class="hacker_cursor2"></div>
     </div>
     <div class="container">
-        <div class="text_hide3"></div>
+        <div class="hide_text3"></div>
         <div class="text3"><span style="text-decoration:underline;">G</span>loves</div>
-        <div class="text_cursor3"></div>
+        <div class="hacker_cursor3"></div>
     </div>
     <div class="container">
-        <div class="text_hide4"></div>
+        <div class="hide_text4"></div>
         <div class="text4">An <span style="text-decoration:underline;">u</span>mbrella</div>
-        <div class="text_cursor4"></div>
+        <div class="hacker_cursor4"></div>
     </div>
     <div class="container">
-        <div class="text_hide5"></div>
+        <div class="hide_text5"></div>
         <div class="text5">A <span style="text-decoration:underline;">r</span>iver</div>
-        <div class="text_cursor5"></div>
+        <div class="hacker_cursor5"></div>
     </div>
     <div class="container">
-        <div class="text_hide6"></div>
+        <div class="hide_text6"></div>
         <div class="text6">An <span style="text-decoration:underline;">o</span>nion</div>
-        <div class="text_cursor6"></div>
+        <div class="hacker_cursor6"></div>
     </div>
     <div class="container">
-        <div class="text_hide7"></div>
+        <div class="hide_text7"></div>
         <div class="text7">You have all you need now.</div>
-        <div class="text_cursor7"></div>
+        <div class="hacker_cursor7"></div>
     </div>
     <div class="container">
-        <div class="text_hide8"></div>
+        <div class="hide_text8"></div>
         <div class="text8">What could your code be?</div>
-        <div class="text_cursor8"></div>
+        <div class="hacker_cursor8"></div>
     </div>
     <div class="cursor">
         <form id="answerform">
@@ -83,9 +83,9 @@
         </form>
     </div>
     <div class="container">
-        <div class="text_hide9"></div>
+        <div class="hide_text9"></div>
         <div class="text9">Why don't you try that on your thingy?</div>
-        <div class="text_cursor9"></div>
+        <div class="hacker_cursor9"></div>
     </div>
 
 
@@ -225,69 +225,69 @@
 
     animateTyping(
         document.querySelector(".text"),
-        document.querySelector(".text_hide"),
-        document.querySelector(".text_cursor")
+        document.querySelector(".hide_text"),
+        document.querySelector(".hacker_cursor")
     );
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text2"),
-            document.querySelector(".text_hide2"),
-            document.querySelector(".text_cursor2"),
-            document.querySelector(".text_cursor").style.display = "none"
+            document.querySelector(".hide_text2"),
+            document.querySelector(".hacker_cursor2"),
+            document.querySelector(".hacker_cursor").style.display = "none"
         );
     }, 2000);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text3"),
-            document.querySelector(".text_hide3"),
-            document.querySelector(".text_cursor3"),
-            document.querySelector(".text_cursor2").style.display = "none"
+            document.querySelector(".hide_text3"),
+            document.querySelector(".hacker_cursor3"),
+            document.querySelector(".hacker_cursor2").style.display = "none"
         );
     }, 2800);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text4"),
-            document.querySelector(".text_hide4"),
-            document.querySelector(".text_cursor4"),
-            document.querySelector(".text_cursor3").style.display = "none"
+            document.querySelector(".hide_text4"),
+            document.querySelector(".hacker_cursor4"),
+            document.querySelector(".hacker_cursor3").style.display = "none"
         );
     }, 4000);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text5"),
-            document.querySelector(".text_hide5"),
-            document.querySelector(".text_cursor5"),
-            document.querySelector(".text_cursor4").style.display = "none"
+            document.querySelector(".hide_text5"),
+            document.querySelector(".hacker_cursor5"),
+            document.querySelector(".hacker_cursor4").style.display = "none"
         );
     }, 5100);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text6"),
-            document.querySelector(".text_hide6"),
-            document.querySelector(".text_cursor6"),
-            document.querySelector(".text_cursor5").style.display = "none"
+            document.querySelector(".hide_text6"),
+            document.querySelector(".hacker_cursor6"),
+            document.querySelector(".hacker_cursor5").style.display = "none"
         );
     }, 6500);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text7"),
-            document.querySelector(".text_hide7"),
-            document.querySelector(".text_cursor7"),
-            document.querySelector(".text_cursor6").style.display = "none"
+            document.querySelector(".hide_text7"),
+            document.querySelector(".hacker_cursor7"),
+            document.querySelector(".hacker_cursor6").style.display = "none"
         );
     }, 7800);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text8"),
-            document.querySelector(".text_hide8"),
-            document.querySelector(".text_cursor8"),
-            document.querySelector(".text_cursor7").style.display = "none"
+            document.querySelector(".hide_text8"),
+            document.querySelector(".hacker_cursor8"),
+            document.querySelector(".hacker_cursor7").style.display = "none"
         );
     }, 9900);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".cursor").style.opacity = 1,
-            document.querySelector(".text_cursor8").style.display = "none"
+            document.querySelector(".hacker_cursor8").style.display = "none"
         );
     }, 12500);
 </script>
@@ -329,8 +329,8 @@
             if (answer === "rogue" || answer === "rogue?") {
                     animateTyping(
                         document.querySelector(".text9"),
-                        document.querySelector(".text_hide9"),
-                        document.querySelector(".text_cursor9"),
+                        document.querySelector(".hide_text9"),
+                        document.querySelector(".hacker_cursor9"),
                     );
             } else {
                 displayErrorMessage("X"); // Display error message

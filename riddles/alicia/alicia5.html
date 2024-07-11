@@ -32,24 +32,24 @@
         </div>
     </div>
     <div class="container">
-        <div class="text_hide"></div>
-        <div class="text">Shit you got here fast.</div>
-        <div class="text_cursor"></div>
+        <div class="hide_text"></div>
+        <div class="text">Here we go!</div>
+        <div class="hacker_cursor"></div>
     </div>
     <div class="container">
-        <div class="text_hide2"></div>
-        <div class="text2">Well I guess this was expected.</div>
-        <div class="text_cursor2"></div>
+        <div class="hide_text2"></div>
+        <div class="text2">One more riddle! Get excited!</div>
+        <div class="hacker_cursor2"></div>
     </div>
     <div class="container">
-        <div class="text_hide3"></div>
-        <div class="text3">But you'll never get this last one.</div>
-        <div class="text_cursor3"></div>
+        <div class="hide_text3"></div>
+        <div class="text3">Okay! Here it comes!</div>
+        <div class="hacker_cursor3"></div>
     </div>
     <div class="container">
-        <div class="text_hide4"></div>
-        <div class="text4">Take my skin, I won't cry. But you will.</div>
-        <div class="text_cursor4"></div>
+        <div class="hide_text4"></div>
+        <div class="text4">What has many teeth but cannot bite?</div>
+        <div class="hacker_cursor4"></div>
     </div>
     <div class="cursor">
         <form id="answerform">
@@ -196,37 +196,37 @@
 
     animateTyping(
         document.querySelector(".text"),
-        document.querySelector(".text_hide"),
-        document.querySelector(".text_cursor")
+        document.querySelector(".hide_text"),
+        document.querySelector(".hacker_cursor")
     );
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text2"),
-            document.querySelector(".text_hide2"),
-            document.querySelector(".text_cursor2"),
-            document.querySelector(".text_cursor").style.display = "none"
+            document.querySelector(".hide_text2"),
+            document.querySelector(".hacker_cursor2"),
+            document.querySelector(".hacker_cursor").style.display = "none"
         );
     }, 2900);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text3"),
-            document.querySelector(".text_hide3"),
-            document.querySelector(".text_cursor3"),
-            document.querySelector(".text_cursor2").style.display = "none"
+            document.querySelector(".hide_text3"),
+            document.querySelector(".hacker_cursor3"),
+            document.querySelector(".hacker_cursor2").style.display = "none"
         );
     }, 5800);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text4"),
-            document.querySelector(".text_hide4"),
-            document.querySelector(".text_cursor4"),
-            document.querySelector(".text_cursor3").style.display = "none"
+            document.querySelector(".hide_text4"),
+            document.querySelector(".hacker_cursor4"),
+            document.querySelector(".hacker_cursor3").style.display = "none"
         );
     }, 8700);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".cursor").style.opacity = 1,
-            document.querySelector(".text_cursor4").style.display = "none"
+            document.querySelector(".hacker_cursor4").style.display = "none"
         );
     }, 12200);
 </script>
@@ -262,7 +262,7 @@
         submitButton.addEventListener('click', function () {
             const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
 
-            if (answer === "onion" || answer === "an onion") {
+            if (answer === "comb" || answer === "a comb") {
                 window.location.href = 'alicia_end.html'; // Replace with your actual URL
             } else {
                 displayErrorMessage("X"); // Display error message

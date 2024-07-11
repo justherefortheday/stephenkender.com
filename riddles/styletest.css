@@ -27,30 +27,14 @@ body {
     width: fit-content;
 }
 
-.text,
-.text2,
-.text3,
-.text4,
-.text5,
-.text6,
-.text7,
-.text8,
-.text9 {
+div[class^="text"] {
     font-size: 14.5px;
     font-weight: 500;
     margin-bottom: 1px;
     width: auto;
 }
 
-.text_hide,
-.text_hide2,
-.text_hide3,
-.text_hide4,
-.text_hide5,
-.text_hide6,
-.text_hide7,
-.text_hide8 ,
-.text_hide9 {
+div[class^="hide_text"]{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -60,15 +44,7 @@ body {
     width: auto;
 }
 
-.text_cursor,
-.text_cursor2,
-.text_cursor3,
-.text_cursor4,
-.text_cursor5,
-.text_cursor6,
-.text_cursor7,
-.text_cursor8,
-.text_cursor9 {
+div[class^="hacker_cursor"] {
     position: absolute;
     top: 0;
     bottom: 0;

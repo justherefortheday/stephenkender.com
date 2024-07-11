@@ -32,29 +32,29 @@
     </div>
 
     <div class="container">
-        <div class="text_hide"></div>
+        <div class="hide_text"></div>
         <div class="text">Alright now you're going too fast.</div>
-        <div class="text_cursor"></div>
+        <div class="hacker_cursor"></div>
     </div>
     <div class="container">
-        <div class="text_hide2"></div>
+        <div class="hide_text2"></div>
         <div class="text2">I'm running out of riddles.</div>
-        <div class="text_cursor2"></div>
+        <div class="hacker_cursor2"></div>
     </div>
     <div class="container">
-        <div class="text_hide3"></div>
+        <div class="hide_text3"></div>
         <div class="text3">Well I guess I have a couple more.</div>
-        <div class="text_cursor3"></div>
+        <div class="hacker_cursor3"></div>
     </div>
     <div class="container">
-        <div class="text_hide4"></div>
+        <div class="hide_text4"></div>
         <div class="text4">I have a foot on each side</div>
-        <div class="text_cursor4"></div>
+        <div class="hacker_cursor4"></div>
     </div>
     <div class="container">
-        <div class="text_hide5"></div>
+        <div class="hide_text5"></div>
         <div class="text5">and one in the middle. What am I?</div>
-        <div class="text_cursor5"></div>
+        <div class="hacker_cursor5"></div>
     </div>
     <div class="cursor">
         <form id="answerform">
@@ -201,45 +201,45 @@
 
     animateTyping(
         document.querySelector(".text"),
-        document.querySelector(".text_hide"),
-        document.querySelector(".text_cursor")
+        document.querySelector(".hide_text"),
+        document.querySelector(".hacker_cursor")
     );
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text2"),
-            document.querySelector(".text_hide2"),
-            document.querySelector(".text_cursor2"),
-            document.querySelector(".text_cursor").style.display = "none"
+            document.querySelector(".hide_text2"),
+            document.querySelector(".hacker_cursor2"),
+            document.querySelector(".hacker_cursor").style.display = "none"
         );
     }, 2400);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text3"),
-            document.querySelector(".text_hide3"),
-            document.querySelector(".text_cursor3"),
-            document.querySelector(".text_cursor2").style.display = "none"
+            document.querySelector(".hide_text3"),
+            document.querySelector(".hacker_cursor3"),
+            document.querySelector(".hacker_cursor2").style.display = "none"
         );
     }, 4900);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text4"),
-            document.querySelector(".text_hide4"),
-            document.querySelector(".text_cursor4"),
-            document.querySelector(".text_cursor3").style.display = "none"
+            document.querySelector(".hide_text4"),
+            document.querySelector(".hacker_cursor4"),
+            document.querySelector(".hacker_cursor3").style.display = "none"
         );
     }, 8800);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".text5"),
-            document.querySelector(".text_hide5"),
-            document.querySelector(".text_cursor5"),
-            document.querySelector(".text_cursor4").style.display = "none"
+            document.querySelector(".hide_text5"),
+            document.querySelector(".hacker_cursor5"),
+            document.querySelector(".hacker_cursor4").style.display = "none"
         );
     }, 11900);
     setTimeout(function () {
         animateTyping(
             document.querySelector(".cursor").style.opacity = 1,
-            document.querySelector(".text_cursor5").style.display = "none"
+            document.querySelector(".hacker_cursor5").style.display = "none"
         );
     }, 15200);
 </script>
