@@ -69,7 +69,6 @@ p {
   max-width: 1080px;
   height: auto; /* Allow height to adjust based on content */
   display: flex;
-  flex-direction: column; /* Stack items vertically on mobile */
   margin: 20px auto;
   text-align: left;
   box-shadow: 3px 3px 10px 2px #1117;
@@ -77,11 +76,17 @@ p {
   overflow: hidden; /* Prevent overflow */
 }
 
+/* Text and Image styles */
 .box-text {
+  width: 50%; /* 50% width for text */
   padding: 20px; /* Add padding for better spacing */
+  display: flex;
+  flex-direction: column; /* Stack text elements vertically */
+  justify-content: center; /* Center text vertically */
 }
 
 .box-img {
+  width: 50%; /* 50% width for image */
   height: 200px; /* Fixed height for images */
   display: flex;
   align-items: center;
@@ -98,6 +103,7 @@ p {
   display: block; /* Make the link fill the box */
 }
 
+/* Background images for each box */
 #box-img-1 {
   background-image: url('https://stephenkender.com/img/box-1.jpg');
 }
@@ -141,6 +147,11 @@ p {
 
   .box-img {
       height: 150px; /* Adjust height for mobile */
+      width: 100%; /* Full width for mobile */
+  }
+
+  .box-text {
+      width: 100%; /* Full width for mobile */
   }
 }
 
