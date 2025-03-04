@@ -1,221 +1,65 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="How long can we make the website descripti" />
-  <title>The only Stephen to have his own website</title>
-  <link rel="shortcut icon" type="image/png" href="https://stephenkender.com/favicon.png" />
-  <link rel="stylesheet" href="https://use.typekit.net/jch2akq.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link rel="stylesheet" type="text/css" href="styletest.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
-	
-	<link rel="stylesheet" href="https://use.typekit.net/fgt7mee.css">
-  <style type="text/css">
-@import url("css/bootstrap.css");
-  </style>
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>My Portfolio</title>
 </head>
-
 <body>
 
-  <a id="return-to-top"><i class="fa fa-chevron-up"></i></a>
-	
-	<img id="logo-img" src="https://stephenkender.com/img/Logo White.png" alt="my logo">
-
-	
-	<div class= "boxes" id="box-1"> 
-		<div class="box-text">
-	<h1>Looking for photos?</h1> 
-	
-
-			<p>This way!</p></div>
-		<div class="box-img">
-		<img src="https://stephenkender.com/img/box-1.jpg" alt="...">
-	</div>
-	</div>
-	
-		<div class= "boxes" id="box-2"> 
-			
-				<div class="box-img">
-		<img src="https://stephenkender.com/img/box-2.jpg" alt="...">
-	</div>
-		<div class="box-text">
-	<h1>Looking for a graphic designer?</h1> 
-	
-
-			<p>That way!</p></div>
-
-	</div>
-
-		<div class= "boxes" id="box-3"> 
-		<div class="box-text">
-	<h1>Just looking for me?</h1> 
-	
-
-			<p>Uhhh why?</p></div>
-		<div class="box-img">
-		<img src="https://stephenkender.com/img/box-3.jpg" alt="...">
-	</div>
-	</div>
-	
-		<div class= "boxes" id="box-4"> 
-					<div class="box-img">
-		<img src="https://stephenkender.com/img/box-4.jpg" alt="...">
-	</div>
-		<div class="box-text">
-	<h1>Looking for a mechanical designer?</h1> 
-	
-
-			<p>Over there!</p></div>
-
-	</div>
-   
-	
-
-
-
-
-  <div class="footer">
-   <p style="color: #ddd; text-align: center"> this website brought to you with love by stephen's tip-tappin' fingers</p>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js">
-  </script>
-	
-	<script>
-	function randomNumber(limit){
-  return Math.floor(Math.random()*limit);
-}
-	</script>
-
-<script>
-	// Example:
-// randomImage(randomBannerID, ['0.gif',50,50,'1.gif',25,25,'2.gif',50,25]); 
-
-// * Dependencies * 
-// this function requires the following snippet:
-// JavaScript/Randomizers/randomNumber
-
-function randomImage(imgTagID, imgArr)
-{
-  var imgSrc, imgW, imgH, r;
-  r = randomNumber(imgArr.length / 3);
-  
-  imgSrc = imgArr[r * 3];
-  imgW = imgArr[(r * 3)+1];
-  imgH = imgArr[(r * 3)+2];
- 
-  document.getElementById(imgTagID).src = imgSrc;
-  document.getElementById(imgTagID).width = imgW;
-  document.getElementById(imgTagID).height = imgH;
-}
-	</script>
-
-  <script>
-    $(document).ready(function () {
-      $(".single-item").slick({
-        dots: true,
-        adaptiveHeight: true
-      });
-    });
-  </script>
-
-  <script>
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on('click', function (event) {
-
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
-    });
-  </script>
-
-  <script>
-    // ===== Scroll to Top ==== 
-    $(window).scroll(function () {
-      if ($(this).scrollTop() >= 500) { // If page is scrolled more than 500px
-        $('#return-to-top').fadeIn(200); // Fade in the things
-      } else {
-        $('#return-to-top').fadeOut(200); // Else fade out the things
-      }
-    });
-    $('#return-to-top').click(function () { // When arrow is clicked
-      $('body,html').animate({
-        scrollTop: 0 // Scroll to top of body
-      }, 500);
-    });
-  </script>
-
-<script>
-	$(document).ready(function() {
-  $(window).scroll(function() {
-    var scrollPos = $(window).scrollTop();
+    <a id="return-to-top"><i class="fa fa-chevron-up"></i></a>
     
-    var page1Top = $("#photography").offset().top;
-    var page2Top = $("#design").offset().top;
-    var page3Top = $("#3d").offset().top;
-	  var footer = $(".footer").offset().top;
-	  
-	if (scrollPos < page1Top ) {
-      $("#menu-1").removeClass("black-inactive");
-      $("#menu-2").removeClass("black-inactive");
-      $("#menu-3").removeClass("black-inactive");
-    }
+    <img id="logo-img" src="https://stephenkender.com/img/Logo White.png" alt="my logo">
 
-    if (scrollPos >= page1Top && scrollPos < page2Top) {
-      $("#menu-1").removeClass("black-inactive");
-      $("#menu-2").addClass("black-inactive");
-      $("#menu-3").addClass("black-inactive");
-    } 
+    <div class="boxes" id="box-1"> 
+        <div class="box-text">
+            <h1>Explore Stunning Photography</h1> 
+            <p>Click here to see my work!</p>
+        </div>
+        <div class="box-img" id="box-img-1">
+            <a href="https://wildlife.darkroom.com"></a>
+        </div>
+    </div>
+    
+    <div class="boxes" id="box-2">     
+        <div class="box-img" id="box-img-2">
+            <a href="https://stephenkender.com/gd/"></a>
+        </div>
+        <div class="box-text">
+            <h1>Need a Graphic Designer?</h1> 
+            <p>Check out my design portfolio!</p>
+        </div>
+    </div>
 
-    if (scrollPos >= page2Top && scrollPos < page3Top) {
-      $("#menu-2").removeClass("black-inactive");
-      $("#menu-1").addClass("black-inactive");
-      $("#menu-3").addClass("black-inactive");
-    }
-    if (scrollPos >= page3Top && scrollPos < footer) {
-      $("#menu-3").removeClass("black-inactive");
-      $("#menu-1").addClass("black-inactive");
-      $("#menu-2").addClass("black-inactive");
-    } 
-	  
-	if (scrollPos >= footer) {
-      $("#menu-1").removeClass("black-inactive");
-      $("#menu-2").removeClass("black-inactive");
-      $("#menu-3").removeClass("black-inactive");
-    } 
+    <div class="boxes" id="box-3"> 
+        <div class="box-text">
+            <h1>Want to Know More About Me?</h1> 
+            <p>Click here to learn more!</p>
+        </div>
+        <div class="box-img" id="box-img-3">
+            <a href="https://stephenkender.com/about/"></a>
+        </div>
+    </div>
+    
+    <div class="boxes" id="box-4"> 
+        <div class="box-img" id="box-img-4">
+            <a href="https://stephenkender.com/3d/"></a>
+        </div>
+        <div class="box-text">
+            <h1>Looking for a Mechanical Engineer?</h1> 
+            <p>Find out more about my engineering services!</p>
+        </div>
+    </div>
 
-  });
-});
-	</script>
-	
+    <div class="footer">
+        <p style="color: #ddd; text-align: center">This website is brought to you with love by Stephen's tip-tappin' fingers</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="scripts.js"></script> <!-- Link to your JavaScript file -->
 </body>
-
 </html>
