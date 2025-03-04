@@ -1,0 +1,299 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="How long can we make the website descripti" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stephenkender.com/riddles/styletest.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothState.js/0.5.6/jquery.smoothState.min.js"
+        integrity="sha512-SKtzgfNYpXndILHPbGDJA3CwwqHeXdFS8YeP3R02N+OBHmbGm7O43mVsTviWi285EnmwBGFw0YjI1c7+hU2HNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script href="https://stephenkender.com/riddles/transition.js"></script>
+
+</head>
+
+
+
+
+
+<body>
+
+    <!-- Detail page -->
+    <div class="m-scene" id="main">
+        <div class="m-aside scene_element scene_element--fadein">
+        </div>
+        <div class="m-right-panel m-page scene_element scene_element--fadein">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="hide_text"></div>
+        <div class="text">I heard Justin's all done with his already.</div>
+        <div class="hacker_cursor"></div>
+    </div>
+    <div class="container">
+        <div class="hide_text2"></div>
+        <div class="text2">Better hurry up.</div>
+        <div class="hacker_cursor2"></div>
+    </div>
+    <div class="container">
+        <div class="hide_text3"></div>
+        <div class="text3">Be a shame if you had to wait...</div>
+        <div class="hacker_cursor3"></div>
+    </div>
+    <div class="container">
+        <div class="hide_text4"></div>
+        <div class="text4">Ok fine. Which word is always spelled</div>
+        <div class="hacker_cursor4"></div>
+    </div>
+    <div class="container">
+        <div class="hide_text5"></div>
+        <div class="text5">incorrectly in the dictionary?</div>
+        <div class="hacker_cursor5"></div>
+    </div>
+    <div class="cursor">
+        <form id="answerform">
+            <input type="text" id="answer" name="answer" required />
+            <i class="blinky"></i>
+            <button type="button" id="submitButton">
+                <i class="fa-solid fa-angles-right"></i>
+            </button>
+            <span id="message"></span> <!-- Message span -->
+        </form>
+    </div>
+</body>
+
+<script>
+    // Function to animate typing effect for a text element
+    function animateTyping(textElement, hideElement, cursorElement) {
+        let text_array = textElement.innerHTML.split("");
+        let text_array_slice = textElement.innerHTML.split(" ");
+        let text_len = text_array.length;
+
+        const word_len = text_array_slice.map((word) => {
+            return word.length;
+        });
+
+        console.log(word_len);
+
+        let timings = {
+            easing: `steps(${Number(word_len[0] + 1)}, end)`,
+            delay: 200,
+            duration: 400,
+            fill: 'forwards'
+        };
+
+        let cursor_timings = {
+            duration: 1000,
+            iterations: Infinity,
+            easing: 'cubic-bezier(0,.26,.44,.93)'
+        };
+
+        cursorElement.animate([{
+                opacity: 1
+            },
+            {
+                opacity: 1,
+                offset: 0.3
+            },
+            {
+                opacity: 0
+            }
+        ], cursor_timings);
+
+        if (text_array_slice.length == 1) {
+            timings.easing = `steps(${Number(word_len[0])}, end)`;
+
+            hideElement.animate([{
+                    left: '0%'
+                },
+                {
+                    left: `${(100 / text_len) * (word_len[0])}%`
+                }
+            ], timings);
+
+            cursorElement.animate([{
+                    left: '0%'
+                },
+                {
+                    left: `${(100 / text_len) * (word_len[0])}%`
+                }
+            ], timings);
+        } else {
+            hideElement.animate([{
+                    left: '0%'
+                },
+                {
+                    left: `${(100 / text_len) * (word_len[0] + 1)}%`
+                }
+            ], timings);
+
+            cursorElement.animate([{
+                    left: '0%'
+                },
+                {
+                    left: `${(100 / text_len) * (word_len[0] + 1)}%`
+                }
+            ], timings);
+        }
+
+        let left_instance = 0;
+
+        for (let i = 1; i < text_array_slice.length; i++) {
+            const single_word_len = word_len[i];
+            console.log(single_word_len);
+
+            if (i == 1) {
+                left_instance = (100 / text_len) * (word_len[i - 1] + 1);
+                console.log(left_instance);
+            }
+
+            let timings_2 = {
+                easing: `steps(${Number(single_word_len + 1)}, end)`,
+                delay: (2 * (i + 1) + (2 * i)) * (75),
+                duration: 400,
+                fill: 'forwards'
+            };
+
+            if (i == (text_array_slice.length - 1)) {
+                timings_2.easing = `steps(${Number(single_word_len)}, end)`;
+                hideElement.animate([{
+                        left: `${left_instance}%`
+                    },
+                    {
+                        left: `${left_instance + ((100 / text_len) * (word_len[i]))}%`
+                    }
+                ], timings_2);
+
+                cursorElement.animate([{
+                        left: `${left_instance}%`
+                    },
+                    {
+                        left: `${left_instance + ((100 / text_len) * (word_len[i]))}%`
+                    }
+                ], timings_2);
+            } else {
+                hideElement.animate([{
+                        left: `${left_instance}%`
+                    },
+                    {
+                        left: `${left_instance + ((100 / text_len) * (word_len[i] + 1))}%`
+                    }
+                ], timings_2);
+
+                cursorElement.animate([{
+                        left: `${left_instance}%`
+                    },
+                    {
+                        left: `${left_instance + ((100 / text_len) * (word_len[i] + 1))}%`
+                    }
+                ], timings_2);
+            }
+
+            left_instance = left_instance + ((100 / text_len) * (word_len[i] + 1));
+        }
+    }
+
+    animateTyping(
+        document.querySelector(".text"),
+        document.querySelector(".hide_text"),
+        document.querySelector(".hacker_cursor")
+    );
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text2"),
+            document.querySelector(".hide_text2"),
+            document.querySelector(".hacker_cursor2"),
+            document.querySelector(".hacker_cursor").style.display = "none"
+        );
+    }, 3900);
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text3"),
+            document.querySelector(".hide_text3"),
+            document.querySelector(".hacker_cursor3"),
+            document.querySelector(".hacker_cursor2").style.display = "none"
+        );
+    }, 7200);
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text4"),
+            document.querySelector(".hide_text4"),
+            document.querySelector(".hacker_cursor4"),
+            document.querySelector(".hacker_cursor3").style.display = "none"
+        );
+    }, 14500);
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".text5"),
+            document.querySelector(".hide_text5"),
+            document.querySelector(".hacker_cursor5"),
+            document.querySelector(".hacker_cursor4").style.display = "none"
+        );
+    }, 16900);
+    setTimeout(function () {
+        animateTyping(
+            document.querySelector(".cursor").style.opacity = 1,
+            document.querySelector(".hacker_cursor5").style.display = "none"
+        );
+    }, 19000);
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const submitButton = document.getElementById('submitButton');
+        const answerInput = document.getElementById('answer');
+        const messageSpan = document.getElementById('message');
+
+
+        document.getElementById('answerform').addEventListener('keypress', function (event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                document.getElementById('submitButton').click(); // Simulate a click on the submit button
+            }
+        });
+
+        document.getElementById('answerform').addEventListener('keypress', function (event) {
+            if (event.key === "Return") {
+                event.preventDefault();
+                document.getElementById('submitButton').click(); // Simulate a click on the submit button
+            }
+        });
+
+        document.getElementById('answerform').addEventListener('keypress', function (event) {
+            if (event.key === "13") {
+                event.preventDefault();
+                document.getElementById('submitButton').click(); // Simulate a click on the submit button
+            }
+        });
+
+        submitButton.addEventListener('click', function () {
+            const answer = answerInput.value.trim().toLowerCase(); // Trim and convert to lowercase
+
+            if (answer === "incorrectly" || answer === "the word incorrectly") {
+                window.location.href = 'alicia5.html'; // Replace with your actual URL
+            } else {
+                displayErrorMessage("X"); // Display error message
+            }
+        });
+
+
+        function displayErrorMessage(message) {
+            messageSpan.textContent = message; // Set error message text
+
+            // Fade out after 2 seconds
+            setTimeout(function () {
+                messageSpan.textContent = ''; // Clear message
+            }, 2000); // 2000 milliseconds = 2 seconds
+        }
+    });
+</script>
+
+
+
+</html>
