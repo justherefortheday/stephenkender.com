@@ -94,7 +94,7 @@ a:hover {
 h1 {
   font-size: 58px;
 font-family: freight-display-pro, serif;
-	letter-spacing: 110%;
+	letter-spacing: 1%;
   font-weight: 600;
   line-height: 1.15em;
   padding: 0px 10px 0px 10px;
@@ -200,14 +200,7 @@ p {
 #box-4 {
 	background-color: #D09F6C;
 	color: #222;
-}
-
-
-
-
-
-
-
+} 
 /* HEY HERES WHERE THE TEST STUFF ENDS*/
 
 #about  {
