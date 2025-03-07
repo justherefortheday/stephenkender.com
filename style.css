@@ -148,6 +148,7 @@ p {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+  cursor: pointer;
 	  }
 
 .box-img:hover {
