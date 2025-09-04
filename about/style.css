@@ -65,9 +65,10 @@ html {
 }
 
 body {
-    margin: 0px;
+    margin: auto;
     font-family: "Axiforma Black";
     font-weight: 400;
+    max-width: 1000px;
 }
 
 a {
@@ -112,6 +113,7 @@ p {
   padding: 0px 10px 0px 10px;
   font-family: pedestria-mvb, sans-serif;
   font-size: 25px;
+  color: white;
 }
 
 /* HEY HERES WHERE THE TEST STUFF STARTS*/
