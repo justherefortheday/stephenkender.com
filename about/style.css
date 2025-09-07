@@ -55,42 +55,22 @@ font-weight: 900;
 font-style: normal;
 }
 
-
-
-
 html {
-  background: #393F4D;
+  background: #1c2521;
   -webkit-font-smoothing: antialiased;
-  text-align: left;
 }
 
 body {
     margin: auto;
-    font-family: "Axiforma Black";
-    font-weight: 400;
     max-width: 1000px;
 }
 
 a {
   text-decoration: none;
-  color: #111;
+  font-family: 'Avenir';
+	font-weight: 600;
 }
 
-a:link:visited {
-  color: #111;
-}
-
-a:link:hover {
-  color: #111;
-}
-
-a:hover {
-  color: #111;
-}
-
-.stronglink {
-  font-weight: 600;
-}
 
 h1 {
   font-size: 58px;
@@ -113,590 +93,387 @@ p {
   padding: 0px 10px 0px 10px;
   font-family: pedestria-mvb, sans-serif;
   font-size: 25px;
-  color: white;
+  color: #fff;
 }
 
-/* HEY HERES WHERE THE TEST STUFF STARTS*/
-
-.boxes {
-    width: 90%;
-    max-width: 1080px;
-    height: 400px;
-    display: flex;
-    margin: 40px auto 40px auto;
-	text-align: left;
-	box-shadow: 3px 3px 10px 2px #1117;
-	border-radius: 35px;
-}
-
-.box-text {
-	width: 60%;
-	display: block;
-	text-align: left;
-	margin-left: 5%;
-  margin-right: 3%;
-}
-
-.box-img {
-	width: 43%;
-	height: 100%;
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
-	object-fit: contain;
-	overflow: hidden;
-	transition: all 0.3s ease;
-	border-radius: 35px;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center center;
-  cursor: pointer;
-	  }
-
-.box-img:hover {
-	width: 53%;
-	transition: all 0.3s ease;
-}
-
-.box-img img{
-	height: 150%;
-	object-fit: cover;
-	overflow: hidden;
-}
-	  
-	  #box-img-1 {
-		  background-image: url('https://stephenkender.com/img/box-1.jpg');
-		  box-shadow: -10px 0px 10px -6px #1117;
-	  }  
-	  #box-img-2 {
-		  background-image: url('https://stephenkender.com/img/box-2.jpg');
-		  box-shadow: 10px 0px 10px -6px #1117;
-	  } 
-	  #box-img-3 {
-		  background-image: url('https://stephenkender.com/img/box-3.jpg');
-		  		  box-shadow: -10px 0px 10px -6px #1117;
-	  }  
-	  #box-img-4 {
-		  background-image: url('https://stephenkender.com/img/box-4.jpg');
-		  		  box-shadow: 10px 0px 10px -6px #1117;
-	  }  
-
-
-	  
-
-#box-1 {
-    background-color: #4A5B3B;
-    color: #F9B53C;
-    font-size: 36px;
-}
-
-#box-2 {
-	background-color: #F45C3A;
-	color: #1E2B48;	
-}
-
-#box-3 {
-	background-color: #927161;
-	color: #F1E8DB;
-}
-
-#box-4 {
-	background-color: #D09F6C;
-	color: #222;
-} 
-/* HEY HERES WHERE THE TEST STUFF ENDS*/
-
-#about  {
-  height: 100vh;
-  padding: 0 !important;
-}
-
-.about-column {
-  width: 30%;
-  height: 100vh;
-	position: fixed;
-	left: 0;
-  display: flex;
-	margin: auto;
-}
-
-.about-column-content {
-  width: 72%;
-	margin: auto;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-	flex-flow: column;
-}
-
-.profile {
-  min-height: 70vh;
-  display: flex;
-  align-content: center;
-  width: 80%;
-  margin: 0;
-  justify-content: center;
-}
-
-.profile-pic {
-  width: 75%;
-	height: auto;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
 
 #logo-img {
   width: 30%;
-  margin: 35px 35% 35px 35%;
+  margin: 35px 35% 15px 35%;
 }
 
-.intro-section-wrapper {
-  width: 75%;
-  height: 69%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.intro-section-text {
-    max-width: 100%;
-	margin: 50px;
-	display: flex;
-	justify-content: center;
-    align-items: center;
-	flex-flow: column;
-	text-align: center;
-}
-
-.intro-section-text p{
-  font-size: 25px;
-  line-height: 1.5em;
-  text-align: center;
+.container {
   width: 100%;
+  margin: auto;
+  overflow: hidden;
 }
 
-.intro-section-text h1 {
-  font-size: 6vw !important;
-  line-height: 120% !important;
+header {
+  text-transform: uppercase;
+  border-bottom: #0003 3px solid;
+  padding-top: 10px;
+  min-height: 70px;
+  text-align: center;
+}
+
+header ul {
   margin: 0;
-  padding-bottom: 15px;
-  text-align: center;
-  color: #444;
-  letter-spacing: 3px;
+  padding: 0;
 }
 
-.colorchange-text {
-  animation-name: changeColor;
-  animation-iteration-count: infinite;
-  animation-duration: 20s;
+header li {
+  display: inline;
+  padding: 0px 20px 0px 20px;
 }
 
-.menu-text {
-	display: inline-block;
-	transition: all .3s ease;
+header nav {
+  float: center;
+  margin-top: 10px;
 }
 
-#menu-1 {
-	color: #ff6540;
-	transition: all 0.3s ease;
+nav a {
+  font-size: 16px;
+  color: #fff;
 }
 
-#menu-2 {
-	color: #275fff;
-	transition: all 0.3s ease;
+nav a:visited {
+  color: #fff;
 }
 
-#menu-3 {
-	color: #ffeb0d;
-	transition: all 0.3s ease;
+nav a:hover {
+  color: rgba(229, 87, 44, 0.9);
 }
 
-.black-inactive {
-	color: #111 !important;	
-	text-transform: none !important;
-    transition: all 0.3s ease;
+nav .current a{
+  color: #DC9E2F;
+  cursor: default;
 }
 
-@keyframes changeColor {
-  0% {
-    color: #111111;
-  }
-
-  20% {
-    color: #ff7d01;
-  }
-
-  40% {
-    color: #ad11dd;
-  }
-
-  60% {
-    color: #2dc22d;
-  }
-
-  80% {
-    color: #8fcff9;
-  }
-
-  100% {
-    color: #111111;
-  }
-}
-
-.profile-pic img {
-  width: 100%;
-  max-width: 650px;
-  border-radius: 80% 20% 50% 50% / 50% 38% 62% 50%;
-  box-shadow: #35353566 2px 2px 5px 1px;
-  animation-name: blob;
-  animation-iteration-count: infinite;
-  animation-duration: 20s;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes blob {
-  0% {
-    border-radius: 80% 20% 50% 50% / 50% 38% 62% 50%;
-  }
-
-  20% {
-    border-radius: 42% 53% 45% 50% / 61% 46% 52% 19%
-  }
-
-  40% {
-    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%
-  }
-
-  60% {
-    border-radius: 27% 53% 37% 35% / 24% 28% 60% 67%;
-  }
-
-  80% {
-    border-radius: 63% 32% 30% 50% / 81% 46% 52% 19%;
-  }
-
-  100% {
-    border-radius: 30% 70% 20% 50% / 40% 38% 62% 50%;
-  }
-}
-
-#return-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #000000b3;
-  width: 100px;
-  height: 65px;
-  text-decoration: none;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  border-radius: 35px;
+.menu {
   display: none;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  text-align: center;
-  z-index: 999;
+  z-index: 99999999;
 }
 
-#return-to-top i {
-  color: #fff;
-  margin: 0;
-  position: relative;
-  left: 0px;
-  top: 15px;
-  font-size: 30px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+@media screen and (max-width: 992px) {
+h2 {
+  font-size: 36px;
 }
-
-#return-to-top:hover {
-  background: #000000e6;
-}
-
-#return-to-top:hover i {
-  color: #fff;
-  top: 2px;
-  font-size: 26px;
-}
-
-section {
-  width: 70%;
-  margin: 0 0 0 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-}
-
-section:nth-of-type(even) {
-  flex-direction: row-reverse;
-}
-
-.section-media {
-  width: 50%;
-  height: auto;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-	flex-flow: column
-}
-
-.section-media>img {
-  width: 300px;
-}
-
-.section-text {
-  width: 50%;
-  height: auto;
-  display: flex;
-  text-align: left;
-  justify-content: center;
-  align-items: center;
-  padding: 200px 0;
-}
-
-.section-text-wrapper {
-    max-width: 85%;
-}
-
-.section-text-wrapper h1 {
-    font-size: 50px;
-    line-height: 3.75rem;
-    margin: 0;
-    padding-bottom: 25px;
-    text-align: left;
-    letter-spacing: 2px;
-    max-width: none;
-}
-
-.section-text-wrapper p {
-  font-size: 25px;
-  line-height: 1.5em;
-  margin: auto;
-  width: 100%;
-}
-
-hr {
-  width: 45%;
-  color: #35353566;
-  margin: 0 auto 0 42.5%;
-}
-
-.footer {
-	width: 70%;
-  margin: 0 15% 0 15%;
-  text-align: center;
-  padding-bottom: 30px;
-  height: auto;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  padding-top: 50px;
-}
-
-.single-item p {
-  padding-bottom: 40px;
-  font-size: 14px;
-}
-
-.slick-next:before,
-.slick-prev:before {
-  color: #444 !important;
-  font-size: 25px !important;
-}
-
-.slick-track {
-  height: 500px;
-}
-
-.slick-slide img {
-  height: auto;
-  max-width: 100%;
-  max-height: 500px;
-  margin: auto;
-}
-
-.slick-initialized .slick-slide {
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  max-height: 500px;
-}
-
-
-
-@media screen and (max-width: 920px) {
-
-	/* HEY HERES WHERE THE TEST STUFF STARTS*/
-
-.boxes {
-	height: auto;
-	min-height: 400px;
-	flex-direction: column;
-}
-
-.box-text {
-	width: 90%;
-	min-height: 60%;
-	display: block;
-	text-align: left;
-	padding: 0 0 40px 0;
-}
-
-.box-img {
-	width: 100%;
-	min-height: 300px;
-	max-height: 40%;
-	display:flex; 
-	align-content: center;
-	align-items: center;
-	justify-content: center;
-}
-
-.box-img:hover {
-	height: 40%;
-	width: 100%;
-}
+	
+  .container {
+    width: 100%;
+    display: none;
+  }
+  .menu {
+    height: auto;
+    display: block;
+    background: #DC9E2F;
+    color: #222;
+    text-align: center;
+    width: 180px;
+    margin-left: -90px;
+    border-radius: 0px 0px 6px 6px;
+  font-family: 'Avenir';
+    font-weight: bold;
+    position: fixed;
+    left: 50%;
+	box-shadow: 5px 5px 10px #0002;
+  }
+  #mobile-menu {
+    display: none;
+    padding-bottom: 20px;
+    border-top: #222 3px solid;
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+  }
+  #mobile-menu a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+    color: #222;
+  }
+ .dropdown-button {
+    -webkit-appearance: none;
+    width: 100%;
+    background: none;
+    cursor: pointer;
+  font-family: 'Avenir';
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+    padding: 15px 0px 18px 0px;
+    line-height: .75em;
+  }
+  .fa-caret-down {
+    transition: all .25s ease-in-out;
+  }
+  .fa-caret-down.up {
+    transform: rotate(180deg);
+    transition: all .25s ease-in-out;
+  }
+  header {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-top: 90px;
+	border-bottom: none;
+  }
 	
 	#logo-img {
-  width: 50%;
-  margin: 35px 25% 35px 25%;
-}
-	
-	h1 {
-		font-size: 48px;
+	  width: 50%;
+	  margin: 10px 25% 10px 25%;
 	}
-
-
-/* HEY HERES WHERE THE TEST STUFF ENDS*/
-
-
-  .profile-pic {
-	width: 80%;
-	height: auto;
-  }
-
-  .profile-pic img {
-    max-height: 200px;
-    width: auto;
-    height: auto;
-  }
-	
-.intro-section-wrapper {
-  width: 100%;
-  height: auto;
 }
 
-.intro-section-text {
-    max-width: 80%;
-	margin: auto;
+
+
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #gallery-43 {
+        padding: var(--sectionPadding);
+        position: relative;
+        /* Prevents overflow from the image going off screen */
+        overflow: hidden;
+    }
+    #gallery-43 .cs-container {
+        width: 100%;
+        max-width: 69rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #gallery-43 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+
+    #gallery-43 .cs-image-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 16px - 20px */
+        gap: clamp(1rem, 1.5vw, 1.25rem);
+    }
+    #gallery-43 .cs-item {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1;
+        margin: 0;
+        position: relative;
+        display: block;
+		box-shadow: 3px 3px 9px #0004;
+    }
+    #gallery-43 .cs-item:hover .cs-hover-box {
+        opacity: 1;
+    }
+    #gallery-43 .cs-item:hover .cs-icon {
+        /* return to original position */
+        transform: rotateY(0);
+    }
+    #gallery-43 .cs-item:hover .cs-h3 {
+        opacity: 1;
+        /* Return to original position */
+        transform: translateY(0);
+    }
+    #gallery-43 .cs-item:hover .cs-hover-box-text {
+        opacity: 1;
+        /* Return to original position */
+        transform: translateY(0);
+    }
+    #gallery-43 .cs-picture {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+		background: #00000010;
+    }
+    #gallery-43 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #gallery-43 .cs-hover-box {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+        background-color: #DC9E2F;
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Prevents padding from contributing to height & width */
+        box-sizing: border-box;
+        /* Sets stage for 3d transform animation */
+        perspective: 700px;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        /* prevents mouse from being able to interact with these elements */
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+    #gallery-43 .cs-icon {
+        /* 50px - 60px */
+        width: clamp(3.125rem, 5vw, 3.75rem);
+        height: clamp(3.125rem, 5vw, 3.75rem);
+        /* 16px - 32px */
+        margin-bottom: clamp(1rem, 5vw, 2rem);
+        border-radius: 50%;
+        background-color: #fff;
+        outline: 0.5rem solid rgba(255, 255, 255, 0.7);
+        /* Start with the icon box rotated 90deg */
+        transform: rotateY(90deg);
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex: none;
+        transition: transform 0.5s;
+    }
+    #gallery-43 .cs-icon img {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    #gallery-43 .cs-h3 {
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 2vw, 1.5625rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0 auto;
+        max-width: 16.875rem;
+        color: #fff;
+        /* make starting position down 10px and invisible */
+        opacity: 0;
+        transform: translateY(0.625rem);
+        margin-bottom: 0.5rem;
+        transition:
+            opacity 0.3s,
+            transform 0.3s ease-out;
+        transition-delay: 0.1s;
+    }
+    #gallery-43 .cs-hover-box-text {
+        /* 13px - 16px */
+        font-size: clamp(1.05rem, 1vw, 1rem);
+        line-height: 1.5em;
+        margin: 0 auto;
+        max-width: 16.875rem;
+        color: #fff;
+        /* make starting position down 10px and invisible */
+        opacity: 0;
+        transform: translateY(0.625rem);
+        transition:
+            opacity 0.3s,
+            transform 0.3s ease-out;
+        transition-delay: 0.2s;
+    }
+}
+/* In Between - 600px */
+@media only screen and (min-width: 37.5rem) {
+    #gallery-43 .cs-image-group {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+    }
+    #gallery-43 .cs-item {
+        grid-column: span 6;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #gallery-43 .cs-item {
+        grid-column: span 4;
+    }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #gallery-43 .cs-title,
+    body.dark-mode #gallery-43 .cs-text {
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #gallery-43 .cs-text {
+        opacity: 0.8;
+    }
 }
 
-.intro-section-text p{
-  font-size: 20px;
-margin: auto 0;
-padding-bottom: 25px;
+:root {
+    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
+    --primary: #ff6a3e;
+    --primaryLight: #ffba43;
+    --secondary: #ffba43;
+    --secondaryLight: #ffba43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(2rem, .5vw, 6.25rem) 1rem;
 }
 
-.intro-section-text h1 {
-  font-size: 11vw !important;
+body {
+    margin: auto;
+    padding: 0;
 }
 
-  .colorchange-text h1 {
-    max-width: 100%;
-    font-size: 75px  !important;
-    line-height: 80px !important;
-  }
-
-  header {
-    min-height: 70vh;
-    padding: 4vh;
-  }
-
-  section {
-    width: 100%;
-    margin: 100px auto;
+*, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
     display: block;
-    height: auto;
-    padding-bottom: 0px;
-  }
-
-  .section-media {
-    width: 100%;
-    min-height: 25vh;
-    height: auto;
-  }
-
-  .section-media>img {
-    max-width: 75%;
-    max-height: 250px;
-    width: auto;
-    height: auto;
-    padding: 30px;
-  }
-
-  .section-text {
-    width: 100%;
-    height: auto;
-    text-align: center;
-    min-height: 45vh;
-  }
-
-  .section-text-wrapper h1 {
-    font-size: 8vw;
-    line-height: 120%;
-    text-align: center;
-    padding-bottom: 30px;
-    width: auto;
-  }
-
-  .section-text-wrapper p {
-    font-size: 17px;
-    line-height: 1.5em;
-    text-align: center;
-    width: auto;
-  }
-
-  hr {
-    width: 60%;
-    color: #35353566;
-    margin: 0 auto 0 auto;
-  }
-
-  .footer {
-    width: 100%;
-    margin: 0 auto 0 auto;
-    text-align: center;
-    padding-bottom: 80px;
-    padding-top: 50px;
-  }
-
-  #3d {
-    padding-bottom: 35px;
-  }
-
-  .slick-track {
-    height: 300px;
-  }
-
-  .slick-slide img {
-    max-height: 300px;
-  }
-
-  .slick-initialized .slick-slide {
-    max-height: 300px;
-  }
-
-
 }
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+                            
+
