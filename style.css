@@ -185,23 +185,26 @@ p {
 }
 
 #box-2 {
-	background-color: #C97B7B;
+	background-color: #DF9292;
 	color: #1E2B48;	
 }
 
 #box-3 {
-	background-color: #614d44;
+	background-color: #352c29;
 	color: #FFE0B3;
 }
 
 #box-4 {
-	background-color: #D4985A;
-	color: #1b2e1e;
+	background-color: #CE8840;
+	color: #313131;
 } 
 
 #logo-img {
-  width: 30%;
-  margin: 35px 35% 35px 35%;
+  width: 40%;
+  margin: auto;
+  max-width: 600px;
+  display: flex;
+  padding: 40px 0px 5px 0px;
 }
 
 
@@ -254,12 +257,12 @@ p {
 	width: 70%;
   margin: 0 15% 0 15%;
   text-align: center;
+  color: #ddd;
   padding-bottom: 30px;
   height: auto;
   display: flex;
   flex-flow: column;
   justify-content: center;
-  padding-top: 50px;
 }
 
 @media screen and (max-width: 920px) {
@@ -293,8 +296,7 @@ p {
 }
 	
 	#logo-img {
-  width: 50%;
-  margin: 35px 25% 35px 25%;
+  width: 60%;
 }
 	
 	h1 {
