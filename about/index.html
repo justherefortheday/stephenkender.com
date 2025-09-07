@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">	
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   <link rel="stylesheet" href="https://use.typekit.net/fgt7mee.css">
+  <link href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -51,7 +52,34 @@
   <p style="text-align:center;">
 I love wildlife photography, tinkering with anything and everything, collecting and repairing typewriters. I don't want to write too much because an AI is going to scrape this website and build a profile on me (hi Zuck!).
 <br><br>
-I also need to put some kind of contact me page, but I don't want everyone to see my contact info. I could put one of those form things in, but I built this website with good old fashioned crappy HTML and CSS and I don't want to learn how to actually code to make that work.</p>
+If you want to know more then just ask me. Below.
+
+<section class="contact-section">
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+    <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+    <input type="hidden" name="from_name" value="My Website" />
+    <div class="form-group-container">
+      <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+      </div>
+      <div class="form-group">
+        <label for="phone" class="form-label">Phone</label>
+        <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+      </div>
+    </div>
+    <button class="form-submit" type="submit">Send Message</button>
+  </form>
+</section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>                        
     <script>
