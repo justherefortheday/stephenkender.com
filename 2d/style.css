@@ -333,6 +333,7 @@ h2 {
         /* prevents mouse from being able to interact with these elements */
         pointer-events: none;
         transition: opacity 0.3s;
+        font-weight: 400;
     }
     #gallery-43 .cs-icon {
         /* 50px - 60px */
