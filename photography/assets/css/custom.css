@@ -53,6 +53,11 @@ header div.background {
   fill: #A0A0A0 !important;
 }
 
+a {
+  text-decoration: none;
+  font-family: 'Avenir';
+	font-weight: 600;
+}
 
 
 
