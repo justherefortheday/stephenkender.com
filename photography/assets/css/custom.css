@@ -15,21 +15,21 @@
 }
 
 html {
-  background-color: #fafafa !important;
+  background-color: #393F4D  !important;
   color: inherit;
 }
 
 .thumb-img {
-  border-color: #fafafa !important;
+  border-color: #393F4D !important;
 }
 
 #loupeContainer div.background {
-  background-color: #fafafa !important;
+  background-color: #393F4D !important;
   color: inherit;
 }
 
 header div.background {
-  background-color: #fafafa !important;
+  background-color: #393F4D !important;
   color: inherit;
 }
 
@@ -38,6 +38,6 @@ header div.background {
 }
 
 body {
-  background-color: #fafafa !important;
-  color: #4B4B4B !important;
+  background-color: #393F4D !important;
+  color: #fff !important;
 }
