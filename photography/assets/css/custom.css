@@ -90,7 +90,7 @@ p {
   overflow: hidden;
 }
 
-header {
+.menu-header {
   text-transform: uppercase;
   border-bottom: #0003 3px solid;
   padding-top: 10px;
@@ -98,17 +98,17 @@ header {
   text-align: center;
 }
 
-header ul {
+.menu-header ul {
   margin: 0;
   padding: 0;
 }
 
-header li {
+.menu-header li {
   display: inline;
   padding: 0px 20px 0px 20px;
 }
 
-header nav {
+.menu-headerader nav {
   float: center;
   margin-top: 10px;
 }
@@ -196,7 +196,7 @@ h2 {
     transform: rotate(180deg);
     transition: all .25s ease-in-out;
   }
-  header {
+  .menu-header {
     margin-bottom: 5px;
     padding-bottom: 5px;
     padding-top: 90px;
