@@ -54,7 +54,7 @@ I love wildlife photography, tinkering with anything and everything, collecting 
 If you want to know more then just ask me. Below.</p>
 
 <section class="contact-section">
-  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+  <form class="contact-form" id="contact" action="https://api.web3forms.com/submit" method="POST">
     <input type="hidden" name="access_key" value="06a5f0ee-06f7-4b18-b522-e7be38648a02" />
     <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
     <input type="hidden" name="from_name" value="My Website" />
@@ -77,6 +77,7 @@ If you want to know more then just ask me. Below.</p>
       </div>
     </div>
     <button class="form-submit" type="submit">Send Message</button>
+       <div class="h-captcha" data-captcha="true"></div>
   </form>
 </section>
 
@@ -87,6 +88,19 @@ If you want to know more then just ask me. Below.</p>
             $(".fa-caret-down").toggleClass("up");
         });
     </script>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<script>
+const form = document.getElementById('contact');
 
+form.addEventListener('submit', function(e) {
 
+    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+    if (!hCaptcha) {
+        e.preventDefault();
+        alert("Please fill out captcha field")
+        return
+    }
+});
+</script>
 </body>
