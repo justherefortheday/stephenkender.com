@@ -31,21 +31,21 @@
 }
 
 html {
-  background-color: #393F4D  !important;
+  background-color: #1c2521  !important;
   color: inherit;
 }
 
 .thumb-img {
-  border-color: #393F4D !important;
+  border-color: #1c2521 !important;
 }
 
 #loupeContainer div.background {
-  background-color: #393F4D !important;
+  background-color: #1c2521 !important;
   color: inherit;
 }
 
 header div.background {
-  background-color: #393F4D !important;
+  background-color: #1c2521 !important;
   color: inherit;
 }
 
@@ -53,45 +53,11 @@ header div.background {
   fill: #A0A0A0 !important;
 }
 
-a {
-  text-decoration: none;
-  font-family: 'Avenir';
-	font-weight: 600;
-}
-
-
-
 body {
-    background-color: #393F4D !important;
+    background-color: #1c2521 !important;
     color: #fff !important;
-    margin: auto;
-    max-width: 1000px;
 }
 
-
-h1 {
-  font-size: 58px;
-font-family: freight-display-pro, serif;
-	letter-spacing: 1%;
-  font-weight: 600;
-  line-height: 1.15em;
-  padding: 0px 10px 0px 10px;
-}
-
-h2 {
-  font-size: 2.4vw;
-  padding: 4vh 10px 0px 10px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-	line-height: 120%;
-}
-
-p {
-  padding: 0px 10px 0px 10px;
-  font-family: pedestria-mvb, sans-serif;
-  font-size: 25px;
-  color: #fff;
-}
 
 
 #logo-img {
@@ -133,6 +99,9 @@ p {
 nav a {
   font-size: 16px;
   color: #fff;
+  font-family: 'Avenir';
+	font-weight: 600;
+  text-decoration: none;
 }
 
 nav a:visited {
@@ -154,9 +123,6 @@ nav .current a{
 }
 
 @media screen and (max-width: 992px) {
-h2 {
-  font-size: 36px;
-}
 	
   .container {
     width: 100%;
