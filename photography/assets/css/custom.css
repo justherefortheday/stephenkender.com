@@ -37,7 +37,174 @@ header div.background {
   fill: #A0A0A0 !important;
 }
 
+
+
+
 body {
-  background-color: #393F4D !important;
-  color: #fff !important;
+    background-color: #393F4D !important;
+    color: #fff !important;
+    margin: auto;
+    max-width: 1000px;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Avenir';
+	font-weight: 600;
+}
+
+
+h1 {
+  font-size: 58px;
+font-family: freight-display-pro, serif;
+	letter-spacing: 1%;
+  font-weight: 600;
+  line-height: 1.15em;
+  padding: 0px 10px 0px 10px;
+}
+
+h2 {
+  font-size: 2.4vw;
+  padding: 4vh 10px 0px 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+	line-height: 120%;
+}
+
+p {
+  padding: 0px 10px 0px 10px;
+  font-family: pedestria-mvb, sans-serif;
+  font-size: 25px;
+  color: #fff;
+}
+
+
+#logo-img {
+  width: 30%;
+  margin: 35px 35% 15px 35%;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  text-transform: uppercase;
+  border-bottom: #0003 3px solid;
+  padding-top: 10px;
+  min-height: 70px;
+  text-align: center;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline;
+  padding: 0px 20px 0px 20px;
+}
+
+header nav {
+  float: center;
+  margin-top: 10px;
+}
+
+nav a {
+  font-size: 16px;
+  color: #fff;
+}
+
+nav a:visited {
+  color: #fff;
+}
+
+nav a:hover {
+  color: rgba(229, 87, 44, 0.9);
+}
+
+nav .current a{
+  color: #DC9E2F;
+  cursor: default;
+}
+
+.menu {
+  display: none;
+  z-index: 99999999;
+}
+
+@media screen and (max-width: 992px) {
+h2 {
+  font-size: 36px;
+}
+	
+  .container {
+    width: 100%;
+    display: none;
+  }
+  .menu {
+    height: auto;
+    display: block;
+    background: #DC9E2F;
+    color: #222;
+    text-align: center;
+    width: 180px;
+    margin-left: -90px;
+    border-radius: 0px 0px 6px 6px;
+  font-family: 'Avenir';
+    font-weight: bold;
+    position: fixed;
+    left: 50%;
+	box-shadow: 5px 5px 10px #0002;
+  }
+  #mobile-menu {
+    display: none;
+    padding-bottom: 20px;
+    border-top: #222 3px solid;
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+  }
+  #mobile-menu a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+    color: #222;
+  }
+ .dropdown-button {
+    -webkit-appearance: none;
+    width: 100%;
+    background: none;
+    cursor: pointer;
+  font-family: 'Avenir';
+    font-weight: bold;
+    font-size: 25px;
+    border: none;
+    padding: 15px 0px 18px 0px;
+    line-height: .75em;
+    color: #222 !important;
+  }
+  .fa-caret-down {
+    transition: all .25s ease-in-out;
+  }
+  .fa-caret-down.up {
+    transform: rotate(180deg);
+    transition: all .25s ease-in-out;
+  }
+  header {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-top: 90px;
+	border-bottom: none;
+  }
+	
+	#logo-img {
+	  width: 50%;
+	  margin: 10px 25% 10px 25%;
+	}
 }
