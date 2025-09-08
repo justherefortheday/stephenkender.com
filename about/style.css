@@ -156,10 +156,11 @@ nav .current a{
 
 .contact-section {
   width: 100%;
-  max-width: 40rem;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding: 3rem 1rem;
+
 }
 
 .contact-intro > * + * {
@@ -189,6 +190,8 @@ nav .current a{
 
 .form-label {
   margin-bottom: 0.5rem;
+  color: white;
+  font-family: pedestria-mvb, sans-serif;
 }
 
 .form-input,
@@ -201,6 +204,7 @@ nav .current a{
   border-radius: 0.375rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
+  font-family: pedestria-mvb, sans-serif;
 }
 
 .form-input::placeholder,
@@ -210,7 +214,7 @@ nav .current a{
 
 .form-input:focus-visible,
 .form-textarea:focus-visible {
-  outline: 2px solid #2563eb;
+  outline: 2px solid #DC9E2F;
   outline-offset: 2px;
 }
 
@@ -221,10 +225,12 @@ nav .current a{
 .form-submit {
   width: 100%;
   margin-top: 1.2rem;
-  background-color: #3124ca;
-  color: #fff;
+  background-color: #DC9E2F;
+  color: #222;
   padding: 13px 5px;
   border-radius: 0.375rem;
+  font-family: pedestria-mvb, sans-serif;
+  border: none;
 }
 
 @media screen and (max-width: 992px) {
