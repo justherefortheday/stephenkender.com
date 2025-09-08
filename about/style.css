@@ -233,6 +233,13 @@ nav .current a{
   border: none;
 }
 
+.h-captcha{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
 @media screen and (max-width: 992px) {
 h2 {
   font-size: 36px;
