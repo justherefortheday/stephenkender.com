@@ -108,9 +108,10 @@ p {
 .menu-header {
   text-transform: uppercase;
   border-bottom: #0003 3px solid;
-  padding-top: 10px;
+  padding-top: 20px;
   min-height: 70px;
   text-align: center;
+  display: flex;
 }
 
 .menu-header ul {
@@ -121,6 +122,7 @@ p {
 .menu-header li {
   display: inline;
   padding: 0px 20px 0px 20px;
+  vertical-align: bottom;
 }
 
 .menu-headerader nav {
