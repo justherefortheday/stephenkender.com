@@ -307,23 +307,23 @@ div.thumbnail {
     box-sizing: border-box;
     cursor: pointer;
 
-   -webkit-transition: -webkit-box-shadow .03s ease-in;
-   -moz-transition: -moz-box-shadow .03s ease-in;
-   -ms-transition: box-shadow .03s ease-in;
-   -o-transition: box-shadow .03s ease-in;
-    transition: box-shadow .03s ease-in; 
+   -webkit-transition: -webkit-box-shadow .3s ease-in;
+   -moz-transition: -moz-box-shadow .3s ease-in;
+   -ms-transition: box-shadow .3s ease-in;
+   -o-transition: box-shadow .3s ease-in;
+    transition: box-shadow .3s ease-in; 
 }
 
 div.thumbnail:hover {
-   -moz-box-shadow: inset 0 0 100px rgba(0, 0, 0, .4);  
-   -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, .4);   
-    box-shadow: inset 0 0 100px rgba(0, 0, 0, .4);
+   -moz-box-shadow: inset 0px 0px 400px #fff7;  
+   -webkit-box-shadow: inset 0px 0px 400px #fff7;   
+    box-shadow: inset 0px 0px 400px #fff7;
 
-   -webkit-transition: all .03s ease-out;
-   -moz-transition: all .03s ease-out;
-   -ms-transition: all .03s ease-out;
-   -o-transition: all .03s ease-out;
-    transition: all .03s ease-out;  
+   -webkit-transition: all .3s ease-out;
+   -moz-transition: all .3s ease-out;
+   -ms-transition: all .3s ease-out;
+   -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;  
 }
 
 .row-spacing-sm div.thumbnail {
