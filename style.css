@@ -1,7 +1,5 @@
 @import url("../webfonts/Axiforma_Black/stylesheet.css");
-/*
-Welcome to my attempt at a stylesheet! Let's see what I can do with this boy.
-*/
+/*FONTS*/
 
 @font-face {
   font-family: 'Avenir';
@@ -57,6 +55,7 @@ font-weight: 900;
 font-style: normal;
 }
 
+/*GENERAL STUFF*/
 
 html {
   background: #393F4D;
@@ -72,6 +71,7 @@ body {
 
 a {
   text-decoration: none;
+  font-family: 'Avenir';
   color: #111;
 }
 
@@ -112,14 +112,17 @@ p {
   padding: 0px 10px 0px 10px;
   font-family: pedestria-mvb, sans-serif;
   font-size: 25px;
+  color: #fff;
 }
 
+/*FRONT PAGE BOXES*/
+
 .boxes {
-    width: 90%;
-    max-width: 1080px;
-    height: 400px;
-    display: flex;
-    margin: 40px auto 40px auto;
+  width: 90%;
+  max-width: 1080px;
+  height: 400px;
+  display: flex;
+  margin: 40px auto 40px auto;
 	text-align: left;
 	box-shadow: 3px 3px 10px 2px #1117;
 	border-radius: 35px;
@@ -199,12 +202,27 @@ p {
 	color: #313131;
 } 
 
+/*OTHER ENTITIES*/
+
+
 #logo-img {
   width: 40%;
   margin: auto;
   max-width: 600px;
   display: flex;
   padding: 40px 0px 5px 0px;
+}
+
+.footer {
+	width: 70%;
+  margin: 0 15% 0 15%;
+  text-align: center;
+  color: #ddd;
+  padding-bottom: 30px;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 
@@ -253,54 +271,101 @@ p {
   font-size: 26px;
 }
 
-.footer {
-	width: 70%;
-  margin: 0 15% 0 15%;
+/*OTHER PAGE STYLING*/
+
+.container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  text-transform: uppercase;
+  border-bottom: #0003 3px solid;
+  padding-top: 10px;
+  min-height: 70px;
   text-align: center;
-  color: #ddd;
-  padding-bottom: 30px;
-  height: auto;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
+}
+
+header ul {
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline;
+  padding: 0px 20px 0px 20px;
+}
+
+header nav {
+  float: center;
+  margin-top: 10px;
+}
+
+nav a {
+  font-size: 16px;
+  color: #fff;
+}
+
+nav a:visited {
+  color: #fff;
+}
+
+nav a:hover {
+  color: rgba(229, 87, 44, 0.9);
+}
+
+nav .current a{
+  color: #DC9E2F;
+  cursor: default;
+}
+
+.menu {
+  display: none;
+  z-index: 99999999;
 }
 
 @media screen and (max-width: 920px) {
-.boxes {
-	height: auto;
-	min-height: 400px;
-	flex-direction: column;
-}
+  h2 {
+    font-size: 36px;
+  }
 
-.box-text {
-	width: 90%;
-	min-height: 60%;
-	display: block;
-	text-align: left;
-	padding: 0 0 40px 0;
-}
+  .boxes {
+    height: auto;
+    min-height: 400px;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
 
-.box-img {
-	width: 100%;
-	min-height: 300px;
-	max-height: 40%;
-	display:flex; 
-	align-content: center;
-	align-items: center;
-	justify-content: center;
-}
+  .box-text {
+    width: 90%;
+    min-height: 200px;
+    display: block;
+    text-align: left;
+    padding: 0 0 5px 0;
+  }
 
-.box-img:hover {
-	height: 40%;
-	width: 100%;
-}
-	
-	#logo-img {
-  width: 60%;
-}
+  .box-img {
+    width: 100%;
+    min-height: 200px;
+    max-height: 40%;
+    display:flex; 
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-img:hover {
+    height: 40%;
+    width: 100%;
+  }
+    
+  #logo-img {
+    width: 60%;
+  }
 	
 	h1 {
-		font-size: 48px;
+		font-size: 43px;
 	}
 
   .footer {
@@ -310,4 +375,324 @@ p {
     padding-bottom: 80px;
     padding-top: 50px;
   }
+
+  /*OTHER PAGE STYLING*/
+
+  .container {
+    width: 100%;
+    display: none;
+  }
+
+  .menu {
+    height: auto;
+    display: block;
+    background: #DC9E2F;
+    color: #222;
+    text-align: center;
+    width: 44%;
+    margin-left: 28%;
+    border-radius: 0px 0px 15px 15px;
+    font-family: 'Avenir';
+    font-weight: bold;
+    position: fixed;
+	  box-shadow: 3px 3px 9px #0007;
+  }
+
+  #mobile-menu {
+    display: none;
+    padding-bottom: 20px;
+    border-top: #222 3px solid;
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+  }
+
+  #mobile-menu a {
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 0px 10px 0px;
+    color: #222;
+  }
+
+ .dropdown-button {
+    width: 100%;
+    background: none;
+    cursor: pointer;
+    font-size: 45px;
+    border: none;
+    padding: 15px 0px 18px 0px;
+    color: #222 !important;
+  }
+
+  .fa-caret-down {
+    transition: all .25s ease-in-out;
+    line-height: .4em !important;
+
+  }
+
+  .fa-caret-down.up {
+    transform: rotate(180deg);
+    transition: all .25s ease-in-out;
+  }
+
+  header {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-top: 40px;
+	  border-bottom: none;
+  }
 }
+
+
+
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #gallery-43 {
+        padding: var(--sectionPadding);
+        position: relative;
+        /* Prevents overflow from the image going off screen */
+        overflow: hidden;
+    }
+    #gallery-43 .cs-container {
+        width: 100%;
+        max-width: 69rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #gallery-43 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+
+    #gallery-43 .cs-image-group {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 16px - 20px */
+        gap: clamp(1rem, 1.5vw, 1.25rem);
+    }
+    #gallery-43 .cs-item {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1;
+        margin: 0;
+        position: relative;
+        display: block;
+		box-shadow: 3px 3px 9px #0004;
+    }
+    #gallery-43 .cs-item:hover .cs-hover-box {
+        opacity: 1;
+    }
+    #gallery-43 .cs-item:hover .cs-icon {
+        /* return to original position */
+        transform: rotateY(0);
+    }
+    #gallery-43 .cs-item:hover .cs-h3 {
+        opacity: 1;
+        /* Return to original position */
+        transform: translateY(0);
+    }
+    #gallery-43 .cs-item:hover .cs-hover-box-text {
+        opacity: 1;
+        /* Return to original position */
+        transform: translateY(0);
+    }
+    #gallery-43 .cs-picture {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+		background: #00000010;
+    }
+    #gallery-43 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #gallery-43 .cs-hover-box {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        padding: 1em;
+        background-color: #DC9E2F;
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* Prevents padding from contributing to height & width */
+        box-sizing: border-box;
+        /* Sets stage for 3d transform animation */
+        perspective: 700px;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        /* prevents mouse from being able to interact with these elements */
+        pointer-events: none;
+        transition: opacity 0.3s;
+        font-weight: 400;
+    }
+    #gallery-43 .cs-icon {
+        /* 50px - 60px */
+        width: clamp(3.125rem, 5vw, 3.75rem);
+        height: clamp(3.125rem, 5vw, 3.75rem);
+        /* 16px - 32px */
+        margin-bottom: clamp(1rem, 5vw, 2rem);
+        border-radius: 50%;
+        background-color: #fff;
+        outline: 0.5rem solid rgba(255, 255, 255, 0.7);
+        /* Start with the icon box rotated 90deg */
+        transform: rotateY(90deg);
+        position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex: none;
+        transition: transform 0.5s;
+    }
+    #gallery-43 .cs-icon img {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+    #gallery-43 .cs-h3 {
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 2vw, 1.5625rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0 auto;
+        max-width: 16.875rem;
+        color: #fff;
+        /* make starting position down 10px and invisible */
+        opacity: 0;
+        transform: translateY(0.625rem);
+        margin-bottom: 0.5rem;
+        transition:
+            opacity 0.3s,
+            transform 0.3s ease-out;
+        transition-delay: 0.1s;
+    }
+    #gallery-43 .cs-hover-box-text {
+        /* 13px - 16px */
+        font-size: clamp(1.05rem, 1vw, 1rem);
+        line-height: 1.5em;
+        margin: 0 auto;
+        max-width: 16.875rem;
+        color: #fff;
+        /* make starting position down 10px and invisible */
+        opacity: 0;
+        transform: translateY(0.625rem);
+        transition:
+            opacity 0.3s,
+            transform 0.3s ease-out;
+        transition-delay: 0.2s;
+    }
+}
+/* In Between - 600px */
+@media only screen and (min-width: 37.5rem) {
+    #gallery-43 .cs-image-group {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+    }
+    #gallery-43 .cs-item {
+        grid-column: span 6;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #gallery-43 .cs-item {
+        grid-column: span 4;
+    }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #gallery-43 .cs-title,
+    body.dark-mode #gallery-43 .cs-text {
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #gallery-43 .cs-text {
+        opacity: 0.8;
+    }
+}
+
+:root {
+    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
+    --primary: #ff6a3e;
+    --primaryLight: #ffba43;
+    --secondary: #ffba43;
+    --secondaryLight: #ffba43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(2rem, .5vw, 6.25rem) 1rem;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+              
