@@ -92,7 +92,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 58px;
+  font-size: 60px;
 font-family: freight-display-pro, serif;
 	letter-spacing: 1%;
   font-weight: 600;
@@ -118,8 +118,8 @@ p {
 /*FRONT PAGE BOXES*/
 
 .boxes {
-  width: 90%;
-  max-width: 1080px;
+  width: 100%;
+  max-width: 800px;
   height: 400px;
   display: flex;
   margin: 40px auto 40px auto;
@@ -129,7 +129,7 @@ p {
 }
 
 .box-text {
-	width: 60%;
+	width: 50%;
 	display: block;
 	text-align: left;
 	margin-left: 5%;
@@ -137,7 +137,7 @@ p {
 }
 
 .box-img {
-	width: 43%;
+	width: 50%;
 	height: 100%;
 	display: flex;
 	align-content: center;
@@ -154,7 +154,7 @@ p {
 	  }
 
 .box-img:hover {
-	width: 53%;
+	width: 60%;
 	transition: all 0.3s ease;
 }
 
@@ -165,19 +165,19 @@ p {
 }
 	  
 #box-img-1 {
-  background-image: url('https://stephenkender.com/img/box-1.jpg');
+  background-image: url('https://stephenkender.com/img/box-1.png');
   box-shadow: -10px 0px 10px -6px #1117;
 }  
 #box-img-2 {
-  background-image: url('https://stephenkender.com/img/box-2.jpg');
+  background-image: url('https://stephenkender.com/img/box-2.png');
   box-shadow: 10px 0px 10px -6px #1117;
 } 
 #box-img-3 {
-  background-image: url('https://stephenkender.com/img/box-3.jpg');
+  background-image: url('https://stephenkender.com/img/box-3.png');
         box-shadow: -10px 0px 10px -6px #1117;
 }  
 #box-img-4 {
-  background-image: url('https://stephenkender.com/img/box-4.jpg');
+  background-image: url('https://stephenkender.com/img/box-4.png');
         box-shadow: 10px 0px 10px -6px #1117;
 }  
 
@@ -330,7 +330,8 @@ nav .current a{
 @media screen and (max-width: 920px) {
 
 	h1 {
-		font-size: 43px;
+		font-size: 46px;
+		text-align: center;
 	}
 
   h2 {
@@ -338,31 +339,38 @@ nav .current a{
   }
 
   .boxes {
-    height: auto;
+    height: 500px;
     flex-direction: column;
     margin-bottom: 50px;
+    width: 90%;
   }
 
   .box-text {
-    width: 90%;
-    min-height: 200px;
-    display: block;
-    text-align: left;
-    padding: 0 0 5px 0;
-  }
-
-  .box-img {
-    width: 100%;
-    min-height: 200px;
-    max-height: 40%;
-    display:flex; 
-    align-content: center;
+    width: 85%;
+    height: 35%;
+    display: flex;
+    text-align: center;
+    /*! padding: 0px 0 5px 0; */
+    margin: auto;
+    /*! align-content: center; */
     align-items: center;
     justify-content: center;
   }
 
+  .box-img {
+    width: 100%;
+    /*! height: 250px; */
+    /*! max-height: 40%; */
+    /*! display:flex; */ 
+    /*! align-content: center; */
+    /*! align-items: center; */
+    /*! justify-content: center; */
+    /*! margin-bottom: ; */
+    height: 65%;
+  }
+
   .box-img:hover {
-    height: 40%;
+    height: 65%;
     width: 100%;
   }
     
