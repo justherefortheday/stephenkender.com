@@ -1,5 +1,5 @@
-
 html {
+  background-color: #1c2521  !important;
   color: inherit;
 }
 
@@ -25,3 +25,36 @@ body {
     background-color: #1c2521 !important;
     color: #fff !important;
 }
+
+.menu-header {
+  text-transform: uppercase;
+  border-bottom: #0003 3px solid;
+  padding-top: 20px;
+  min-height: 70px;
+  text-align: center;
+  display: flex;
+}
+
+.menu-header ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-header li {
+  display: inline;
+  padding: 0px 20px 0px 20px;
+  vertical-align: bottom;
+}
+
+nav a {
+  font-size: 16px;
+  color: #fff;
+  font-family: 'Avenir';
+	font-weight: 600;
+  text-decoration: none;
+}
+
+
+
+
+

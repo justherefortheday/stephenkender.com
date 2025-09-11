@@ -338,6 +338,11 @@ nav .current a{
     font-size: 36px;
   }
 
+  p {
+    margin: auto;
+    width: 85%;
+  }
+
   .boxes {
     height: 500px;
     flex-direction: column;
