@@ -101,7 +101,7 @@ font-family: freight-display-pro, serif;
 }
 
 h2 {
-  font-size: 2.4vw;
+  font-size: 3em;
   padding: 0px 10px 0px 10px;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
@@ -112,7 +112,7 @@ p {
   padding: 0px 10px 0px 10px;
   font-family: pedestria-mvb, sans-serif;
   font-size: 25px;
-  color: #fff;
+  max-width: 800px;
 }
 
 /*FRONT PAGE BOXES*/
@@ -285,6 +285,8 @@ header {
   padding-top: 10px;
   min-height: 70px;
   text-align: center;
+  max-width: 800px;
+  margin: auto;
 }
 
 header ul {
@@ -326,15 +328,19 @@ nav .current a{
 }
 
 @media screen and (max-width: 920px) {
+
+	h1 {
+		font-size: 43px;
+	}
+
   h2 {
     font-size: 36px;
   }
 
   .boxes {
     height: auto;
-    min-height: 400px;
     flex-direction: column;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
   }
 
   .box-text {
@@ -363,10 +369,7 @@ nav .current a{
   #logo-img {
     width: 60%;
   }
-	
-	h1 {
-		font-size: 43px;
-	}
+
 
   .footer {
     width: 100%;
