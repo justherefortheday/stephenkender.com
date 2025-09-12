@@ -69,10 +69,6 @@ a:link:visited {
   color: #111;
 }
 
-a:link:hover {
-  color: #111;
-}
-
 a:hover {
   color: #111;
 }
@@ -357,7 +353,7 @@ nav .current a{
 .form-label {
   margin-bottom: 0.5rem;
   color: white;
-  font-family: pedestria-mvb, sans-serif;
+  font-family: 'Pedestria', sans-serif;
 }
 
 .form-input,
@@ -370,7 +366,7 @@ nav .current a{
   border-radius: 0.375rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  font-family: pedestria-mvb, sans-serif;
+  font-family: 'Pedestria', sans-serif;
 }
 
 .form-input::placeholder,
@@ -395,8 +391,10 @@ nav .current a{
   color: #222;
   padding: 13px 5px;
   border-radius: 0.375rem;
-  font-family: pedestria-mvb, sans-serif;
+  font-family: 'Pedestria', sans-serif;
   border: none;
+  cursor: pointer;
+
 }
 
 .h-captcha{
