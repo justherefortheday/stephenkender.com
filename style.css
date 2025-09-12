@@ -518,13 +518,12 @@ nav .current a{
     color: #222 !important;
   }
 
-  .fa-caret-down {
+  .menu_caret {
     transition: all .25s ease-in-out;
     line-height: .4em !important;
-
   }
 
-  .fa-caret-down.up {
+  .menu_caret.up {
     transform: rotate(180deg);
     transition: all .25s ease-in-out;
   }
