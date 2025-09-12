@@ -31,25 +31,19 @@
 }
 
 @font-face {
-font-family: dejanire-headline, serif;
-font-weight: 900;
-font-style: normal;
+  font-family: 'Pedestria';
+  src: url('https://stephenkender.com/fonts/Pedestria.otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-font-family: pedestria-mvb, sans-serif;
-font-weight: 400;
-font-style: normal;
-}
-@font-face {
-font-family: freight-big-pro, serif;
-font-weight: 900;
-font-style: normal;
-}
-@font-face {
-font-family: freight-display-pro, serif;
-font-weight: 900;
-font-style: normal;
+  font-family: 'Freight';
+  src: url('https://stephenkender.com/fonts/Freight-Display-Pro-Black.otf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 /*GENERAL STUFF*/
@@ -89,9 +83,8 @@ a:hover {
 
 h1 {
   font-size: 60px;
-font-family: freight-display-pro, serif;
+  font-family: 'Freight', serif;
 	letter-spacing: 1%;
-  font-weight: 600;
   line-height: 1.15em;
   padding: 0px 10px 0px 10px;
 }
@@ -106,7 +99,7 @@ h2 {
 
 p {
   padding: 0px 10px 0px 10px;
-  font-family: pedestria-mvb, sans-serif;
+  font-family: 'Pedestria', sans-serif;
   font-size: 25px;
   max-width: 800px;
   margin: auto;
