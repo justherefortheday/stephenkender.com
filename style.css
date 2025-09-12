@@ -231,30 +231,26 @@ p {
   transition: all 0.3s ease;
   text-align: center;
   z-index: 999;
+  cursor: pointer;
 }
 
-#return-to-top i {
-  color: #fff;
-  margin: 0;
-  position: relative;
-  left: 0px;
-  top: 15px;
-  font-size: 30px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+#return-to-top img {
+  width: 60px;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -ms-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
 }
 
 #return-to-top:hover {
   background: #000000e6;
 }
 
-#return-to-top:hover i {
+#return-to-top:hover img {
   color: #fff;
-  top: 2px;
-  font-size: 26px;
+  top: 25px;
+  width: 35px;
 }
 
 /*OTHER PAGE STYLING*/
@@ -753,6 +749,7 @@ body {
 *, *:before, *:after {
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
+    /*! width: 30px; */
 }
 .cs-topper {
     font-size: var(--topperFontSize);
