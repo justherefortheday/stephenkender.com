@@ -1,6 +1,3 @@
-@import url("../webfonts/Axiforma_Black/stylesheet.css");
-/*FONTS*/
-
 @font-face {
   font-family: 'Avenir';
   src: url('https://stephenkender.com/fonts/AvenirNextLTPro-Regular.otf');
@@ -65,7 +62,6 @@ html {
 
 body {
     margin: 0px;
-    font-family: "Axiforma Black";
     font-weight: 400;
 }
 
