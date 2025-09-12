@@ -24,7 +24,7 @@
 <div class="menu">
 
 	<button class="dropdown-button">
-		<i id="caret-down" style="line-height: .4em !important" class="fas fa-caret-down"></i>
+		<img src="https://stephenkender.com/img/chevron-down.svg" alt="Menu" id="dropdown-icon">
 	</button>
 
 	<div id="mobile-menu">
@@ -170,13 +170,13 @@
         </div>
     </div>
 </section>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>                        
-    <script>
-        $(".dropdown-button").click(function () {
-            $("#mobile-menu").slideToggle(350, "swing");
-            $(".fa-caret-down").toggleClass("up");
-        });
-    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>                        
+<script>
+    $(".dropdown-button").click(function () {
+        $("#mobile-menu").slideToggle(350, "swing");
+        $("#dropdown-icon").toggleClass("up");
+    });
+</script>
 
 
 </body>

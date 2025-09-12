@@ -509,17 +509,16 @@ nav .current a{
     width: 100%;
     background: none;
     cursor: pointer;
-    font-size: 45px;
     border: none;
-    color: #222 !important;
   }
 
-  .menu_caret {
+  #dropdown-icon {
     transition: all .25s ease-in-out;
-    line-height: .4em !important;
+    width: 35px;
+    padding: 6px 0px;
   }
 
-  .menu_caret.up {
+  #dropdown-icon.up {
     transform: rotate(180deg);
     transition: all .25s ease-in-out;
   }
@@ -531,8 +530,6 @@ nav .current a{
 	  border-bottom: none;
   }
 }
-
-
 
 /*-- -------------------------- -->
 <---          Gallery           -->
