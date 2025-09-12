@@ -151,19 +151,19 @@ p {
 }
 	  
 #box-img-1 {
-  background-image: url('https://stephenkender.com/img/box-1.png');
+  background-image: url('https://stephenkender.com/img/box-1.webp');
   box-shadow: -10px 0px 10px -6px #1117;
 }  
 #box-img-2 {
-  background-image: url('https://stephenkender.com/img/box-2.png');
+  background-image: url('https://stephenkender.com/img/box-2.webp');
   box-shadow: 10px 0px 10px -6px #1117;
 } 
 #box-img-3 {
-  background-image: url('https://stephenkender.com/img/box-3.png');
+  background-image: url('https://stephenkender.com/img/box-3.webp');
         box-shadow: -10px 0px 10px -6px #1117;
 }  
 #box-img-4 {
-  background-image: url('https://stephenkender.com/img/box-4.png');
+  background-image: url('https://stephenkender.com/img/box-4.webp');
         box-shadow: 10px 0px 10px -6px #1117;
 }  
 
