@@ -120,6 +120,7 @@ p {
 	text-align: left;
 	margin-left: 5%;
   margin-right: 3%;
+	/*! rotate: -3deg; */
 }
 
 .box-img {
@@ -171,21 +172,25 @@ p {
     background-color: #4A5B3B;
     color: #F9B53C;
     font-size: 36px;
+    rotate: -2deg;
 }
 
 #box-2 {
 	background-color: #DF9292;
 	color: #1E2B48;	
+	rotate: -1deg;
 }
 
 #box-3 {
 	background-color: #352c29;
 	color: #FFE0B3;
+	rotate: 2.5deg;
 }
 
 #box-4 {
 	background-color: #CE8840;
 	color: #313131;
+	ROTATE: -10deg;
 } 
 
 /*OTHER ENTITIES*/
@@ -197,6 +202,7 @@ p {
   max-width: 600px;
   display: flex;
   padding: 40px 0px 5px 0px;
+  rotate: 3deg;
 }
 
 .footer {
@@ -209,6 +215,7 @@ p {
   display: flex;
   flex-flow: column;
   justify-content: center;
+	rotate: -3deg;
 }
 
 
@@ -464,6 +471,10 @@ nav .current a{
     padding-bottom: 80px;
     padding-top: 50px;
   }
+  
+  #box-4 {
+	ROTATE: -4deg;
+} 
 
   /*OTHER PAGE STYLING*/
 
